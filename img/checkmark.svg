@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="10px" height="11px" viewBox="0 0 10 11" enable-background="new 0 0 10 11" xml:space="preserve">
+<filter  width="183.3%" height="176.9%" filterUnits="objectBoundingBox" y="-30.8%" x="-41.7%" id="filter-2">
+	<feMorphology  result="shadowSpreadOuter1" radius="0.75" in="SourceAlpha" operator="dilate"></feMorphology>
+	<feOffset  dy="0.5" result="shadowOffsetOuter1" in="shadowSpreadOuter1" dx="0"></feOffset>
+	<feMorphology  result="shadowInner" radius="1" in="SourceAlpha" operator="erode"></feMorphology>
+	<feOffset  dy="0.5" result="shadowInner" in="shadowInner" dx="0"></feOffset>
+	<feComposite  result="shadowOffsetOuter1" in2="shadowInner" in="shadowOffsetOuter1" operator="out"></feComposite>
+	<feGaussianBlur  stdDeviation="0.5" result="shadowBlurOuter1" in="shadowOffsetOuter1"></feGaussianBlur>
+	<feColorMatrix  type="matrix" in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0"></feColorMatrix>
+</filter>
+<title>Checkmark</title>
+<desc>Created with Sketch.</desc>
+<g id="ui">
+	<g id="v3__02.2__user-registration__early-reg__corporate" transform="translate(-1068.000000, -2398.000000)">
+		<g id="Group-2" transform="translate(1066.000000, 2396.000000)">
+			<g id="Checkmark">
+				<g filter="url(#filter-2)">
+					<polyline id="path-1_2_" points="4,7 6.143,9.5 10,3 					"/>
+				</g>
+				<g>
+					
+						<polyline id="path-1_1_" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" points="
+						4,7 6.143,9.5 10,3 					"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="js/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <script src="js/slick/slick.min.js"></script>
+  <script src="js/helpers.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+
+<div id="content">
+  <header id="header" class="header-in">
+    <div class="header-fix">
+      <div class="container">
+        <a href="javascript:;" id="logo"></a>
+        <h2 class="header-big-title">הרשמה לקבלת מידע עבור השקעות עתידיות שיפורסמו בהמשך</h2>
+        <div class="mobile-menu-holder">
+          <a href="javascript:$('.dialog-sms').modal();" class="btn btn-default"><span class="xicon-lock"></span>לכניסה לחשבונך</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+
+    <section class="gui-form-section">
+      <div class="container">
+        <div class="gui-tab-holder gui-form-holder">
+          <nav class="gui-tabs">
+            <a href="#user-register" class="active">פרטי</a>
+            <a href="#corporate-register">תאגיד</a>
+          </nav>
+          <div class="gui-tab" id="user-register">
+            <div class="gui-tab-wrapper richtext">
+              <h5>מילוי פרטים</h5>
+              <p>אנא מלאו את פרטיכם האישיים. שימו לב כי הפרטים מוזנים באופן מדויק - הפרטים הכרחיים להמשך התהליך וישמשו לזיהוי שלכם מול החברה.</p>
+            </div>
+            <div class="gui-tab-wrapper">
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>שם משפחה בעברית</label>
+                    <input type="text" class="form-control" placeholder="כפי שמופיע בת.ז.">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>שם פרטי בעברית   </label>
+                    <input type="text" class="form-control" placeholder="אברם">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6 col-md-offset-6">
+                    <div class="form-group">
+                      <label>מספר ת.ז.</label>
+                      <input type="text" class="form-control" placeholder="9 ספרות כולל ספרת ביקורת">
+                    </div>
+                  </div>
+                </div>
+
+              <div class="row">
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>כתובת דוא"ל</label>
+                      <input type="text" class="form-control" placeholder="name@domain.com">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group ">
+                    <label>טלפון נייד </label>
+                    <div class="input-group">
+                      <input type="text" class="form-control">
+                      <div class="input-group-addon" style="direction: ltr">+050 </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+
+               <div class="box box-alt richtext">
+                  <label class="check check-rtl">
+                    <span>מאשר/ת העברת הפרטים הנ"ל לחברה לטובת יצירת קשר ושליחת מידע נוסף בטלפון ו/או דוא"ל</span>
+                    <input type="checkbox">
+                    <span></span>
+                  </label>
+                  <label class="check check-rtl">
+                    <span>מאשר/ת את <a href="javascript:;">תקנון החברה</a></span>
+                    <input type="checkbox" checked="checked">
+                    <span></span>
+                  </label>
+                </div>
+            </div>
+            <div class="submit-section">
+              <div class="gui-tab-wrapper">
+                <button type="submit" class="btn btn-primary">להרשמה</button>
+              </div>
+            </div>
+          </div>
+          <div class="gui-tab" id="corporate-register">
+            <div class="gui-tab-wrapper richtext">
+              <h5>פרטים אישיים</h5>
+            </div>
+            <div class="gui-tab-wrapper">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>מספר תאגיד</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>שם התאגיד בעברית</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                </div>
+
+                <h5>פרטי איש קשר</h5>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>שם משפחה בעברית</label>
+                      <input type="text" class="form-control" placeholder="שם איש קשר">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>שם פרטי בעברית</label>
+                      <input type="text" class="form-control" placeholder="שם איש קשר">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label> כתובת דוא"ל</label>
+                      <input type="text" class="form-control" placeholder="name@domain.com">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>טלפון נייד</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control">
+                        <div class="input-group-addon" style="direction: ltr">+050 </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="box box-alt richtext">
+                  <label class="check check-rtl">
+                    <span>מאשר/ת העברת הפרטים הנ"ל לחברה לטובת יצירת קשר ושליחת מידע נוסף בטלפון ו/או דוא"ל</span>
+                    <input type="checkbox">
+                    <span></span>
+                  </label>
+                  <label class="check check-rtl">
+                    <span>מאשר/ת את <a href="javascript:;">תקנון החברה</a></span>
+                    <input type="checkbox" checked="checked">
+                    <span></span>
+                  </label>
+                </div>
+
+
+
+
+            </div>
+            <div class="submit-section">
+                <div class="gui-tab-wrapper">
+                  <button type="submit" class="btn btn-primary ">להרשמה</button>
+                </div>
+              </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer id="footer">
+    <nav class="container">
+      <a href="javascript:;">פרטי העסקה</a>
+      <a href="javascript:;">אלטשולר שחם</a>
+    </nav>
+  </footer>
+</div>
+
+</body>
+
+</html>
