@@ -28,7 +28,7 @@
       })
     },
     mobileMenu: function() {
-      $("#header .container").append('<span id="mobile-menu"><span></span><span></span><span></span></span>');
+      $("#header .container-fluid").append('<span id="mobile-menu"><span></span><span></span><span></span></span>');
       $('#mobile-menu').on('click', function() {
         $(document.body).toggleClass('mobile-menu-active')
       })
@@ -56,12 +56,12 @@
         }, 777);
       })(this)
     },
-    menu: function() {
-      var $win = $(window),
-        header = $("#header");
-      minHead = /*$win.scrollTop() > 0 ||*/ $win.width() < 1200 || header.hasClass('header-in');
-      header[minHead ? 'addClass' : 'removeClass']('header-small')
-    },
+    // menu: function() {
+    //   var $win = $(window),
+    //     header = $("#header");
+    //   minHead = /*$win.scrollTop() > 0 ||*/ $win.width() < 1200 || header.hasClass('header-in');
+    //   header[minHead ? 'addClass' : 'removeClass']('header-small')
+    // },
     tabs: function() {
       var links = $(".gui-tab-holder").each(function() {
         var scope = this;
@@ -81,7 +81,7 @@
       var scope = this;
       $(document).ready(function() {
         scope.heroCarousel();
-        scope.menu();
+        // scope.menu();
         scope.mobileMenu();
         scope.tabs();
         // scope.mobileHeaderTitle();
@@ -101,7 +101,7 @@
 
       })
       $(window).on('load resize scroll', function() {
-        scope.menu();
+        // scope.menu();
       })
     }
   }

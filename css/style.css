@@ -135,8 +135,6 @@
 }
 
 
-
-
 /* COMMON: */
 
 *,
@@ -152,6 +150,8 @@ body {
   direction: rtl;
   color: #6D6E71;
   font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body,
@@ -221,8 +221,6 @@ h5 {
   clear: both;
   height: 0;
 }
-
-
 
 
 /* UI: */
@@ -1013,9 +1011,18 @@ h5 {
   z-index: 99
 }
 
+#header.header-small {
+  border-bottom: 1px solid #ddd;
+}
+
 #header .container-fluid {
   padding: 0;
-  line-height: 50px;
+  line-height: 48px;
+}
+
+#header.header-small .container-fluid {
+  padding: 0;
+  line-height: 38px;
 }
 
 .document-ready #header .container-fluid {
@@ -1040,7 +1047,8 @@ h5 {
 .mobile-menu-holder,
 .menu-title,
 #header .btn,
-#header h2 {
+#header h2,
+#mobile-menu {
   transition: all .25s ease;
 }
 
@@ -1055,7 +1063,7 @@ h5 {
 .menu-title h2 {
   vertical-align: middle;
   display: inline;
-  margin-right: 175px;
+  margin-right: 200px;
 }
 
 #header .btn+.btn {
@@ -1063,7 +1071,7 @@ h5 {
 }
 
 #header .share {
-  margin: 0 10% 0 15px;
+  margin: 0 5% 0 15px;
 }
 
 #logo {
@@ -1076,9 +1084,15 @@ h5 {
   background: url(../img/logo.png) no-repeat center;
   -webkit-transition: height .5s ease;
   transition: height .5s ease;
+  background-size: contain;
 }
 
-
+.header-small #logo {
+  height: 80px;
+  width: 190px;
+  background: url(../img/logo-horizontal.png) no-repeat center;
+  background-size: contain;
+}
 
 
 /***********************************************************************/
@@ -1095,20 +1109,29 @@ h5 {
 }
 
 .affix #logo {
-  background-image: url(../img/logo2.png);
+  background-image: url(../img/logo-horizontal.png);
 }
 
 .affix .mobile-menu-holder,
-.affix .menu-title {
+.affix .menu-title,
+.header-small .mobile-menu-holder,
+.header-small .menu-title {
   padding: 20px 15px;
 }
 
-.affix .btn {
+.affix .btn,
+.header-small .btn {
   line-height: 38px;
 }
 
-.affix h2 {
+.affix h2,
+.header-small h2 {
   font-size: 36px;
+}
+
+.affix #mobile-menu,
+.header-small #mobile-menu {
+  margin: 20px 0;
 }
 
 @media (max-width:1300px) {
@@ -1436,11 +1459,14 @@ h5 {
 #mobile-menu {
   display: inline-block;
   width: 30px;
+  height: 50px;
   cursor: pointer;
-  float: left;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 25px;
   z-index: 15;
-  margin: 30px 0;
+  margin: 40px 0;
+  padding: 11px 0;
 }
 
 #mobile-menu span {
@@ -1448,7 +1474,7 @@ h5 {
   height: 4px;
   border: 1px solid #FA8833;
   border-radius: 4px;
-  margin: 0 0 4px;
+  margin: 4px 0;
 }
 
 #mobile-menu {
@@ -1636,8 +1662,6 @@ h5 {
 }
 
 
-
-
 /* Dialogs */
 
 .dialog-sms .modal-dialog {
@@ -1717,8 +1741,6 @@ h5 {
 .modal-title-icon {
   margin-left: 12px;
 }
-
-
 
 
 /* FORMS */
@@ -1831,14 +1853,16 @@ label {
 }
 
 
-
-
 /* /FORMS */
 
 .info {
   padding: 60px 0;
   max-width: 840px;
   margin: auto;
+}
+
+.info:first-of-type {
+  padding-top: 10px;
 }
 
 .gui-form-holder {
