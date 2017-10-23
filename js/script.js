@@ -23,7 +23,7 @@
           rtl: true,
           arrows: false,
           dots:true,
-          adaptiveHeight:true
+          adaptiveHeight: false
         })
       })
     },
@@ -109,5 +109,3 @@
   //window.app = app;
 
 })(jQuery);
-
-
