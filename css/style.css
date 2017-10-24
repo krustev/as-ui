@@ -139,6 +139,8 @@
 
 
 
+
+
 /* COMMON: */
 
 *,
@@ -233,6 +235,8 @@ h5 {
 .no-padding {
   padding: 0;
 }
+
+
 
 
 
@@ -651,7 +655,7 @@ h5 {
   white-space: nowrap;
   overflow: hidden;
   height: 30px;
-  min-width: 70px;
+  width: 70px;
   position: relative;
   border-radius: 30px;
   background: #D1D3DD;
@@ -739,8 +743,9 @@ h5 {
 }
 
 .switch input:checked+.switch-labels:after {
-  right: 100%;
-  margin-right: -25px;
+  /*right: 100%;
+  margin-right: -25px;*/
+  transform: translateX(-40px);
 }
 
 .check {
@@ -1033,6 +1038,8 @@ h5 {
 
 
 
+
+
 /* SITE: */
 
 #header {
@@ -1127,6 +1134,8 @@ h5 {
   background: url(../img/logo-horizontal.png) no-repeat center;
   background-size: contain;
 }
+
+
 
 
 
@@ -1265,7 +1274,6 @@ h5 {
 .dl-items-col {
   float: right;
   width: 50%;
-  padding-bottom: 30px;
 }
 
 .dl-items-col:after {
@@ -1323,7 +1331,7 @@ h5 {
 }
 
 .hero-carousel-side {
-  padding-top: 30px;
+  padding: 30px 0;
 }
 
 .hero-list .h-grid-col-half-1 {
@@ -1386,6 +1394,17 @@ h5 {
   height: 45px;
   line-height: 45px;
   font-size: 22px;
+}
+
+.hero-in .hero-carousel img {
+  height: 360px;
+  min-width: 100%;
+  width: auto;
+}
+
+.hero-in .slick-dots {
+  display: none !important;
+  position: absolute;
 }
 
 .hero-list {
@@ -1610,6 +1629,9 @@ h5 {
 
 .dl-items-col .box-map {
   height: 220px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 20px 0
 }
 
 @media (max-width:800px) {
@@ -1722,6 +1744,8 @@ h5 {
 
 
 
+
+
 /* Dialogs */
 
 .modal-dialog {
@@ -1806,6 +1830,8 @@ h5 {
 .modal-title-icon {
   margin-left: 12px;
 }
+
+
 
 
 
@@ -1926,6 +1952,8 @@ label {
 
 
 
+
+
 /* /FORMS */
 
 .info {
@@ -2022,6 +2050,7 @@ label {
   height: 70px;
   line-height: 70px;
   color: white;
+  /*background: #00A768;*/
   background: #006A52;
   border-radius: 6px;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
@@ -2079,6 +2108,8 @@ label {
   opacity: 1 !important;
 }
 
+/*Steps*/
+
 .steps {
   clear: both;
   padding-top: 50px;
@@ -2124,21 +2155,26 @@ label {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background-color: #00A768;
+  border: 1px solid #00A768;
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
-  color: white;
-  line-height: 40px;
+  color: #00A768;
+  line-height: 35px;
   font-size: 20px;
   margin-left: 10px;
   vertical-align: middle;
 }
 
+.step.active .step-index {
+  background-color: #00A768;
+  color: white;
+}
+
 .step.done .step-index {
   font-size: 0;
   background-image: url(../img/checkmark.svg);
-  background-size: 15px 15px;
+  background-size: 24px 24px;
 }
 
 .steptext {

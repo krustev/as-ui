@@ -1,33 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="10px" height="11px" viewBox="0 0 10 11" enable-background="new 0 0 10 11" xml:space="preserve">
-<filter  width="183.3%" height="176.9%" filterUnits="objectBoundingBox" y="-30.8%" x="-41.7%" id="filter-2">
-	<feMorphology  result="shadowSpreadOuter1" radius="0.75" in="SourceAlpha" operator="dilate"></feMorphology>
-	<feOffset  dy="0.5" result="shadowOffsetOuter1" in="shadowSpreadOuter1" dx="0"></feOffset>
-	<feMorphology  result="shadowInner" radius="1" in="SourceAlpha" operator="erode"></feMorphology>
-	<feOffset  dy="0.5" result="shadowInner" in="shadowInner" dx="0"></feOffset>
-	<feComposite  result="shadowOffsetOuter1" in2="shadowInner" in="shadowOffsetOuter1" operator="out"></feComposite>
-	<feGaussianBlur  stdDeviation="0.5" result="shadowBlurOuter1" in="shadowOffsetOuter1"></feGaussianBlur>
-	<feColorMatrix  type="matrix" in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0"></feColorMatrix>
-</filter>
-<title>Checkmark</title>
-<desc>Created with Sketch.</desc>
-<g id="ui">
-	<g id="v3__02.2__user-registration__early-reg__corporate" transform="translate(-1068.000000, -2398.000000)">
-		<g id="Group-2" transform="translate(1066.000000, 2396.000000)">
-			<g id="Checkmark">
-				<g filter="url(#filter-2)">
-					<polyline id="path-1_2_" points="4,7 6.143,9.5 10,3 					"/>
-				</g>
-				<g>
-					
-						<polyline id="path-1_1_" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" points="
-						4,7 6.143,9.5 10,3 					"/>
-				</g>
-			</g>
-		</g>
-	</g>
-</g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>checkmark</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ui" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="v3__07.1__user-application__private" transform="translate(-1218.000000, -148.000000)" fill="#FFFFFF">
+            <g id="Group-2" transform="translate(1210.000000, 140.000000)">
+                <g id="Group-15">
+                    <path d="M26.5273847,13.1146573 C26.2879276,13.0000003 26.043486,12.9713342 25.7940483,13.0286664 C25.5446145,13.0859949 25.3500566,13.2293144 25.2103708,13.4586285 L19.0742853,23.6057786 L15.662022,20.5960326 C15.4824292,20.404935 15.2579411,20.3046092 14.9885499,20.295055 C14.7191588,20.2855009 14.4946707,20.3667148 14.3150741,20.5387004 C14.1155278,20.7106896 14.0107643,20.9256689 14.0007876,21.1836491 C13.9908109,21.4416293 14.075617,21.6566086 14.2552136,21.8285942 L18.6552354,25.6982682 C18.8348282,25.8893658 19.0543279,25.9896916 19.3137423,25.9992458 C19.5731567,26.0087999 19.8026332,25.927586 20.0021833,25.7556004 C20.0221368,25.7364885 20.3912953,25.1297673 21.1096704,23.9354186 C21.8280454,22.7410663 22.61625,21.4368559 23.4743108,20.0227472 C24.3323679,18.6086349 25.1155841,17.3139787 25.8239824,16.1387383 C26.5323807,14.9634979 26.8865703,14.375885 26.8865703,14.375885 C27.0063026,14.1465709 27.0312445,13.9124797 26.9614035,13.6736114 C26.8915586,13.4347395 26.7468883,13.2484264 26.5273847,13.1146573 Z" id="Page-1"></path>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>
