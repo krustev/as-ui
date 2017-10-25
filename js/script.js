@@ -82,6 +82,21 @@
       });
       links.filter('[href="' + location.hash + '"]').click()
     },
+    showHide: function() {
+      $(".show-contoller").each(function() {
+
+        var controller = $(this).data("controller"),
+            state = $(this).data("state"),
+            target = $(this).data("target");
+
+        $(this).click(function() {
+          if ( $(controller).is(state) ) {
+            console.log(target);
+            $(target).toggleClass("hide");
+          }
+        });
+      });
+    },
     init: function() {
       var scope = this;
       $(document).ready(function() {
@@ -92,6 +107,7 @@
         // scope.mobileHeaderTitle();
         scope.selects();
         scope.helps();
+        scope.showHide();
         scope.guiAccordion();
         $("input[title]").each(function() {
           $(this).tooltip({
@@ -103,7 +119,6 @@
         setTimeout(function() {
           $(document.body).addClass('document-ready')
         }, 10)
-
       })
       $(window).on('load resize scroll', function() {
         // scope.menu();
