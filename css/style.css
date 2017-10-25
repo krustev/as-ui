@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Assistant:300,400,600,700,800|Roboto+Condensed:400,400i&subset=hebrew,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Assistant:300,400,600,700,800');
 @font-face {
   font-family: 'NarkisBlockMFCondensed-Thin';
   src: url('../font/narkis/NarkisBlockMFCondensed-Thin.eot');
@@ -141,6 +141,9 @@
 
 
 
+
+
+
 /* COMMON: */
 
 *,
@@ -236,6 +239,19 @@ h5 {
   padding: 0;
 }
 
+.text-small {
+  font-size: .875em;
+  color: #898A94;
+}
+
+strong {
+  color: black;
+  font-weight: 600;
+}
+
+ol {
+  list-style-position: inside;
+}
 
 
 
@@ -500,7 +516,7 @@ h5 {
   border-radius: 50px;
   outline: none !important;
   min-width: 120px;
-  padding: 0 20px;
+  padding: 0 25px 2px;
   position: relative;
   text-align: center;
   font-size: 17px;
@@ -544,6 +560,7 @@ h5 {
   background-color: #FA8833;
   border-color: #FA8833;
   color: #fff;
+  font-weight: bold;
 }
 
 .btn-primary:hover,
@@ -557,8 +574,9 @@ h5 {
 }
 
 .btn-al {
-  min-width: 260px;
-  padding-left: 60px;
+  min-width: 150px;
+  padding-left: 50px;
+  text-align: right;
 }
 
 .btn-al.btn-sm {
@@ -569,7 +587,8 @@ h5 {
   content: '\0049';
   font-family: font;
   position: absolute;
-  left: 25px;
+  font-weight: normal;
+  left: 15px;
   top: 0;
   line-height: 50px;
   color: white;
@@ -577,7 +596,7 @@ h5 {
 
 .btn-al-2:before {
   left: auto;
-  right: 25px;
+  right: 15px;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
@@ -587,8 +606,8 @@ h5 {
 }
 
 .btn-al-2 {
-  padding-left: 20px;
-  padding-right: 60px;
+  padding-left: 25px;
+  padding-right: 50px;
 }
 
 .btn-default.btn-al:before {
@@ -759,6 +778,7 @@ h5 {
 .switch input:checked+.switch-labels:after {
   /*right: 100%;
   margin-right: -25px;*/
+  -webkit-transform: translateX(-40px);
   transform: translateX(-40px);
 }
 
@@ -1054,6 +1074,9 @@ h5 {
 
 
 
+
+
+
 /* SITE: */
 
 #header {
@@ -1148,6 +1171,9 @@ h5 {
   background: url(../img/logo-horizontal.png) no-repeat center;
   background-size: contain;
 }
+
+
+
 
 
 
@@ -1764,6 +1790,9 @@ h5 {
 
 
 
+
+
+
 /* Dialogs */
 
 .modal-dialog {
@@ -1856,6 +1885,9 @@ h5 {
 
 
 
+
+
+
 /* FORMS */
 
 .form-row {
@@ -1896,8 +1928,12 @@ h5 {
 input.form-control,
 select.form-control {
   height: 50px;
+}
+
+select.form-control {
   cursor: pointer;
-  box-shadow: none;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .075);
 }
 
 .form-control {
@@ -1966,6 +2002,9 @@ label {
 .ifg-4 {
   width: 280px
 }
+
+
+
 
 
 
@@ -2085,6 +2124,7 @@ label {
   position: relative;
   top: -35px;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   margin: auto;
   height: 70px;
@@ -2133,6 +2173,9 @@ label {
   background-size: cover;
   opacity: 1 !important;
 }
+
+
+
 
 /*Steps*/
 
@@ -2212,6 +2255,7 @@ label {
 
 .select {
   position: relative;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -2228,7 +2272,8 @@ label {
   margin-left: 7px;
 }
 
-.select, select {
+.select,
+select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -2275,6 +2320,12 @@ label {
 
 .app-1-inline .select {
   width: 270px;
+}
+
+.form-control:focus {
+  border-color: #00A768;
+  -webkit-box-shadow: 0 0 0 2px rgba(0, 167, 104, 0.2);
+  box-shadow: 0 0 0 2px rgba(0, 167, 104, 0.2);
 }
 
 .form-control-focus {
