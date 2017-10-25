@@ -18,6 +18,11 @@
       })
     },
     heroCarousel: function() {
+      $('.hero-carousel').on('init', function(event, slick) {
+        var $items = slick.$dots.find('li');
+        $items.addClass('dot');
+        $items.find('button').remove();
+      });
       $(".hero-carousel").not('.initialized').each(function() {
         $(this).addClass('initialized').slick({
           rtl: true,
