@@ -135,6 +135,7 @@
 }
 
 
+
 /* COMMON: */
 
 *,
@@ -244,6 +245,9 @@ ol {
   list-style-position: inside;
 }
 
+.ltr {
+  direction: ltr;
+}
 
 
 
@@ -266,13 +270,13 @@ ol {
 }
 
 .status-box {
-  width: 100px;
+  width: 100%;
   height: 50px;
   border: 1px solid transparent;
   border-radius: 30px;
   text-align: center;
   line-height: 50px;
-  display: inline-block;
+  display: block;
   vertical-align: bottom;
   text-align: center;
   position: relative;
@@ -340,9 +344,23 @@ ol {
 
 .section-control .form-control {
   display: inline-block;
+  width: auto;
 }
 
-.input-group .form-control:last-child,
+.section-control .small {
+  width: 25%;
+}
+
+.section-control .small + .form-control{
+  width: 75%;
+}
+
+.section-control .form-control+.form-control {
+  margin-left: -1px;
+}
+
+
+/*.input-group .form-control:last-child,
 .input-group-addon:last-child,
 .input-group-btn:first-child>.btn-group:not(:first-child)>.btn,
 .input-group-btn:first-child>.btn:not(:first-child),
@@ -366,17 +384,7 @@ ol {
   border-top-left-radius: 0;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 0;
-}
-
-.input-group-addon:first-child {
-  border-right: 1px solid #ccc;
-  border-left: 0;
-}
-
-.input-group-addon:last-child {
-  border-left: 1px solid #ccc;
-  border-right: 0;
-}
+}*/
 
 .form-intext {
   line-height: 60px;
@@ -778,6 +786,7 @@ ol {
 }
 
 
+
 /*Checkbox*/
 
 .check {
@@ -873,7 +882,7 @@ ol {
 .plus {
   display: inline-block;
   position: relative;
-  padding: 0 30px 0 0;
+  padding: 0 35px 0 0;
   color: #00A768;
   font-weight: bold;
   cursor: pointer;
@@ -885,8 +894,8 @@ ol {
   top: 0;
   display: block;
   font-size: 19px;
-  height: 23px;
-  width: 23px;
+  height: 26px;
+  width: 26px;
   border: 1px solid #00A768;
   border-radius: 30px;
   -webkit-transition: all 0.3s;
@@ -906,19 +915,18 @@ ol {
   overflow: hidden;
   top: 50%;
   left: 50%;
-  content: ''
+  content: '';
+  transform: translate(-50%, -50%);
 }
 
 .plus-icon:before {
-  width: 1px;
-  height: 7px;
-  margin: -3.5px 0 0 -.5px;
+  width: 2px;
+  height: 8px;
 }
 
 .plus-icon:after {
-  width: 7px;
-  height: 1px;
-  margin: -.5px 0 0 -3.5px;
+  width: 8px;
+  height: 2px;
 }
 
 .gui-accordion {
@@ -1082,6 +1090,7 @@ ol {
 
 
 
+
 /* SITE: */
 
 #header {
@@ -1176,6 +1185,7 @@ ol {
   background: url(../img/logo-horizontal.png) no-repeat center;
   background-size: contain;
 }
+
 
 
 
@@ -1802,6 +1812,7 @@ ol {
 
 
 
+
 /* Dialogs */
 
 .modal-dialog {
@@ -1906,6 +1917,7 @@ ol {
 
 
 
+
 /* FORMS */
 
 .form-row {
@@ -1957,6 +1969,8 @@ select.form-control {
 .form-control {
   border-radius: 0;
   font-size: 20px;
+  -webkit-box-shadow: inset 0 2px 0 rgba(198, 199, 209, 0.2);
+  box-shadow: inset 0 2px 0 rgba(198, 199, 209, 0.2);
 }
 
 textarea.form-control {
@@ -2060,9 +2074,11 @@ label {
   width: 26.666%
 }
 
-.inline-form-button {
+.inline-form-button.btn {
   display: block;
+  min-width: 0;
 }
+
 
 /* /FORMS */
 
@@ -2162,6 +2178,7 @@ label {
   border-radius: 5px;
   -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, .075);
   box-shadow: 0 4px 0 rgba(0, 0, 0, .075);
+  -webkit-transform: scaleY(1.2);
   transform: scaleY(1.2);
 }
 
@@ -2221,6 +2238,7 @@ label {
   background-size: cover;
   opacity: 1 !important;
 }
+
 
 
 
