@@ -135,16 +135,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* COMMON: */
 
 *,
@@ -260,6 +250,7 @@ ol {
 
 
 
+
 /* UI: */
 
 .help {
@@ -272,10 +263,6 @@ ol {
   position: relative;
   top: 2px;
   cursor: help;
-}
-
-.status-col label {
-  display: block;
 }
 
 .status-box {
@@ -349,6 +336,10 @@ ol {
   vertical-align: middle;
   font-size: 20px;
   color: #D1D3DD
+}
+
+.section-control .form-control {
+  display: inline-block;
 }
 
 .input-group .form-control:last-child,
@@ -519,7 +510,7 @@ ol {
   line-height: 48px;
   border-radius: 50px;
   outline: none !important;
-  min-width: 120px;
+  min-width: 160px;
   padding: 0 25px 2px;
   position: relative;
   text-align: center;
@@ -785,6 +776,7 @@ ol {
   -webkit-transform: translateX(-40px);
   transform: translateX(-40px);
 }
+
 
 /*Checkbox*/
 
@@ -1089,6 +1081,7 @@ ol {
 
 
 
+
 /* SITE: */
 
 #header {
@@ -1183,6 +1176,7 @@ ol {
   background: url(../img/logo-horizontal.png) no-repeat center;
   background-size: contain;
 }
+
 
 
 
@@ -1807,6 +1801,7 @@ ol {
 
 
 
+
 /* Dialogs */
 
 .modal-dialog {
@@ -1898,6 +1893,7 @@ ol {
 .modal-title-icon {
   margin-left: 12px;
 }
+
 
 
 
@@ -2027,37 +2023,46 @@ label {
   padding-bottom: 35px;
 }
 
+.inline-form-group::before {
+  display: table;
+  content: " ";
+}
+
+.inline-form-group::after {
+  clear: both;
+  display: table;
+  content: " ";
+}
+
 .inline-form-group>.form-group {
   display: inline-block;
-  margin-left: 8px;
+  float: right;
+  padding: 0;
+}
+
+.inline-form-group>.form-group:not(:last-child) {
+  padding: 0 0 0 15px;
 }
 
 .ifg-1 {
-  width: 80px
+  width: 6.666%
 }
 
 .ifg-2 {
-  width: 120px
+  width: 13.333%
 }
 
 .ifg-3 {
-  width: 220px
+  width: 20%
 }
 
 .ifg-4 {
-  width: 280px
+  width: 26.666%
 }
 
-
-
-
-
-
-
-
-
-
-
+.inline-form-button {
+  display: block;
+}
 
 /* /FORMS */
 
@@ -2216,6 +2221,7 @@ label {
   background-size: cover;
   opacity: 1 !important;
 }
+
 
 
 

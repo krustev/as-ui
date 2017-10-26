@@ -19,6 +19,7 @@
 
   <div id="content">
 
+    <!-- HEADER -->
     <header id="header" class="header-small" data-spy="affix" data-offset-top="100">
       <div class="container-fluid">
         <div class="menu-title col-sm-6">
@@ -27,7 +28,7 @@
         </div>
         <div class="mobile-menu-holder col-sm-6 text-left">
           <a href="" class="share">Share</a>
-          <a href="javascript:$('.dialog-sms').modal();" class="btn btn-default"><span class="xicon-lock"></span>לכניסה לחשבונך</a>
+          <a href="" class="btn btn-default"><span class="xicon-lock"></span>לכניסה לחשבונך</a>
         </div>
       </div>
     </header>
@@ -107,6 +108,8 @@
       <section class="gui-form-section">
         <div class="container">
           <div class="gui-tab-holder gui-form-holder">
+
+            <!-- TABS -->
             <nav class="gui-tabs">
               <a href="#user-register" class="active">פרטי</a>
               <a href="#corporate-register">תאגיד</a>
@@ -114,13 +117,15 @@
 
             <!-- TAB - PRIVATE -->
             <div class="gui-tab" id="user-register">
-              <div class="gui-tab-wrapper richtext">
-                <h5>מילוי פרטים</h5>
-                <p>אנא מלאו את פרטיכם האישיים. שימו לב כי הפרטים מוזנים באופן מדויק - הפרטים הכרחיים להמשך התהליך וישמשו לזיהוי שלכם מול החברה.</p>
-              </div>
-              <div class="gui-tab-wrapper">
 
-                <div class="row">
+              <div class="gui-tab-wrapper richtext">
+
+                <div class="section-padding">
+                  <h5>מילוי פרטים</h5>
+                  <p>אנא מלאו את פרטיכם האישיים. שימו לב כי הפרטים מוזנים באופן מדויק - הפרטים הכרחיים להמשך התהליך וישמשו לזיהוי שלכם מול החברה.</p>
+                </div>
+
+                <div class="section-padding row">
                   <div class="col-md-6">
                     <div class="form-group">
                       <label>שם משפחה בעברית</label>
@@ -133,8 +138,6 @@
                       <input type="text" class="form-control" placeholder="אברם">
                     </div>
                   </div>
-                </div>
-                <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
                       <label>שם התאגיד</label>
@@ -147,8 +150,6 @@
                       <input type="text" class="form-control" placeholder="כפי z בדרכון">
                     </div>
                   </div>
-                </div>
-                <div class="row">
                   <div class="col-md-6 col-md-offset-6">
                     <div class="form-group">
                       <label>מספר ת.ז.</label>
@@ -156,48 +157,57 @@
                     </div>
                   </div>
                 </div>
-                <br>
-                <h5>כתובת</h5>
-                <div class="inline-form-group">
-                  <div class="form-group ifg-4">
-                    <label>רחוב</label>
-                    <input type="text" class="form-control">
-                  </div>
-                  <div class="form-group ifg-1">
-                    <label>מס' בית</label>
-                    <input type="text" class="form-control">
-                  </div>
-                  <div class="form-group ifg-1">
-                    <label>מס' דירה</label>
-                    <input type="text" class="form-control">
-                  </div>
-                  <div class="form-group ifg-3">
-                    <label>עיר</label>
-                    <input type="text" class="form-control">
-                  </div>
-                  <div class="form-group ifg-2">
-                    <label>מיקוד</label>
-                    <input type="text" class="form-control">
+
+                <div class="section-padding">
+                  <h5>כתובת</h5>
+                  <div class="inline-form-group">
+                    <div class="form-group ifg-4">
+                      <label>רחוב</label>
+                      <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group ifg-2">
+                      <label>מס' בית</label>
+                      <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group ifg-2">
+                      <label>מס' דירה</label>
+                      <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group ifg-4">
+                      <label>עיר</label>
+                      <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group ifg-3">
+                      <label>מיקוד</label>
+                      <input type="text" class="form-control">
+                    </div>
                   </div>
                 </div>
 
-                <div class="row">
+                <div class="section-padding row">
                   <div class="col-md-6 col-md-offset-6">
                     <div class="form-group">
                       <label>כתובת דוא"ל</label>
                       <input type="text" class="form-control" placeholder="name@domain.com">
                     </div>
                   </div>
-                </div>
+                  <!-- PHONE #1 -->
+                  <div class="col-md-12">
+                    <div class="row">
 
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group ">
-                      <label>טלפון נייד </label>
-                      <div class="input-group">
-                        <input type="text" class="form-control">
-                        <div class="input-group-addon" style="direction: ltr">+050 </div>
+                      <div class="form-group col-md-6">
+                        <label>טלפון נייד </label>
+                        <div class="input-group">
+                          <input type="text" class="form-control">
+                          <div class="input-group-addon" style="direction: ltr">+050 </div>
+                        </div>
                       </div>
+
+                      <div class="form-group col-md-3">
+                        <label>&nbsp;</label>
+                        <a href="" class="btn btn-default inline-form-button">אישור ושליחת SMS</a>
+                      </div>
+
                     </div>
                   </div>
 
@@ -207,24 +217,27 @@
                       <input type="text" class="form-control" placeholder="הזן קוד אימות שהתקבל ב-SMS">
                     </div>
                   </div>
-
                   <div class="col-md-2 status-col">
                     <div class="form-group">
                       <label>&nbsp;</label>
                       <span class="status-box status-box-success"></span>
                     </div>
                   </div>
-
-                </div>
-                <div class="form-row">
-                  <div class="form-group form-group-6">
-                    <label>טלפון נייד </label>
-                    <div class="input-group">
-                      <input type="text" class="form-control">
-                      <div class="input-group-addon" style="direction: ltr">+050 </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>טלפון נייד </label>
+                      <div class="input-group section-control">
+                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" placeholder="+050">
+                        <!-- <div class="input-group-addon" style="direction: ltr">+050 </div> -->
+                      </div>
                     </div>
                   </div>
-                  <a href="" class="btn btn-default">אישור ושליחת SMS</a>
+                  <div class="col-md-3">
+                    <label for=""></label>
+                    <a href="" class="btn btn-default">אישור ושליחת SMS</a>
+                  </div>
+
                 </div>
                 <div class="form-group">
                   <span class="plus">הוספת מספר נוסף<span class="plus-icon"></span></span>
