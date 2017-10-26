@@ -144,6 +144,7 @@
 
 
 
+
 /* COMMON: */
 
 *,
@@ -258,6 +259,7 @@ ol {
 
 
 
+
 /* UI: */
 
 .help {
@@ -314,7 +316,7 @@ ol {
 }
 
 .status-box-success:after {
-  background: #00A768 url(../img/checkmark.svg) no-repeat center;
+  background: #00A768 url(../img/checkmark-small.svg) no-repeat center;
 }
 
 .xico {
@@ -394,7 +396,7 @@ ol {
   background-color: #F4F4F7;
   border: 1px solid #E8E9ED;
   border-radius: 5px;
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
 }
 
 .box>hr {
@@ -782,6 +784,8 @@ ol {
   transform: translateX(-40px);
 }
 
+/*Checkbox*/
+
 .check {
   display: block;
   position: relative;
@@ -795,6 +799,7 @@ ol {
 .check>input {
   position: absolute;
   visibility: hidden;
+  right: 0;
 }
 
 .check>input+span {
@@ -829,7 +834,7 @@ ol {
   text-align: center;
   color: white;
   content: '';
-  background: url(../img/checkmark.svg) no-repeat center;
+  background: url(../img/checkmark-small.svg) no-repeat center;
   -webkit-transform: scale(0);
   transform: scale(0);
   -webkit-transition: all 0.3s;
@@ -844,6 +849,10 @@ ol {
 .check>input:checked+span {
   background-color: #00A768;
   border-width: 0;
+}
+
+.controller-target {
+  display: none;
 }
 
 .share {
@@ -1077,6 +1086,7 @@ ol {
 
 
 
+
 /* SITE: */
 
 #header {
@@ -1171,6 +1181,7 @@ ol {
   background: url(../img/logo-horizontal.png) no-repeat center;
   background-size: contain;
 }
+
 
 
 
@@ -1793,6 +1804,7 @@ ol {
 
 
 
+
 /* Dialogs */
 
 .modal-dialog {
@@ -1888,6 +1900,7 @@ ol {
 
 
 
+
 /* FORMS */
 
 .form-row {
@@ -1951,6 +1964,29 @@ textarea.form-control.appendix-a-area {
   max-height: 60vh;
 }
 
+::-webkit-input-placeholder {
+  opacity: .5;
+}
+
+::-moz-placeholder {
+  opacity: .5;
+}
+
+:-ms-input-placeholder {
+  opacity: .5;
+}
+
+:-moz-placeholder {
+  opacity: .5;
+}
+
+input::-webkit-contacts-auto-fill-button {
+  visibility: hidden;
+  display: none !important;
+  pointer-events: none;
+  position: absolute;
+}
+
 .richtext p.smaller {
   font-size: 16px;
 }
@@ -2002,6 +2038,7 @@ label {
 .ifg-4 {
   width: 280px
 }
+
 
 
 
@@ -2085,7 +2122,6 @@ label {
 .gui-tabs a {
   display: inline-block;
   text-align: center;
-  height: 60px;
   line-height: 60px;
   background-color: #E8E9ED;
   color: #4E5056;
@@ -2093,8 +2129,8 @@ label {
   vertical-align: middle;
   text-decoration: none;
   text-align: center;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
   font-weight: 600;
 }
 
@@ -2107,14 +2143,12 @@ label {
 }
 
 .gui-tabs a.active {
-  height: 70px;
-  line-height: 70px;
   color: white;
-  /*background: #00A768;*/
   background: #006A52;
-  border-radius: 6px;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, .075);
+  box-shadow: 0 4px 0 rgba(0, 0, 0, .075);
+  transform: scaleY(1.2);
 }
 
 .gui-form-holder .gui-tabs {
@@ -2173,6 +2207,7 @@ label {
   background-size: cover;
   opacity: 1 !important;
 }
+
 
 
 

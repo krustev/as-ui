@@ -108,10 +108,11 @@
             <a href="#user-register" class="active">פרטי</a>
             <a href="#corporate-register">תאגיד</a>
           </nav>
+          <!-- TAB - PRIVATE -->
           <div class="gui-tab" id="user-register">
 
             <div class="gui-tab-wrapper richtext">
-              <h5>   כוונה לביצוע הזמנה – מילוי פרטים </h5>
+              <h5>כוונה לביצוע הזמנה – מילוי פרטים</h5>
               <p>אנא מלאו את פרטיכם באופן מדויק. פרטים אלו הכרחיים להמשך התהליך וישמשו לזיהויכם מול החברה. </p>
 
             </div>
@@ -196,22 +197,32 @@
                       <div class="input-group-addon" style="direction: ltr">+050 </div>
                     </div>
                   </div>
-                  <a href="javascript:;" class="btn btn-primary">אישור ושליחת SMS</a>
+                  <a href="" class="btn btn-primary">אישור ושליחת SMS</a>
                 </div>
                 <div class="form-group">
                   <span class="plus">הוספת מספר נוסף<span class="plus-icon"></span></span>
                 </div>
 
-                <div class="form-group">
-                  <label class="label-switch"> האם הגעת דרך גורם מפנה?
-                    <span class="switch">
-                      <input type="checkbox">
-                      <span class="switch-labels">
-                        <span class="switch-label-no">לא</span>
-                        <span class="switch-label-yes">כן</span>
+                <!-- REFERRER? -->
+                <div class="section-padding">
+                  <!-- SWITCH -->
+                  <div class="form-group show-contoller" data-controller="#switch-referrer">
+                    <label class="label-switch" for="switch-referrer"> האם הגעת דרך גורם מפנה?
+                      <span class="switch">
+                        <input id="switch-referrer" type="checkbox" data-state=":checked" data-target="#referrer-content">
+                        <span class="switch-labels">
+                          <span class="switch-label-no">לא</span>
+                          <span class="switch-label-yes">כן</span>
+                        </span>
                       </span>
-                    </span>
-                  </label>
+                    </label>
+                  </div>
+                  <!-- REFERRER CONTENT -->
+                  <div id="referrer-content" class="richtext controller-target">
+                    <p class="form-intext">
+                      אני ממנה בזאת את הסוכן <input type="text" class="form-control" placeholder="קוד סוכן"> כמיופה כוחי וכמוסמך לפעול בשמי ומטעמי בכל דבר ועניין הקשור להיותי משקיע בקרן השקעה בנדל"ן באלטשולר שחם פרופרטיז.
+                    </p>
+                  </div>
                 </div>
 
                 <div class="box richtext">
@@ -229,7 +240,7 @@
                     <span></span>
                   </label>
                   <label class="check check-rtl">
-                    <span>מאשר/ת את <a href="javascript:;">תקנון החברה</a></span>
+                    <span>מאשר/ת את <a href="">תקנון החברה</a></span>
                     <input type="checkbox" checked="checked">
                     <span></span>
                   </label>
@@ -244,6 +255,8 @@
 
             </form>
           </div>
+          <!-- END TAB - PRIVATE -->
+          <!-- TAB - CORPORATE -->
           <div class="gui-tab" id="corporate-register">
             <div class="gui-tab-wrapper richtext">
               <h5>   כוונה לביצוע הזמנה – מילוי פרטים </h5>
@@ -266,7 +279,7 @@
                   </div>
                 </div>
                 <br>
-                <h5>פרטי איש קשר</h5>
+                <h5>פרטי מורשה חתימה</h5>
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
@@ -308,7 +321,7 @@
                   <div class="col-md-2">
                     <div class="form-group">
                       <label>&nbsp;</label>
-                      <a href="javascript:;" class="btn btn-default">אישור</a>
+                      <a href="" class="btn btn-default">אישור</a>
                     </div>
                   </div>
                   <div class="col-md-4">
@@ -331,25 +344,29 @@
                   <span class="plus">הוספת מספר נוסף<span class="plus-icon"></span></span>
                 </div>
                 <br>
-                <div class="form-group">
-                  <label class="label-switch"> האם הגעת דרך גורם מפנה?
-                    <span class="switch">
-                      <input type="checkbox" checked="checked">
-                      <span class="switch-labels">
-                        <span class="switch-label-no">לא</span>
-                        <span class="switch-label-yes">כן</span>
+
+                <!-- REFERRER? -->
+                <div class="section-padding">
+                  <!-- SWITCH -->
+                  <div class="form-group show-contoller" data-controller="#switch-referrer-corporate">
+                    <label class="label-switch" for="switch-referrer-corporate"> האם הגעת דרך גורם מפנה?
+                      <span class="switch">
+                        <input id="switch-referrer-corporate" type="checkbox" data-state=":checked" data-target="#referrer-content-corporate">
+                        <span class="switch-labels">
+                          <span class="switch-label-no">לא</span>
+                          <span class="switch-label-yes">כן</span>
+                        </span>
                       </span>
-                    </span>
-                  </label>
+                    </label>
+                  </div>
+                  <!-- REFERRER CONTENT -->
+                  <div id="referrer-content-corporate" class="richtext controller-target">
+                    <p class="form-intext">
+                      אני ממנה בזאת את הסוכן <input type="text" class="form-control" placeholder="קוד סוכן"> כמיופה כוחי וכמוסמך לפעול בשמי ומטעמי בכל דבר ועניין הקשור להיותי משקיע בקרן השקעה בנדל"ן באלטשולר שחם פרופרטיז.
+                    </p>
+                  </div>
                 </div>
 
-                <br>
-                <div class="richtext richtext-input-2">
-                  <p>אני מאשר להעביר מידע אודות השקעתי באלטשולר שחם פרופרטיז לגורם המפנה:</p>
-                  <p>
-                    ת.ז/ח.פ<input type="text" class="form-control"> , שם <input type="text" class="form-control"> , מס' נייד/מס' טלפון <input type="text" class="form-control">
-                  </p>
-                </div>
                 <br><br>
                 <div class="richtext box">
                   <p>מבקש להעלות על הכתב, את כוונתי לבצע הזמנה של <input type="text" class="form-control" placeholder="סכום היחידות לרכישה" />יחידות השתתפות</p>
@@ -365,7 +382,7 @@
                     <span></span>
                   </label>
                   <label class="check check-rtl">
-                    <span>מאשר/ת את <a href="javascript:;">תקנון החברה</a></span>
+                    <span>מאשר/ת את <a href="">תקנון החברה</a></span>
                     <input type="checkbox" checked="checked">
                     <span></span>
                   </label>
@@ -378,6 +395,7 @@
                 </div>
               </div>
           </div>
+          <!-- END TAB - CORPORATE -->
         </div>
       </div>
     </section>
@@ -385,8 +403,8 @@
   </main>
   <footer id="footer">
     <nav class="container">
-      <a href="javascript:;">פרטי העסקה</a>
-      <a href="javascript:;">אלטשולר שחם</a>
+      <a href="">פרטי העסקה</a>
+      <a href="">אלטשולר שחם</a>
     </nav>
   </footer>
 </div>

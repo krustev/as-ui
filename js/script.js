@@ -85,16 +85,23 @@
     showHide: function() {
       $(".show-contoller").each(function() {
 
-        var controller = $(this).data("controller"),
-            state = $(this).data("state"),
-            target = $(this).data("target");
+        var controller = $(this).data("controller");
+
+        function control() {
+          $(controller).each(function() {
+            var state = $(this).data("state"),
+              target = $(this).data("target");
+            if ($(this).is(state)) {
+              $(target).fadeIn();
+            } else {
+              $(target).fadeOut();
+            }
+          })
+        }
 
         $(this).click(function() {
-          if ( $(controller).is(state) ) {
-            console.log(target);
-            $(target).toggleClass("hide");
-          }
-        });
+          control();
+        })
       });
     },
     init: function() {
