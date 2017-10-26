@@ -33,6 +33,7 @@
 
 
     <main>
+      <!-- STEPS -->
       <div class="steps">
         <div class="gui-form-holder-alt">
           <span class="step active done">
@@ -51,14 +52,15 @@
           <span class="step-index">4</span>
           <span class="steptext"> טופס ייפוי כח </span>
           </span>
-
         </div>
       </div>
+
       <section class="gui-form-section">
+
         <div class="container">
           <div class="gui-tab-holder gui-form-holder">
-
             <form>
+
               <div class="gui-tab-wrapper">
                 <h5>פרטי חשבון בנק</h5>
                 <p>להלן פרטי חשבון מהם אעביר את כספי ההשקעה, באמצעות העברה בנקאית:</p>
@@ -84,20 +86,27 @@
                   *בעל החשבון חייב להיות זהה למגיש בקשת הצטרפות זו.
                 </p>
               </div>
+
               <hr>
+
               <div class="gui-tab-wrapper">
-
-
-                <div class="form-group">
-                  <label>בנק</label>
-                  <input type="text" class="form-control" />
-                </div>
-
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-sm-6">
                     <div class="form-group">
-                      <label>IBAN<span class="help" title="תקן בינלאומי לזיהוי חד-חד ערכי של חשבון בנק. לקבלת מספר IBAN אנא פנו לבנק בו מתנהל חשבונכם"></span></label>
-                      <input type="text" class="form-control" />
+                      <label>בנק</label>
+                      <select class="form-control">
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>סניף</label>
+                      <select class="form-control">
+                        <option></option>
+                        <option></option>
+                      </select>
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -106,7 +115,14 @@
                       <input type="text" class="form-control" />
                     </div>
                   </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>IBAN<span class="help" title="תקן בינלאומי לזיהוי חד-חד ערכי של חשבון בנק. לקבלת מספר IBAN אנא פנו לבנק בו מתנהל חשבונכם"></span></label>
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
                 </div>
+
                 <div class="form-group form-currency-select">
                   <label>מטבע מבוקש*</label>
                   <select class="form-control">
@@ -128,18 +144,40 @@
                   <p>
                     אני הח״מ ת.ז. [ ] מבקש/ת להעביר כספים להם אני זכאי/ית על פי המפורט בסעיף [___] לתשקיף, באמצעות העברה בנקאית לחשבון אשר פרטיו להלן:
                   </p>
+                  <p class="text-small">*אנא הקפד לרשום את שם החשבון בעברית ובאנגלית כפי שמופיע ברישומי הבנק.</p>
+                  <p class="text-small">*בעל החשבון חייב להיות זהה למגיש בקשת הצטרפות זו</p>
+
+
                 </div>
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
-                      <label>סניף</label>
+                      <label>שם בעל החשבון בעברית</label>
                       <input type="text" class="form-control" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
-                      <label>בנק</label>
+                      <label>שם בעל החשבון באנגלית</label>
                       <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>בנק</label>
+                      <select class="form-control">
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>סניף</label>
+                      <select class="form-control">
+                        <option></option>
+                        <option></option>
+                      </select>
                     </div>
                   </div>
                 </div>
