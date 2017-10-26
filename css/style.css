@@ -2176,8 +2176,8 @@ label {
   color: white;
   background: #006A52;
   border-radius: 5px;
-  -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, .075);
-  box-shadow: 0 4px 0 rgba(0, 0, 0, .075);
+  -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, .075);
+  box-shadow: 0 3px 0 rgba(0, 0, 0, .075);
   -webkit-transform: scaleY(1.2);
   transform: scaleY(1.2);
 }
@@ -2187,12 +2187,12 @@ label {
   max-width: 90%;
   display: block;
   position: relative;
-  top: -35px;
+  top: -30px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   margin: auto;
-  height: 70px;
+  height: 60px;
   position: absolute;
 }
 
