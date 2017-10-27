@@ -404,8 +404,13 @@ ol {
 }
 
 @media (max-width:750px) {
+  .box{
   padding-left: 10px;
   padding-right: 10px;
+
+  }
+
+
 }
 
 .box a:not([class]) {
@@ -882,6 +887,21 @@ ol {
 
 .content-box:last-child {
   padding: 50px 90px 100px;
+}
+
+@media(max-width:800px){
+  .content-box:last-child{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+}
+@media(max-width:500px){
+  .content-box:last-child{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
 }
 
 .plus {
@@ -1760,6 +1780,18 @@ ol {
   margin-right: 20px;
 }
 
+@media (max-width:650px){
+  .richtext .btn-lg{
+    display: block;
+    margin-bottom: 15px;
+    margin-left: 0;
+  }
+  .richtext .btn+.btn {
+    margin-right: 0;
+  }
+
+}
+
 .td-th {
   font-weight: bold;
   color: black;
@@ -1799,6 +1831,19 @@ ol {
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .table-inline-headings tr {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+
+  .table-inline-headings tr td.td-th{
+    border-right: 0 !important;
+  }
+  .table-inline-headings tr td.td-th+td{
+    border-left: 0 !important;
+  }
+
 }
 
 
