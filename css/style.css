@@ -586,6 +586,10 @@ ol {
   min-width: 100px;
 }
 
+.btn-al.btn-lg {
+  min-width: 240px
+}
+
 .btn-al:before {
   content: '\0049';
   font-family: font;
@@ -628,6 +632,7 @@ ol {
 .btn-success {
   background-color: #005151;
   border-color: #005151;
+  font-weight: bold;
 }
 
 .btn-success-alt {
@@ -1761,11 +1766,7 @@ ol {
 }
 
 .table-inline-headings {
-  width: 50%;
-}
-
-.table-inline-headings+.table-inline-headings {
-  margin-right: -1px;
+  table-layout: fixed;
 }
 
 @media (max-width:800px) {
