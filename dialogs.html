@@ -2,225 +2,219 @@
 
 <html>
 
-<head>
-  <title></title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="js/bootstrap/bootstrap.min.js"></script>
-  <script src="js/slick/slick.min.js"></script>
-  <script src="js/script.js"></script>
-</head>
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
 
-<body>
+  <body>
 
-  <script>
-    dialogs = {
-      login: function() {
-        $('.dialog-login').modal();
-      },
-      registrationClosed: function() {
-        $('.dialog-registration-closed').modal();
-      },
-      registrationConfirmed: function() {
+    <script>
+      dialogs = {
+        login: function() {
+          $('.dialog-login').modal();
+        },
+        registrationClosed: function() {
+          $('.dialog-registration-closed').modal();
+        },
+        registrationConfirmed: function() {
 
-        $('.dialog-registration-confirmed-normal')
-          .modal()
-          .on('show.bs.modal', function() {
-            $(".modal-backdrop").addClass('overlay-registration-confirmed')
-          })
-          .on('shown.bs.modal', function() {
-            $(".modal-backdrop").addClass('overlay-registration-confirmed')
-          });
-      },
-      registrationConfirmedEarly: function() {
+          $('.dialog-registration-confirmed-normal')
+            .modal()
+            .on('show.bs.modal', function() {
+              $(".modal-backdrop").addClass('overlay-registration-confirmed')
+            })
+            .on('shown.bs.modal', function() {
+              $(".modal-backdrop").addClass('overlay-registration-confirmed')
+            });
+        },
+        registrationConfirmedEarly: function() {
 
-        $('.dialog-registration-confirmed-early')
-          .modal()
-          .on('show.bs.modal', function() {
-            $(".modal-backdrop").addClass('overlay-registration-confirmed-early')
-          })
-          .on('shown.bs.modal', function() {
-            $(".modal-backdrop").addClass('overlay-registration-confirmed-early')
-          });
-      },
-      applicationConfirmed: function() {
+          $('.dialog-registration-confirmed-early')
+            .modal()
+            .on('show.bs.modal', function() {
+              $(".modal-backdrop").addClass('overlay-registration-confirmed-early')
+            })
+            .on('shown.bs.modal', function() {
+              $(".modal-backdrop").addClass('overlay-registration-confirmed-early')
+            });
+        },
+        applicationConfirmed: function() {
 
-        $('.dialog-application-confirmed')
-          .modal()
-          .on('show.bs.modal', function() {
-            $(".modal-backdrop").addClass('overlay-application-confirmed')
-          })
-          .on('shown.bs.modal', function() {
-            $(".modal-backdrop").addClass('overlay-application-confirmed')
-          });
+          $('.dialog-application-confirmed')
+            .modal()
+            .on('show.bs.modal', function() {
+              $(".modal-backdrop").addClass('overlay-application-confirmed')
+            })
+            .on('shown.bs.modal', function() {
+              $(".modal-backdrop").addClass('overlay-application-confirmed')
+            });
+        }
+
       }
 
-    }
-  </script>
+    </script>
 
 
-  <!-- DIALOGS -->
+    <!-- DIALOGS -->
 
-  <p style="text-align: center">
-    <br><br><br>
+    <p style="text-align: center">
+      <br><br><br>
 
-    <button onclick="dialogs.login()" class="btn btn-default">Login</button> <br><br><br>
-    <button onclick="dialogs.registrationClosed()" class="btn btn-default">Registration Closed</button> <br><br><br>
-    <button onclick="dialogs.registrationConfirmed()" class="btn btn-default">Registration Confirmed</button> <br><br><br>
-    <button onclick="dialogs.registrationConfirmedEarly()" class="btn btn-default">Registration Confirmed Early</button> <br><br><br>
-    <button onclick="dialogs.applicationConfirmed()" class="btn btn-default">Application Confirmed</button> <br><br><br>
-
-
-  </p>
+      <button onclick="dialogs.login()" class="btn btn-default">Login</button> <br><br><br>
+      <button onclick="dialogs.registrationClosed()" class="btn btn-default">Registration Closed</button> <br><br><br>
+      <button onclick="dialogs.registrationConfirmed()" class="btn btn-default">Registration Confirmed</button> <br><br><br>
+      <button onclick="dialogs.registrationConfirmedEarly()" class="btn btn-default">Registration Confirmed Early</button> <br><br><br>
+      <button onclick="dialogs.applicationConfirmed()" class="btn btn-default">Application Confirmed</button> <br><br><br>
 
 
-  <div id="the__dialogs">
+    </p>
 
-    <!--
+
+    <div id="the__dialogs">
+
+      <!--
     **********************
         Application confirmed
     **********************
     -->
-    <div class="modal fade dialog-registration-confirmed dialog-application-confirmed">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
+      <div class="modal fade dialog-registration-confirmed dialog-application-confirmed">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
 
-          <div class="modal-body">
-            <br><br>
-            <div class="success-mark"></div>
-            <br> <br>
-            <h2>תודה שנרשמת!</h2>
-            <p>
-              הטפסים נקלטו בהצלחה ומעוברים לאישור החברה.<br> סטטוס הרישום ישלח אליכם במייל תוך 72 שעות. <br> לתשומת ליבכם, מקומכם יובטח בהשקעה בה התעניינתם רק לאחר העברת הכספים לחשבון.<br>
-              <br> בברכה, <br> אלטשולר שחם פרופרטיז
-            </p>
-            <br>
-            <a href="" class="btn btn-default btn-sm btn-al">לצפיה במסמכים החתומים</a>
-          </div>
-          <div class="modal-footer">
-            <a href="">
+            <div class="modal-body">
+              <div class="success-mark"></div>
+              <h2>תודה שנרשמת!</h2>
+              <p>
+                הטפסים נקלטו בהצלחה ומועברים לאישור החברה. סטטוס הרישום ישלח אליכם במייל תוך 72 שעות. לתשומת ליבכם, מקומכם יובטח בהשקעה בה התעניינתם רק לאחר העברת הכספים לחשבון.
+              </p>
+              <p>
+                בברכה, <br> אלטשולר שחם פרופרטיז
+              </p>
+              <a href="" class="btn btn-default btn-sm btn-al">לצפיה במסמכים החתומים</a>
+            </div>
+            <div class="modal-footer">
+              <a href="">
             <img src="img/logo-horizontal.png" alt="" />
           </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
 
-    <!--
+      <!--
     **********************
         Registration confirmed Early
     **********************
     -->
-    <div class="modal fade dialog-registration-confirmed dialog-registration-confirmed-early">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
+      <div class="modal fade dialog-registration-confirmed dialog-registration-confirmed-early">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
 
-          <div class="modal-body">
-            <br><br>
-            <div class="success-mark"></div>
-            <br> <br>
-            <h2>תודה שנרשמת!</h2>
-            <p>קיבלנו את פרטיך ואנו נעדכנך כאשר תיפתח ההרשמה להשקעה.</p>
-            <br>
-            <a href="" class="btn btn-default btn-sm btn-al">בחזרה להשקעה</a>
-          </div>
-          <div class="modal-footer">
-            <a href="">
+            <div class="modal-body">
+              <div class="success-mark"></div>
+              <h2>תודה שנרשמת!</h2>
+              <p>קיבלנו את פרטיך ואנו נעדכנך כאשר תיפתח ההרשמה להשקעה.</p>
+              <a href="" class="btn btn-default btn-sm btn-al">בחזרה להשקעה</a>
+            </div>
+            <div class="modal-footer">
+              <a href="">
             <img src="img/logo-horizontal.png" alt="" />
           </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!--
+      <!--
     **********************
         Registration confirmed
     **********************
     -->
-    <div class="modal fade dialog-registration-confirmed dialog-registration-confirmed-normal">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
+      <div class="modal fade dialog-registration-confirmed dialog-registration-confirmed-normal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
 
-          <div class="modal-body">
-            <br><br>
-            <div class="success-mark"></div>
-            <br> <br>
-            <h2>הרישום בוצע בהצלחה!</h2>
-            <p>מעתה תהיו מעודכנים בהשקעות הנדל"ן החדשות</p>
-            <br>
-            <a href="" class="btn btn-default btn-sm btn-al">בחזרה להשקעה</a>
-          </div>
-          <div class="modal-footer">
-            <a href="">
+            <div class="modal-body">
+              <div class="success-mark"></div>
+              <h2>הרישום בוצע בהצלחה!</h2>
+              <p>מעתה תהיו מעודכנים בהשקעות הנדל"ן החדשות</p>
+              <a href="" class="btn btn-default btn-sm btn-al">בחזרה להשקעה</a>
+            </div>
+            <div class="modal-footer">
+              <a href="">
               <img src="img/logo-horizontal.png" alt="" />
             </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!--
+      <!--
     **********************
         Registration disabled
     **********************
     -->
-    <div class="modal fade dialog-registration-closed">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span class="close" data-dismiss="modal"></span>
-            <h4 class="modal-title">הגיוס הושלם!</h4>
-          </div>
-          <div class="modal-body">
-            <div class="section-padding">
-              <button type="button" class="btn btn-lg btn-primary">הרשמה למידע עבור השקעות עתידיות</button>
-              <button type="button" class="btn btn-lg btn-default"><span class="xicon-lock"></span>לכניסה לחשבונך</button>
+      <div class="modal fade dialog-registration-closed">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close" data-dismiss="modal"></span>
+              <h4 class="modal-title">הגיוס הושלם!</h4>
+            </div>
+            <div class="modal-body">
+              <div class="section-padding">
+                <button type="button" class="btn btn-lg btn-primary">הרשמה למידע עבור השקעות עתידיות</button>
+                <button type="button" class="btn btn-lg btn-default"><span class="xicon-lock"></span>לכניסה לחשבונך</button>
+              </div>
+
             </div>
 
           </div>
-
         </div>
       </div>
-    </div>
 
 
-    <!--
+      <!--
     **********************
         SMS Log in
     **********************
     -->
-    <div class="modal fade dialog-login">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span class="close" data-dismiss="modal"></span>
-            <h4 class="modal-title"><span class="modal-title-icon icn-user"></span>כניסה למשקיע קיים</h4>
-          </div>
-          <div class="modal-body">
-            <form novalidate="novalidate">
-              <div class="form-group">
-                <label>במידה והחלת בתהליך הרישום להשקעה, באפשרותך להתחבר למערכת ע"י הזנת ת.ז./מספר תאגיד:</label>
-                <input type="text" class="form-control" placeholder="ת.ז. / מספר תאגיד">
-              </div>
-              <div class="recaptcha">
-                <img src="img/recaptcha.jpg" alt="" />
-              </div>
-              <button type="submit" class="btn btn-lg btn-primary btn-al">שלח סיסמא ב-SMS</button>
-              <p class="form-footer">רוצים להירשם לעסקה? <a href="">הירשמו כעת</a>!</p>
-            </form>
-          </div>
+      <div class="modal fade dialog-login">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close" data-dismiss="modal"></span>
+              <h4 class="modal-title"><span class="modal-title-icon icn-user"></span>כניסה למשקיע קיים</h4>
+            </div>
+            <div class="modal-body">
+              <form novalidate="novalidate">
+                <div class="form-group">
+                  <label>במידה והחלת בתהליך הרישום להשקעה, באפשרותך להתחבר למערכת ע"י הזנת ת.ז./מספר תאגיד:</label>
+                  <input type="text" class="form-control" placeholder="ת.ז. / מספר תאגיד">
+                </div>
+                <div class="recaptcha">
+                  <img src="img/recaptcha.jpg" alt="" />
+                </div>
+                <button type="submit" class="btn btn-lg btn-primary btn-al">שלח סיסמא ב-SMS</button>
+                <p class="form-footer">רוצים להירשם לעסקה? <a href="">הירשמו כעת</a>!</p>
+              </form>
+            </div>
 
+          </div>
         </div>
       </div>
-    </div>
 
-  </div>
-</body>
+    </div>
+  </body>
 
 </html>
