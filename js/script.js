@@ -18,6 +18,11 @@
       })
     },
     heroCarousel: function() {
+      $('.hero-carousel').on('init', function(event, slick) {
+        var $items = slick.$dots.find('li');
+        $items.addClass('dot');
+        $items.find('button').remove();
+      });
       $(".hero-carousel").not('.initialized').each(function() {
         $(this).addClass('initialized').slick({
           rtl: true,
@@ -77,6 +82,28 @@
       });
       links.filter('[href="' + location.hash + '"]').click()
     },
+    showHide: function() {
+      $(".show-contoller").each(function() {
+
+        var controller = $(this).data("controller");
+
+        function control() {
+          $(controller).each(function() {
+            var state = $(this).data("state"),
+              target = $(this).data("target");
+            if ($(this).is(state)) {
+              $(target).fadeIn();
+            } else {
+              $(target).fadeOut();
+            }
+          })
+        }
+
+        $(this).click(function() {
+          control();
+        })
+      });
+    },
     init: function() {
       var scope = this;
       $(document).ready(function() {
@@ -87,6 +114,7 @@
         // scope.mobileHeaderTitle();
         scope.selects();
         scope.helps();
+        scope.showHide();
         scope.guiAccordion();
         $("input[title]").each(function() {
           $(this).tooltip({
@@ -98,7 +126,6 @@
         setTimeout(function() {
           $(document.body).addClass('document-ready')
         }, 10)
-
       })
       $(window).on('load resize scroll', function() {
         // scope.menu();
