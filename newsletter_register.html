@@ -18,6 +18,8 @@
 <body>
 
   <div id="content">
+
+    <!-- HEADER -->
     <header id="header" class="header-small" data-spy="affix" data-offset-top="100">
       <div class="container-fluid">
         <div class="menu-title col-sm-6">
@@ -44,167 +46,174 @@
 
             <!-- TAB - PRIVATE -->
             <div class="gui-tab" id="user-register">
-              <div class="gui-tab-wrapper richtext">
-                <h5>מילוי פרטים</h5>
-                <p>אנא מלאו את פרטיכם האישיים. שימו לב כי הפרטים מוזנים באופן מדויק - הפרטים הכרחיים להמשך התהליך וישמשו לזיהוי שלכם מול החברה.</p>
-              </div>
-              <div class="gui-tab-wrapper">
+              <form>
+                <div class="gui-tab-wrapper richtext">
+                  <div class="section-padding">
+                    <h5>מילוי פרטים</h5>
+                    <p>אנא מלאו את פרטיכם האישיים. שימו לב כי הפרטים מוזנים באופן מדויק - הפרטים הכרחיים להמשך התהליך וישמשו לזיהוי שלכם מול החברה.</p>
+                  </div>
 
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label>שם משפחה בעברית</label>
-                      <input type="text" class="form-control" placeholder="כפי שמופיע בת.ז.">
+
+                  <div class="section-padding row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>שם משפחה בעברית</label>
+                        <input type="text" class="form-control" placeholder="כפי שמופיע בת.ז.">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>שם פרטי בעברית   </label>
+                        <input type="text" class="form-control" placeholder="אברם">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-md-offset-6">
+                      <div class="form-group">
+                        <label>מספר ת.ז.</label>
+                        <input type="text" class="form-control" placeholder="9 ספרות כולל ספרת ביקורת">
+                      </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label>שם פרטי בעברית   </label>
-                      <input type="text" class="form-control" placeholder="אברם">
+
+                  <div class="section-padding row">
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>כתובת דוא"ל</label>
+                        <input type="text" class="form-control" placeholder="name@domain.com">
+                      </div>
                     </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>טלפון נייד </label>
+                        <div class="input-group section-control ltr">
+                          <input type="text" class="form-control small ltr" placeholder="+050">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+
+                  <!-- AGREE TO TERMS -->
+                  <div class="section-padding">
+                    <div class="box richtext">
+                      <p class="richtext">
+                        ידוע לי ואני מסכים בזאת כי המידע אשר יימסר על ידי ישמר במאגרי המידע של החברה וישמש לצורך ניהול, תפעול ושיווק של נכסי הנדל"ן שבניהול החברה, ניהול קשרי לקוחות, והפקת מידע סטטיסטי ועיבוד נתונים וכן יימסר לצדדים שלישיים לצורך קיום מימוש המטרות המאגרים הנ"ל. מסירת המידע לחברה נעשית מרצוני ובהסכמתי, ובכלל זה מידע שחלה עלי חובה למוסרו על פי דין לצורך קבלת שירותים דלעיל.
+                      </p>
+                      <br>
+                      <p>
+                        <label class="check check-rtl">
+                          <span>הריני מסכים בזאת לקבל הודעות שיווקיות ודברי פרסומת בכל דרך לרבות באמצעות הודעות דואר אלקטרוניות, הודעות פקס, מסרונים, מערכת חיוג אוטומטית או אמצעי דיגיטאלי אחר. ידוע לי כי אני רשאי לפנות לחברה בכל עת ולבטל הסכמתי זו באמצעות פנייה לחברה בכתב או באופן שבו שוגרה הפנייה.</span>
+                          <input type="checkbox">
+                          <span></span>
+                      </label>
+                      </p>
+                      <br>
+                      <p>
+                        <label class="check check-rtl">
+                          <span>הריני מסכים כי החברה ו/או חברות מקבוצת החברות בה מנויה החברה ו/או מי מטעמן יהיו רשאיות לעשות שימוש במידע שמסרתי ו/או אשר נאגר ו/או נוצר אודותיי לצורך שיווק מוצרים ושירותים פנסיוניים ו/או פיננסיים, לרבות בדרך של מתן שירותי דיוור ישיר.</span>
+                          <input type="checkbox">
+                          <span></span>
+                        </label>
+                      </p>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="submit-section">
+                  <div class="gui-tab-wrapper">
+                    <button type="submit" class="btn btn-primary">להרשמה</button>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-md-6 col-md-offset-6">
-                    <div class="form-group">
-                      <label>מספר ת.ז.</label>
-                      <input type="text" class="form-control" placeholder="9 ספרות כולל ספרת ביקורת">
-                    </div>
-                  </div>
-                </div>
+              </form>
 
-                <div class="row">
+            </div>
+            <!-- END TAB - PRIVATE -->
 
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label>כתובת דוא"ל</label>
-                      <input type="text" class="form-control" placeholder="name@domain.com">
-                    </div>
+            <!-- TAB CORPORATE -->
+            <div class="gui-tab" id="corporate-register">
+              <form>
+                <div class="gui-tab-wrapper richtext">
+                  <div class="section-padding">
+                    <h5>פרטים אישיים</h5>
                   </div>
 
-
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label>טלפון נייד </label>
-                      <div class="input-group section-control ltr">
-                        <input type="text" class="form-control small ltr" placeholder="+050">
+                  <div class="section-padding row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>מספר תאגיד</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>שם התאגיד בעברית</label>
                         <input type="text" class="form-control">
                       </div>
                     </div>
                   </div>
 
+                  <div class="section-padding">
+                    <h5>פרטי מורשה חתימה</h5>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>שם משפחה בעברית</label>
+                          <input type="text" class="form-control" placeholder="שם איש קשר">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>שם פרטי בעברית</label>
+                          <input type="text" class="form-control" placeholder="שם איש קשר">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label> כתובת דוא"ל</label>
+                          <input type="text" class="form-control" placeholder="name@domain.com">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>טלפון נייד </label>
+                          <div class="input-group section-control ltr">
+                            <input type="text" class="form-control small ltr" placeholder="+050">
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-                </div>
-
-
-                <!-- AGREE TO TERMS -->
-                <div class="section-padding">
-                  <div class="box richtext">
-                    <p class="richtext">
-                      ידוע לי ואני מסכים בזאת כי המידע אשר יימסר על ידי ישמר במאגרי המידע של החברה וישמש לצורך ניהול, תפעול ושיווק של נכסי הנדל"ן שבניהול החברה, ניהול קשרי לקוחות, והפקת מידע סטטיסטי ועיבוד נתונים וכן יימסר לצדדים שלישיים לצורך קיום מימוש המטרות המאגרים הנ"ל. מסירת המידע לחברה נעשית מרצוני ובהסכמתי, ובכלל זה מידע שחלה עלי חובה למוסרו על פי דין לצורך קבלת שירותים דלעיל.
-                    </p>
-                    <br>
-                    <p>
+                  <div class="section-padding">
+                    <div class="box richtext">
                       <label class="check check-rtl">
-                        <span>הריני מסכים בזאת לקבל הודעות שיווקיות ודברי פרסומת בכל דרך לרבות באמצעות הודעות דואר אלקטרוניות, הודעות פקס, מסרונים, מערכת חיוג אוטומטית או אמצעי דיגיטאלי אחר. ידוע לי כי אני רשאי לפנות לחברה בכל עת ולבטל הסכמתי זו באמצעות פנייה לחברה בכתב או באופן שבו שוגרה הפנייה.</span>
-                        <input type="checkbox">
-                        <span></span>
-                    </label>
-                    </p>
-                    <br>
-                    <p>
-                      <label class="check check-rtl">
-                        <span>הריני מסכים כי החברה ו/או חברות מקבוצת החברות בה מנויה החברה ו/או מי מטעמן יהיו רשאיות לעשות שימוש במידע שמסרתי ו/או אשר נאגר ו/או נוצר אודותיי לצורך שיווק מוצרים ושירותים פנסיוניים ו/או פיננסיים, לרבות בדרך של מתן שירותי דיוור ישיר.</span>
+                        <span>מאשר/ת העברת הפרטים הנ"ל לחברה לטובת יצירת קשר ושליחת מידע נוסף בטלפון ו/או דוא"ל</span>
                         <input type="checkbox">
                         <span></span>
                       </label>
-                    </p>
+                      <label class="check check-rtl">
+                        <span>מאשר/ת את <a href="">תקנון החברה</a></span>
+                        <input type="checkbox">
+                        <span></span>
+                      </label>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="submit-section">
+                  <div class="gui-tab-wrapper">
+                    <button type="submit" class="btn btn-primary ">להרשמה</button>
                   </div>
                 </div>
 
-
-              </div>
-              <div class="submit-section">
-                <div class="gui-tab-wrapper">
-                  <button type="submit" class="btn btn-primary">להרשמה</button>
-                </div>
-              </div>
-            </div>
-            <!-- END TAB - PRIVATE -->
-            <!-- TAB CORPORATE -->
-            <div class="gui-tab" id="corporate-register">
-              <div class="gui-tab-wrapper richtext">
-                <h5>פרטים אישיים</h5>
-              </div>
-              <div class="gui-tab-wrapper">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label>מספר תאגיד</label>
-                      <input type="text" class="form-control">
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label>שם התאגיד בעברית</label>
-                      <input type="text" class="form-control">
-                    </div>
-                  </div>
-                </div>
-
-                <h5>פרטי מורשה חתימה</h5>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label>שם משפחה בעברית</label>
-                      <input type="text" class="form-control" placeholder="שם איש קשר">
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label>שם פרטי בעברית</label>
-                      <input type="text" class="form-control" placeholder="שם איש קשר">
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label> כתובת דוא"ל</label>
-                      <input type="text" class="form-control" placeholder="name@domain.com">
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label>טלפון נייד </label>
-                      <div class="input-group section-control ltr">
-                        <input type="text" class="form-control small ltr" placeholder="+050">
-                        <input type="text" class="form-control">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="box richtext">
-                  <label class="check check-rtl">
-                    <span>מאשר/ת העברת הפרטים הנ"ל לחברה לטובת יצירת קשר ושליחת מידע נוסף בטלפון ו/או דוא"ל</span>
-                    <input type="checkbox">
-                    <span></span>
-                  </label>
-                  <label class="check check-rtl">
-                    <span>מאשר/ת את <a href="">תקנון החברה</a></span>
-                    <input type="checkbox" checked="checked">
-                    <span></span>
-                  </label>
-                </div>
-
-
-              </div>
-              <div class="submit-section">
-                <div class="gui-tab-wrapper">
-                  <button type="submit" class="btn btn-primary ">להרשמה</button>
-                </div>
-              </div>
+              </form>
 
 
             </div>
