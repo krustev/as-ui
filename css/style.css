@@ -1,27 +1,42 @@
-@import url('https://fonts.googleapis.com/css?family=Assistant:300,400,600,700,800');
+/***********************************************************************/
+
+
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css?family=Assistant:400,600,700&subset=hebrew');
+
 @font-face {
-  font-family: 'NarkisBlockMFCondensed-Thin';
-  src: url('../font/narkis/NarkisBlockMFCondensed-Thin.eot');
-  src: url('../font/narkis/NarkisBlockMFCondensed-Thin.eot?#iefix') format('embedded-opentype'), url('../font/narkis/NarkisBlockMFCondensed-Thin.woff') format('woff'), url('../font/narkis/NarkisBlockMFCondensed-Thin.ttf') format('truetype');
-  font-weight: 100;
+  font-family: 'NarkisBlock';
+  src: url('../font/narkis/NarkisBlockCon-Thin_MFW.eot');
+  src: url('../font/narkis/NarkisBlockCon-Thin_MFW.eot?#iefix') format('embedded-opentype'), url('../font/narkis/NarkisBlockCon-Thin_MFW.woff') format('woff'), url('../font/narkis/NarkisBlockCon-Thin_MFW.ttf') format('truetype');
+  font-weight: lighter;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'NarkisNew-Medium';
-  src: url('../font/narkis/b5b746c7ef6d2e203d487cd0d728a739.eot');
-  src: url('../font/narkis/b5b746c7ef6d2e203d487cd0d728a739.eot?#iefix') format('embedded-opentype'), url('../font/narkis/b5b746c7ef6d2e203d487cd0d728a739.woff') format('woff'), url('../font/narkis/b5b746c7ef6d2e203d487cd0d728a739.ttf') format('truetype');
-  font-weight: 500;
+  font-family: 'NarkisBlock';
+  src: url('../font/narkis/NarkisBlock-Condensed_MFW.eot');
+  src: url('../font/narkis/NarkisBlock-Condensed_MFW.eot?#iefix') format('embedded-opentype'), url('../font/narkis/NarkisBlock-Condensed_MFW.woff') format('woff'), url('../font/narkis/NarkisBlock-Condensed_MFW.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'NarkisBlockMFCondensed-Bold';
-  src: url('../font/narkis/NarkisBlockMFCondensed-Bold.eot');
-  src: url('../font/narkis/NarkisBlockMFCondensed-Bold.eot?#iefix') format('embedded-opentype'), url('../font/narkis/NarkisBlockMFCondensed-Bold.woff') format('woff'), url('../font/narkis/NarkisBlockMFCondensed-Bold.ttf') format('truetype');
+  font-family: 'NarkisBlock';
+  src: url('../font/narkis/NarkisBlockCon-Bold_MFW.eot');
+  src: url('../font/narkis/NarkisBlockCon-Bold_MFW.eot?#iefix') format('embedded-opentype'), url('../font/narkis/NarkisBlockCon-Bold_MFW.woff') format('woff'), url('../font/narkis/NarkisBlockCon-Bold_MFW.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
+
+
+
+
+
+/***********************************************************************/
+
+
+/* ICONS */
 
 @font-face {
   font-family: 'font';
@@ -118,6 +133,14 @@
   content: '\0050';
 }
 
+.icon-print {
+  background: url(../img/print.svg) no-repeat;
+  width: 20px;
+  height: 1em;
+  display: inline-block;
+  background-size: contain;
+}
+
 [class*='icn-'] {
   background-size: contain;
   background-repeat: no-repeat;
@@ -135,7 +158,13 @@
 }
 
 
-/* COMMON: */
+
+
+
+/***********************************************************************/
+
+
+/* GENERAL */
 
 *,
 *:after,
@@ -186,12 +215,14 @@ h6 {
 }
 
 h2 {
-  font-family: 'NarkisBlockMFCondensed-Bold';
+  font-family: 'NarkisBlock', Assistant, sans-serif;
+  font-weight: bold;
   font-size: 48px;
 }
 
 h3 {
-  font-family: 'NarkisBlockMFCondensed-Thin';
+  font-family: 'NarkisBlock', Assistant, sans-serif;
+  font-weight: lighter;
   font-size: 36px;
 }
 
@@ -237,7 +268,7 @@ h5 {
 
 strong {
   color: black;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 ol {
@@ -249,7 +280,11 @@ ol {
 }
 
 
-/* UI: */
+
+/***********************************************************************/
+
+
+/* UI / FORMS */
 
 .help {
   display: inline-block;
@@ -791,6 +826,9 @@ ol {
 }
 
 
+
+
+
 /*Checkbox*/
 
 .check,
@@ -899,6 +937,9 @@ ol {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+
+
+
 
 /*.controller-target {
   display: none;
@@ -1139,6 +1180,9 @@ ol {
 }
 
 
+
+
+
 /* SITE: */
 
 #header {
@@ -1233,6 +1277,9 @@ ol {
   background: url(../img/logo-horizontal.png) no-repeat center;
   background-size: contain;
 }
+
+
+
 
 
 /***********************************************************************/
@@ -1617,6 +1664,8 @@ ol {
   color: white;
   font-size: 33px;
   line-height: 1;
+  font-family: 'NarkisBlock', Assistant, sans-serif;
+  font-weight: normal;
 }
 
 @media (max-width:970px) {
@@ -1854,6 +1903,9 @@ ol {
 }
 
 
+
+
+
 /* Dialogs */
 
 .modal-dialog {
@@ -1894,10 +1946,6 @@ ol {
 .dialog-registration-confirmed .modal-dialog {
   max-width: 700px;
   text-align: center;
-}
-
-.dialog-registration-confirmed .modal-dialog h2 {
-  font-family: Assistant, sans-serif;
 }
 
 .modal-footer {
@@ -1952,11 +2000,15 @@ ol {
 
 .modal-body h2 {
   margin-bottom: 10px;
+  font-weight: normal;
 }
 
 .modal-body p+.btn {
   margin-top: 15px;
 }
+
+
+
 
 
 /* FORMS */
@@ -2124,6 +2176,9 @@ label {
   display: block;
   min-width: 0;
 }
+
+
+
 
 
 /* /FORMS */
@@ -2299,6 +2354,9 @@ label {
 }
 
 
+
+
+
 /*Steps*/
 
 .steps {
@@ -2423,6 +2481,9 @@ select {
 }
 
 
+
+
+
 /*.app-1-inline>* {
   margin-left: 15px;
 }*/
@@ -2441,6 +2502,9 @@ select {
     width: 100%
   }*/
 }
+
+
+
 
 
 /*.app-1-inline .select {
