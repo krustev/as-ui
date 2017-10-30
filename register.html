@@ -317,10 +317,10 @@
                   <!-- REFERRER? -->
                   <div class="section-padding">
                     <!-- SWITCH -->
-                    <div class="form-group show-contoller" data-controller="#switch-referrer">
-                      <label class="label-switch" for="switch-referrer"> האם הגעת דרך גורם מפנה?
+                    <div class="form-group">
+                      <label class="label-switch" for="switch-referrer-private"> האם הגעת דרך גורם מפנה?
                       <span class="switch">
-                        <input id="switch-referrer" type="checkbox" data-state=":checked" data-target="#referrer-content">
+                        <input id="switch-referrer-private" type="checkbox" data-toggle="collapse" data-target="#referrer-content-private">
                         <span class="switch-labels">
                           <span class="switch-label-no">לא</span>
                           <span class="switch-label-yes">כן</span>
@@ -329,7 +329,7 @@
                     </label>
                     </div>
                     <!-- REFERRER CONTENT -->
-                    <div id="referrer-content" class="richtext controller-target">
+                    <div id="referrer-content-private" class="richtext collapse fade">
                       <p class="form-intext">
                         אני ממנה בזאת את הסוכן <input type="text" class="form-control" placeholder="קוד סוכן"> כמיופה כוחי וכמוסמך לפעול בשמי ומטעמי בכל דבר ועניין הקשור להיותי משקיע בקרן השקעה בנדל"ן באלטשולר שחם פרופרטיז.
                       </p>
@@ -529,10 +529,10 @@
                   <!-- REFERRER? -->
                   <div class="section-padding">
                     <!-- SWITCH -->
-                    <div class="form-group show-contoller" data-controller="#switch-referrer-corporate">
+                    <div class="form-group">
                       <label class="label-switch" for="switch-referrer-corporate"> האם הגעת דרך גורם מפנה?
                       <span class="switch">
-                        <input id="switch-referrer-corporate" type="checkbox" data-state=":checked" data-target="#referrer-content-corporate">
+                        <input id="switch-referrer-corporate" type="checkbox" data-toggle="collapse" data-target="#referrer-content-corporate">
                         <span class="switch-labels">
                           <span class="switch-label-no">לא</span>
                           <span class="switch-label-yes">כן</span>
@@ -541,7 +541,7 @@
                     </label>
                     </div>
                     <!-- REFERRER CONTENT -->
-                    <div id="referrer-content-corporate" class="richtext controller-target">
+                    <div id="referrer-content-corporate" class="richtext collapse fade">
                       <p class="form-intext">
                         אני ממנה בזאת את הסוכן <input type="text" class="form-control" placeholder="קוד סוכן"> כמיופה כוחי וכמוסמך לפעול בשמי ומטעמי בכל דבר ועניין הקשור להיותי משקיע בקרן השקעה בנדל"ן באלטשולר שחם פרופרטיז.
                       </p>

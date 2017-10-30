@@ -82,28 +82,29 @@
       });
       links.filter('[href="' + location.hash + '"]').click()
     },
-    showHide: function() {
-      $(".show-contoller").each(function() {
-
-        var controller = $(this).data("controller");
-
-        function control() {
-          $(controller).each(function() {
-            var state = $(this).data("state"),
-              target = $(this).data("target");
-            if ($(this).is(state)) {
-              $(target).fadeIn();
-            } else {
-              $(target).fadeOut();
-            }
-          })
-        }
-
-        $(this).click(function() {
-          control();
-        })
-      });
-    },
+    // showHide: function() {
+    //   $(".show-controller").each(function() {
+    //
+    //     var controller = $(this).data("controller");
+    //
+    //     function control() {
+    //
+    //       $(controller).each(function() {
+    //         var state = $(this).data("state"),
+    //           target = $(this).data("target");
+    //         if ($(this).is(state)) {
+    //           $(target).fadeIn();
+    //         } else {
+    //           $(target).fadeOut();
+    //         }
+    //       })
+    //     }
+    //
+    //     $(this).click(function() {
+    //       control();
+    //     })
+    //   });
+    // },
     init: function() {
       var scope = this;
       $(document).ready(function() {
@@ -114,7 +115,7 @@
         // scope.mobileHeaderTitle();
         scope.selects();
         scope.helps();
-        scope.showHide();
+        // scope.showHide();
         scope.guiAccordion();
         $("input[title]").each(function() {
           $(this).tooltip({
