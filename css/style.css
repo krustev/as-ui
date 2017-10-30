@@ -2459,20 +2459,18 @@ select {
   box-shadow: 0 0 0 2px rgba(0, 167, 104, 0.2);
 }
 
-.form-control-focus {
-  background-color: #EAF4FF;
-  background-repeat: no-repeat;
+.form-control-sign {
+  background: #EAF4FF url(../img/handwriting.svg) no-repeat;
+  background-position: 90% center;
+  background-position: calc(100% - 10px) center;
   border-color: #75B5FF;
 }
 
-.form-control-focus-1 {
-  background-image: url(../img/handwriting.svg);
-  background-position: 90% center;
-  background-position: calc(100% - 13px) center;
-}
-
-.form-control-focus-1:focus {
-  background-position: 13px center;
+.form-control-sign:focus {
+  border-color: #75B5FF;
+  -webkit-box-shadow: 0 0 0 2px rgba(117, 181, 255, 0.2);
+  box-shadow: 0 0 0 2px rgba(117, 181, 255, 0.2);
+  background-image: none;
 }
 
 .x-form-control {
