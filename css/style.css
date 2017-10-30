@@ -33,6 +33,8 @@
 
 
 
+
+
 /***********************************************************************/
 
 
@@ -46,7 +48,7 @@
   font-style: normal;
 }
 
-[class*='xicon-']:before {
+[class*='icon-']:before {
   display: inline;
   font-family: 'font';
   font-style: normal;
@@ -54,91 +56,6 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale
-}
-
-.xicon-extend:before {
-  content: '\0041';
-}
-
-.xicon-fuser:before {
-  content: '\0042';
-}
-
-.xicon-gd:before {
-  content: '\0043';
-}
-
-.xicon-h1:before {
-  content: '\0044';
-}
-
-.xicon-h2:before {
-  content: '\0045';
-}
-
-.xicon-h3:before {
-  content: '\0046';
-}
-
-.xicon-h4:before {
-  content: '\0047';
-}
-
-.xicon-h5:before {
-  content: '\0048';
-}
-
-.xicon-larr:before {
-  content: '\0049';
-}
-
-.xicon-lock:before {
-  content: '\004a';
-}
-
-.xicon-rarr:before {
-  content: '\004b';
-}
-
-.xicon-share:before {
-  content: '\004c';
-}
-
-.xicon-uarr:before {
-  content: '\004d';
-}
-
-.xicon-upload:before {
-  content: '\004e';
-}
-
-.xicon-checkmark:before {
-  content: '\004f';
-}
-
-.xicon-close:before {
-  content: '\0050';
-}
-
-.xicon-download:before {
-  content: '\0051';
-}
-
-.xicon-draw:before {
-  content: '\0052';
-}
-
-.close:before {
-  font-family: 'font';
-  content: '\0050';
-}
-
-.icon-print {
-  background: url(../img/print.svg) no-repeat;
-  width: 20px;
-  height: 1em;
-  display: inline-block;
-  background-size: contain;
 }
 
 [class*='icn-'] {
@@ -156,6 +73,113 @@
 .icn-face1 {
   background: url(../img/face1.svg) no-repeat;
 }
+
+@font-face {
+  font-family: 'as-icons';
+  src: url('../font/icons/as-icons.eot');
+  src: url('../font/icons/as-icons.eot#iefix') format('embedded-opentype'),
+  url('../font/icons/as-icons.ttf') format('truetype'),
+  url('../font/icons/as-icons.woff') format('woff'),
+  url('../font/icons/as-icons.svg#as-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  display: inline;
+  font-family: 'as-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #FA8833;
+}
+
+.icon-lock:before {
+  content: "\4a";
+}
+
+.icon-arrow-down:before {
+  content: "\e900";
+}
+
+.icon-arrow-l:before {
+  content: "\e901";
+}
+
+.icon-arrow-r:before {
+  content: "\e902";
+}
+
+.icon-arrow-up:before {
+  content: "\e903";
+}
+
+.icon-briefcase:before {
+  content: "\e904";
+}
+
+.icon-card:before {
+  content: "\e905";
+}
+
+.icon-close:before {
+  content: "\e906";
+}
+
+.icon-date:before {
+  content: "\e907";
+}
+
+.icon-download-lg:before {
+  content: "\e908";
+}
+
+.icon-download-sm:before {
+  content: "\e909";
+}
+
+.icon-location:before {
+  content: "\e90a";
+}
+
+.icon-pen:before {
+  content: "\e90c";
+}
+
+.icon-print:before {
+  content: "\e90d";
+}
+
+.icon-profile:before {
+  content: "\e90e";
+}
+
+.icon-property:before {
+  content: "\e90f";
+}
+
+.icon-question:before {
+  content: "\e910";
+}
+
+.icon-resize:before {
+  content: "\e911";
+}
+
+.icon-share:before {
+  content: "\e912";
+}
+
+.icon-upload:before {
+  content: "\e913";
+}
+
 
 
 
@@ -199,7 +223,8 @@ label {
   color: #6D6E71;
 }
 
-a {
+a,
+a:hover {
   text-decoration: none;
 }
 
@@ -281,6 +306,8 @@ ol {
 
 
 
+
+
 /***********************************************************************/
 
 
@@ -290,12 +317,23 @@ ol {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background: url(../img/help.svg) no-repeat;
   background-size: contain;
   margin-right: 5px;
   position: relative;
-  top: 2px;
   cursor: help;
+}
+
+.help::before {
+  content: "\e910";
+  display: inline-block;
+  font-family: "as-icons" !important;
+  font-weight: normal;
+  font-size: 16px;
+  position: absolute;
+  right: 0;
+  top: -1px;
+  height: 100%;
+  color: #E87722;
 }
 
 .status-box {
@@ -368,6 +406,10 @@ ol {
 
 .button-close:hover {
   color: #C2C2C2;
+}
+
+.button-close.icon-close::before {
+  color: #cecece !important;
 }
 
 .input-group-addon {
@@ -614,8 +656,8 @@ ol {
 }
 
 .btn-al:before {
-  content: '\0049';
-  font-family: font;
+  content: "\e901";
+  font-family: "as-icons" !important;
   position: absolute;
   font-weight: normal;
   left: 15px;
@@ -627,8 +669,7 @@ ol {
 .btn-al-2:before {
   left: auto;
   right: 15px;
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+  content: "\e902";
 }
 
 .btn-al-auto {
@@ -703,9 +744,13 @@ ol {
   border-radius: 50px;
   background-color: #006A52;
   color: white;
-  font-family: font;
   text-align: center;
   font-size: 29px;
+}
+
+.bicon::before {
+  color: white;
+  line-height: 56px;
 }
 
 .switch {
@@ -829,6 +874,8 @@ ol {
 
 
 
+
+
 /*Checkbox*/
 
 .check,
@@ -938,18 +985,21 @@ ol {
   box-shadow: none;
 }
 
-
-
-
-/*.controller-target {
-  display: none;
-}*/
-
 .share {
   font-size: 0;
+  position: relative;
+}
+
+.share::before {
+  content: "\e912";
+  font-family: "as-icons" !important;
+  font-size: 25px;
   width: 25px;
   height: 25px;
-  background: url(../img/share.svg) no-repeat center;
+  color: #FA8833;
+  position: absolute;
+  left: 0;
+  /*background: url(../img/share.svg) no-repeat center;*/
 }
 
 .root-title {
@@ -1065,7 +1115,11 @@ ol {
   display: block;
 }
 
-.gui-acc-profile-date {}
+.gui-accordion [class*="icon-"],
+.gui-accordion a {
+  font-size: 24px;
+  vertical-align: middle;
+}
 
 .gui-acc-profile-info {
   display: inline-block;
@@ -1124,10 +1178,8 @@ ol {
 }
 
 .gui-accordion-toggle:after {
-  font-family: font;
-  content: '\0043';
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+  font-family: "as-icons" !important;
+  content: "\e900";
   display: inline-block;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -1136,8 +1188,7 @@ ol {
 }
 
 .active .gui-accordion-toggle:after {
-  -webkit-transform: rotate(-0);
-  transform: rotate(-0);
+  content: "\e903";
 }
 
 .profile-accordion .gui-acc-profile,
@@ -1170,7 +1221,7 @@ ol {
   vertical-align: middle;
 }
 
-.xicon-download {
+.icon-download {
   color: #E87722;
   font-size: 26px;
 }
@@ -1178,6 +1229,8 @@ ol {
 #content {
   padding-top: 133px;
 }
+
+
 
 
 
@@ -1277,6 +1330,8 @@ ol {
   background: url(../img/logo-horizontal.png) no-repeat center;
   background-size: contain;
 }
+
+
 
 
 
@@ -1534,6 +1589,10 @@ ol {
   height: 45px;
   line-height: 45px;
   font-size: 22px;
+}
+
+.hero-in .bicon:before {
+  line-height: 45px;
 }
 
 .hero-in .hero-carousel img {
@@ -1906,6 +1965,8 @@ ol {
 
 
 
+
+
 /* Dialogs */
 
 .modal-dialog {
@@ -1920,7 +1981,7 @@ ol {
   min-width: 100%;
 }
 
-.dialog-registration-closed .xicon-lock {
+.dialog-registration-closed .icon-lock {
   float: right;
 }
 
@@ -1973,13 +2034,18 @@ ol {
   background: #425252
 }
 
-.modal .close {
+.modal .icon-close {
   position: absolute;
   top: 10px;
   left: 10px;
   font-size: 15px;
   margin: 0;
   text-shadow: none;
+  cursor: pointer;
+}
+
+.modal .icon-close::before {
+  color: #CECECE;
 }
 
 .modal-body {
@@ -1992,6 +2058,11 @@ ol {
 
 .modal-title-icon {
   margin-left: 12px;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.modal-title-icon::before{
 }
 
 .modal-body .success-mark {
@@ -2006,6 +2077,8 @@ ol {
 .modal-body p+.btn {
   margin-top: 15px;
 }
+
+
 
 
 
@@ -2176,6 +2249,8 @@ label {
   display: block;
   min-width: 0;
 }
+
+
 
 
 
@@ -2357,6 +2432,8 @@ label {
 
 
 
+
+
 /*Steps*/
 
 .steps {
@@ -2462,15 +2539,13 @@ select {
 
 .select:after {
   display: block;
-  content: '\0043';
+  content: "\e900";
   line-height: 50px;
   background: white;
   color: rgba(0, 167, 104, 1);
   width: 30px;
-  font-family: font;
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-  border-left: 1px solid #ccc;
+  font-family: "as-icons" !important;
+  border-right: 1px solid #ccc;
   position: absolute;
   top: 1px;
   left: 1px;
@@ -2504,13 +2579,6 @@ select {
 }
 
 
-
-
-
-/*.app-1-inline .select {
-  width: 270px;
-}*/
-
 .form-error input,
 .form-error input:focus {
   border-color: #E87722;
@@ -2525,7 +2593,7 @@ select {
 }
 
 .form-control-sign {
-  background: #EAF4FF url(../img/handwriting.svg) no-repeat;
+  background: #EAF4FF url(../img/pen.svg) no-repeat;
   background-position: 90% center;
   background-position: calc(100% - 10px) center;
   border-color: #75B5FF;
