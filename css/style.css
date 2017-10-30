@@ -2151,7 +2151,8 @@ label {
   margin-top: 50px;
 }
 
-.gui-form-holder:last-child {
+.gui-form-holder:last-child,
+.hero-list:last-child {
   margin-bottom: 100px;
 }
 
