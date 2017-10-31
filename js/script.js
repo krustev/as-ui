@@ -153,6 +153,24 @@
         });
       });
     },
+    collapsableSelect: function() {
+
+      function collpaseStuff(e) {
+        var target = $(e).find(":selected").data("target");
+
+        $(target).siblings(".collapse").collapse("hide");
+        $(target).collapse('show');
+      }
+
+      $("select[data-toggle='collapse']").change(function() {
+        collpaseStuff(this);
+      });
+
+      $("select[data-toggle='collapse']").each(function() {
+        collpaseStuff(this);
+      });
+
+    },
     init: function() {
       var scope = this;
       $(document).ready(function() {
@@ -164,6 +182,7 @@
         scope.phoneCode();
         scope.guiAccordion();
         scope.formValidate();
+        scope.collapsableSelect();
 
         // $("input[data-original-title]").each(function() {
         //   $(this).tooltip({

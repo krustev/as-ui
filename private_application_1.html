@@ -84,21 +84,38 @@
 
                 <div class="form-group">
                   <div class="form-inline">
+
                     <div class="form-group">
                       <label>צילום תעודה מזהה</label>
-                      <select class="form-control">
-                        <option>ת.ז. ביומטרית</option>
-                        <option>ת.ז. ביומטרית</option>
+                      <select class="form-control" data-toggle="collapse">
+                        <option value="one" data-toggle="collapse" data-target="#single-photo">ת.ז. רגילה</option>
+                        <option value="2" data-toggle="collapse" data-target="#double-photo">ת.ז. ביומטרית</option>
+                        <option value="3" data-toggle="collapse" data-target="#single-photo">דרכון</option>
                       </select>
                     </div>
 
-                    <div class="uploaded-file">
-                      <span class="xico xico-success"></span> צילום
-                      <span class="icon-close button-close"></span>
+                    <div class="form-group">
+                      <span id="single-photo" class="collapse">
+                        <button class="btn btn-default"><span class="icon-upload"></span></button>
+                      </span>
+                      <span id="double-photo" class="collapse">
+                        <button class="btn btn-default"><span class="icon-upload"></span>צילום</button>
+                        <button class="btn btn-default"><span class="icon-upload"></span>צילום צד שני</button>
+                      </span>
                     </div>
 
-                    <button class="btn btn-default"><span class="icon-upload"></span></button>
+
+
                   </div>
+                  <ul class="file-list">
+                    <li>
+                      <div class="uploaded-file">
+                        some_file_name.jpg
+                        <span class="icon-close button-close"></span>
+                      </div>
+                    </li>
+                  </ul>
+
                 </div>
 
               </div>
