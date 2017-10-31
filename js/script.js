@@ -17,6 +17,11 @@
         });
       })
     },
+    // errorTooltips: function() {
+    //   $(".form-error").each(function() {
+    //     $(this).tooltip('show');
+    //   })
+    // },
     heroCarousel: function() {
       $('.hero-carousel').on('init', function(event, slick) {
         var $items = slick.$dots.find('li');
@@ -82,52 +87,97 @@
       });
       links.filter('[href="' + location.hash + '"]').click()
     },
-    // showHide: function() {
-    //   $(".show-controller").each(function() {
-    //
-    //     var controller = $(this).data("controller");
-    //
-    //     function control() {
-    //
-    //       $(controller).each(function() {
-    //         var state = $(this).data("state"),
-    //           target = $(this).data("target");
-    //         if ($(this).is(state)) {
-    //           $(target).fadeIn();
-    //         } else {
-    //           $(target).fadeOut();
-    //         }
-    //       })
-    //     }
-    //
-    //     $(this).click(function() {
-    //       control();
-    //     })
-    //   });
-    // },
+    phoneCode: function() {
+      $("input[maxlength]").keyup(function() {
+        if (this.value.length == this.maxLength) {
+          $(this).next('input').focus();
+        }
+      });
+    },
+    formValidate: function() {
+      $("form").each(function() {
+        var form = this;
+
+        // Suppress the default bubbles
+        form.addEventListener("invalid", function(event) {
+          event.preventDefault();
+        }, true);
+
+        // Support Safari, iOS Safari, and the Android browser—each of which do not prevent
+        // form submissions by default
+        $(form).on("submit", function(event) {
+          if (!this.checkValidity()) {
+            event.preventDefault();
+          }
+        });
+
+        $(":required", form)
+          // Destroy the tooltip on blur if the field contains valid data
+          .on("blur", function() {
+            var field = $(this);
+            field.tooltip("hide");
+          })
+          // Show the tooltip on focus
+          .on("focus", function() {
+            var field = $(this);
+            if (this.validity.valid) {
+              field.tooltip("hide");
+            } else if (this.validity.invalid) {
+              field.tooltip("show");
+            }
+          });
+
+        $("button:not([type=button]), input[type=submit]", form).on("click", function(event) {
+          // Destroy any tooltips from previous runs
+          $("input, select, textarea", form).each(function() {
+            var field = $(this);
+            if (field.data("toggle")) {
+              field.tooltip("destroy");
+            }
+          });
+
+          // Add a tooltip to each invalid field
+          var invalidFields = $(":invalid", form).each(function() {
+            var field = $(this).tooltip({
+              animation: false,
+              trigger: "focus",
+              placement: "bottom",
+              title: function() {
+                return field[0].validationMessage;
+              }
+            });
+          });
+
+          // If there are errors, give focus to the first invalid field
+          invalidFields.first().trigger("focus").eq(0).focus();
+        });
+      });
+    },
     init: function() {
       var scope = this;
       $(document).ready(function() {
         scope.heroCarousel();
-        // scope.menu();
         scope.mobileMenu();
         scope.tabs();
-        // scope.mobileHeaderTitle();
         scope.selects();
         scope.helps();
-        // scope.showHide();
+        scope.phoneCode();
         scope.guiAccordion();
-        $("input[title]").each(function() {
-          $(this).tooltip({
-            placement: $(this).attr('data-placement') || "top",
-            trigger: "focus"
-          }).on('shown.bs.tooltip', function(a, b) {});
-        });
+        scope.formValidate();
+
+        // $("input[data-original-title]").each(function() {
+        //   $(this).tooltip({
+        //     placement: $(this).attr('data-placement'),
+        //     trigger: "focus"
+        //   });
+        // });
+
         $.fn.modal.prototype.constructor.Constructor.DEFAULTS.backdrop = 'static';
         setTimeout(function() {
           $(document.body).addClass('document-ready')
         }, 10)
       })
+
       $(window).on('load resize scroll', function() {
         // scope.menu();
       })
