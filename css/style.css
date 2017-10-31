@@ -761,9 +761,12 @@ ul.file-list {
 
 .uploaded-file {
   display: inline-block;
-  cursor: default;
+  /*cursor: default;*/
   line-height: 48px;
-  padding: 0 30px;
+  padding: 0 50px ;
+  border: 1px solid #E8E9ED;
+  color: black;
+  border-radius: 30px;
   vertical-align: middle;
   position: relative;
 }
@@ -774,7 +777,7 @@ ul.file-list {
   display: inline-block;
   width: 20px;
   height: 20px;
-  right: 0;
+  right: 15px;
   top: 50%;
   margin-top: -10px;
   position: absolute;
@@ -784,7 +787,7 @@ ul.file-list {
 
 .uploaded-file>.button-close {
   position: absolute;
-  left: 0;
+  left: 15px;
   top: 50%;
   margin-top: -10px;
   height: 20px;
@@ -1889,7 +1892,7 @@ ul.file-list {
 }
 
 .richtext .btn+.btn {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 @media (max-width:650px) {
