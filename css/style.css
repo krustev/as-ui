@@ -205,7 +205,7 @@ h2 {
 
 h3 {
   font-family: 'NarkisBlock', Assistant, sans-serif;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 39px;
 }
 
@@ -708,15 +708,16 @@ input+.tooltip .tooltip-inner {
   height: 56px;
   line-height: 56px;
   border-radius: 50px;
-  /*background-color: #006A52;*/
-  background: white;
+  background-color: #006A52;
+  /*background: #00A768;*/
   /*color: white;*/
   text-align: center;
-  font-size: 29px;
+  font-size: 25px;
 }
 
 .bicon::before {
-  color: #006A52;
+  /*color: #006A52;*/
+  color: white;
   line-height: 56px;
 }
 
@@ -799,6 +800,17 @@ ul.file-list {
   position: absolute;
   left: 0;
   line-height: 20px;
+  transition: all .15s ease;
+}
+
+.uploaded-file:hover {
+  color: black;
+  border-color: #ccc;
+}
+
+.uploaded-file:hover .button-close.icon-close::before {
+  color: #6D6E71 !important;
+  transform: rotate(-90deg);
 }
 
 .switch input {
@@ -1436,7 +1448,7 @@ ul.file-list {
   /*height: 540px; */
   /*background: #2C3131;*/
   /*background: #6D6E71;*/
-  background: #6D6E71;
+  background: #b1b2b6;
   position: relative;
   overflow: hidden;
 }
@@ -1671,7 +1683,7 @@ ul.file-list {
   margin: 0 6px;
   display: inline-block;
   border-radius: 8px;
-  background: #afb1b6;
+  background: #7f838b;
   cursor: pointer;
 }
 
@@ -1683,6 +1695,7 @@ ul.file-list {
 
 .hero-carousel {
   width: 100%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
 .closed .hero-carousel {
@@ -1704,7 +1717,8 @@ ul.file-list {
 }
 
 .dl-item-title {
-  color: #B1B3B7;
+  /*color: #B1B3B7;*/
+  color: white;
   font-size: 17px;
   font-weight: bold;
   display: block;
@@ -1716,7 +1730,7 @@ ul.file-list {
 }
 
 .dl-item-desc {
-  color: white;
+  color: #5b5e63;
   font-size: 33px;
   line-height: 1;
   font-family: 'NarkisBlock', Assistant, sans-serif;
@@ -2181,6 +2195,11 @@ input::-webkit-contacts-auto-fill-button {
   vertical-align: middle;
   display: inline-block;
   margin: 0 10px;
+}
+
+.richtext p .form-control.long {
+  width: 360px;
+  max-width: 100%;
 }
 
 .richtext-input-2 .form-control {
