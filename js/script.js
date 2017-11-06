@@ -11,7 +11,7 @@
     helps: function() {
       $(".help").each(function() {
         $(this).tooltip({
-          placement: $(this).attr('data-placement') || "top"
+          placement: $(this).attr('data-placement')
         }).on('shown.bs.tooltip', function(a, b) {
 
         });
@@ -171,6 +171,15 @@
       });
 
     },
+    initDatepicker: function() {
+      if ($(".datepicker").length) {
+        $(".datepicker").datepicker({
+          changeYear: true,
+          changeMonth: true,
+          yearRange: "-100:+0"
+        });
+      }
+    },
     init: function() {
       var scope = this;
       $(document).ready(function() {
@@ -182,6 +191,7 @@
         scope.phoneCode();
         scope.guiAccordion();
         scope.formValidate();
+        scope.initDatepicker();
         scope.collapsableSelect();
 
         // $("input[data-original-title]").each(function() {

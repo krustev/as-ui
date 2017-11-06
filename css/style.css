@@ -438,7 +438,12 @@ ol {
   font-size: 16px;
   line-height: 20px;
   min-width: 200px;
+  width: auto;
   text-align: right;
+}
+
+.big + .tooltip .tooltip-inner {
+  min-width: 400px;
 }
 
 input+.tooltip {
@@ -1100,16 +1105,39 @@ ul.file-list {
 }
 
 .gui-accordion-header {
-  min-height: 130px;
+  /*min-height: 130px;*/
   padding: 20px;
   background: #F4F4F7;
   border-radius: 5px 5px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.closed .gui-accordion-header:before {
+  content: "הגיוס הושלם!";
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  right: -55px;
+  z-index: 9;
+  background: #E87722;
+  font-size: 15px;
+  font-weight: bold;
+  width: 200px;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
 }
 
 .gui-acc-profile-img {
   display: inline-block;
-  width: 90px;
-  height: 90px;
+  width: 60px;
+  height: 60px;
   border-radius: 3px;
   background-size: cover;
   margin-left: 27px;
@@ -1349,7 +1377,7 @@ ul.file-list {
 
 #header.affix {
   width: 100%;
-  z-index: 999;
+  z-index: 99999;
   -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
   border-bottom: 1px solid #ddd;
@@ -2626,8 +2654,7 @@ input:required:focus:invalid {
 
 .form-control-sign {
   background: #EAF4FF url(../img/pen.svg) no-repeat;
-  background-position: 90% center;
-  background-position: calc(100% - 10px) center;
+  background-position: 10px center;
   border-color: #75B5FF;
 }
 
@@ -2635,7 +2662,6 @@ input:required:focus:invalid {
   border-color: #75B5FF;
   -webkit-box-shadow: 0 0 0 2px rgba(117, 181, 255, 0.2);
   box-shadow: 0 0 0 2px rgba(117, 181, 255, 0.2);
-  background-image: none;
 }
 
 .x-form-control {
@@ -2662,4 +2688,86 @@ input:required:focus:invalid {
   width: 445px;
   max-width: 70%;
   max-width: calc(100% - 80px);
+}
+
+.ui-datepicker {
+  background: #F4F4F7;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border: 1px solid #E8E9ED;
+}
+
+.ui-datepicker-calendar td {
+  background: white;
+  padding: 7px 10px;
+  border: 3px solid #F4F4F7;
+  cursor: pointer;
+}
+
+.ui-datepicker-calendar th {
+  text-align: center;
+}
+
+.ui-datepicker-calendar a {
+  color: #00A768;
+}
+
+td.ui-datepicker-current-day {
+  background: #FA8833;
+}
+
+a.ui-state-active {
+  color: white;
+  font-weight: bold;
+}
+
+.ui-datepicker-header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.ui-datepicker-title {
+  display: inline-block;
+}
+
+.ui-datepicker-next,
+.ui-datepicker-prev,
+.ui-datepicker-month,
+.ui-datepicker-year {
+  cursor: pointer;
+  line-height: 2em;
+  vertical-align: middle;
+  padding: 5px 0;
+}
+
+.ui-datepicker-prev,
+.ui-datepicker-next {
+  color: #00A768;
+  font-weight: bold;
+}
+
+.ui-datepicker-prev:hover,
+.ui-datepicker-next:hover {
+  color: #00A768;
+}
+
+.ui-datepicker-prev {
+  float: right;
+}
+
+.ui-datepicker-next {
+  float: left;
+}
+
+.ui-datepicker-month,
+.ui-datepicker-year {
+  margin: 0 -1px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  padding: 5px 20px;
+}
+
+.datepicker {
+  background: url(../img/calendar.svg) no-repeat;
+  background-position: 10px center;
 }
