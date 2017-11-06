@@ -6,24 +6,24 @@
 
 @font-face {
   font-family: 'NarkisBlock';
-  src: url('../font/narkis/NarkisBlockCon-Thin_MFW.eot');
-  src: url('../font/narkis/NarkisBlockCon-Thin_MFW.eot?#iefix') format('embedded-opentype'), url('../font/narkis/NarkisBlockCon-Thin_MFW.woff') format('woff'), url('../font/narkis/NarkisBlockCon-Thin_MFW.ttf') format('truetype');
+  src: url('https://pa1nd.github.io/as-ui/font/narkis/NarkisBlockCon-Thin_MFW.eot');
+  src: url('https://pa1nd.github.io/as-ui/font/narkis/NarkisBlockCon-Thin_MFW.eot?#iefix') format('embedded-opentype'), url('https://pa1nd.github.io/as-ui/font/narkis/NarkisBlockCon-Thin_MFW.woff') format('woff'), url('https://pa1nd.github.io/as-ui/font/narkis/NarkisBlockCon-Thin_MFW.ttf') format('truetype');
   font-weight: lighter;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'NarkisBlock';
-  src: url('../font/narkis/NarkisBlock-Condensed_MFW.eot');
-  src: url('../font/narkis/NarkisBlock-Condensed_MFW.eot?#iefix') format('embedded-opentype'), url('../font/narkis/NarkisBlock-Condensed_MFW.woff') format('woff'), url('../font/narkis/NarkisBlock-Condensed_MFW.ttf') format('truetype');
+  src: url('https://pa1nd.github.io/as-ui/font/narkis/NarkisBlock-Condensed_MFW.eot');
+  src: url('https://pa1nd.github.io/as-ui/font/narkis/NarkisBlock-Condensed_MFW.eot?#iefix') format('embedded-opentype'), url('https://pa1nd.github.io/as-ui/font/narkis/NarkisBlock-Condensed_MFW.woff') format('woff'), url('https://pa1nd.github.io/as-ui/font/narkis/NarkisBlock-Condensed_MFW.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'NarkisBlock';
-  src: url('../font/narkis/NarkisBlockCon-Bold_MFW.eot');
-  src: url('../font/narkis/NarkisBlockCon-Bold_MFW.eot?#iefix') format('embedded-opentype'), url('../font/narkis/NarkisBlockCon-Bold_MFW.woff') format('woff'), url('../font/narkis/NarkisBlockCon-Bold_MFW.ttf') format('truetype');
+  src: url('https://pa1nd.github.io/as-ui/font/narkis/NarkisBlockCon-Bold_MFW.eot');
+  src: url('https://pa1nd.github.io/as-ui/font/narkis/NarkisBlockCon-Bold_MFW.eot?#iefix') format('embedded-opentype'), url('https://pa1nd.github.io/as-ui/font/narkis/NarkisBlockCon-Bold_MFW.woff') format('woff'), url('https://pa1nd.github.io/as-ui/font/narkis/NarkisBlockCon-Bold_MFW.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
