@@ -52,12 +52,12 @@
         }
       });
     },
-    mobileHeaderTitle: function() {
-      var title = $("#header h2:first");
-      if (title.length > 0) {
-        $("#header").after('<h2 class="' + title.attr('class') + ' header-h2-clone"><span class="container">' + title.html() + '</span></h2>')
-      }
-    },
+    // mobileHeaderTitle: function() {
+    //   var title = $("#header h2:first");
+    //   if (title.length > 0) {
+    //     $("#header").after('<h2 class="' + title.attr('class') + ' header-h2-clone"><span class="container">' + title.html() + '</span></h2>')
+    //   }
+    // },
     selects: function() {
       $("select.form-control").not('.wrapped').addClass('wrapped').wrap('<div class="select"></div>');
       (function(scope) {
