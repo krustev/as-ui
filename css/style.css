@@ -2220,17 +2220,23 @@ input::-webkit-contacts-auto-fill-button {
   font-size: 16px;
 }
 
-.richtext p .form-control,
-.richtext p .form-group {
+.form-intext .form-control,
+.form-intext .form-group {
   width: 200px;
   vertical-align: middle;
   display: inline-block;
   margin: 0 10px;
 }
 
-.richtext p .form-control.long {
+.form-intext .form-control.long {
   width: 360px;
   max-width: 100%;
+}
+
+.form-intext .form-control.block {
+  width: 100%;
+  display: block;
+  margin: 0;
 }
 
 .richtext-input-2 .form-control {
@@ -2644,6 +2650,11 @@ input:required:focus:invalid {
   border-color: #75B5FF;
 }
 
+.ltr .form-control-sign {
+  background-position: 95% center;
+  background-position: calc(100% - 10px) center;
+}
+
 .form-control-sign:focus {
   border-color: #75B5FF;
   -webkit-box-shadow: 0 0 0 2px rgba(117, 181, 255, 0.2);
@@ -2681,6 +2692,7 @@ input:required:focus:invalid {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   padding: 20px;
   border: 1px solid #E8E9ED;
+  display: none;
 }
 
 .ui-datepicker-calendar td {
@@ -2756,4 +2768,9 @@ a.ui-state-active {
 .datepicker {
   background: url(../img/calendar.svg) no-repeat;
   background-position: 10px center;
+}
+
+.ltr .datepicker {
+  background-position: 95% center;
+  background-position: calc(100% - 10px) center;
 }
