@@ -428,10 +428,15 @@ ol {
   margin-right: -40px;
 }
 
-@media (max-width:750px) {
+@media (max-width:767px) {
   .box {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 20px;
+  }
+}
+
+@media (max-width:480px) {
+  .box {
+    padding: 15px;
   }
 }
 
@@ -2215,6 +2220,10 @@ ul.file-list {
 
 .form-group {
   padding-top: 5px;
+}
+
+.form-group .text-small {
+  margin-top: 10px;
 }
 
 input.form-control,
