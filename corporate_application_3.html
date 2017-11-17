@@ -66,50 +66,208 @@
               <form>
 
                 <div class="gui-tab-wrapper richtext">
-                  <h5>מילוי טופס W</h5>
-                  <div class="form-group">
-                    <div class="form-inline">
-                      <label>אנא בחרו את הטופס הרלוונטי אליכם:</label>
-                      <select class="form-control">
-                      <option>W9</option>
-                      <option>W-8BEN</option>
-                      <option>W-8ECI</option>
-                      <option>W-8IMY</option>
-                      <option>W-8EXP</option>
-                    </select>
-                    </div>
-                  </div>
+                  <h5>מילוי טופס <span class="en">W</span></h5>
+
                   <div class="section-padding">
                     <p>
                       <strong>טופס W9 —</strong> מיועד למי שהינו אזרח/תושב ארה"ב
                     </p>
                     <p>
-                      <strong>טופס W-8BEN —</strong> טופ מיועד למי שאינו אזרח/תושב ארה"ב ואינו מפעיל עסק בארה"ב
+                      <strong>טופס W-8BEN —</strong> טופ מיועד למי שאינו אזרח/תושב
+                      ארה"ב ואינו מפעיל עסק בארה"ב
                     </p>
                     <p>
-                      <strong>טופס W-8ECI —</strong> מיועד למי שמקבל הכנסות עסקיות מארה"ב
+                      <strong>טופס W-8ECI —</strong> מיועד למי שמקבל הכנסות עסקיות
+                      מארה"ב
                     </p>
                     <p>
-                      <strong>טופס W-8IMY —</strong> מיועד לשותפות או גופים שקופים אחרים אשר הוקמו מחוץ לארה"ב
+                      <strong>טופס W-8IMY —</strong> מיועד לשותפות או גופים שקופים
+                      אחרים אשר הוקמו מחוץ לארה"ב
                     </p>
                     <p>
-                      <strong>טופס W-8EXP —</strong> מיועד לתאגידים בעלי הסכם פטור עם ה-IRS כמו: ממשלות זרות, ארגונים בינלאומיים, בנקים מרכזים זרים ועוד
+                      <strong>טופס W-8EXP —</strong> מיועד לתאגידים בעלי הסכם פטור
+                      עם ה-IRS כמו: ממשלות זרות, ארגונים בינלאומיים, בנקים מרכזים
+                      זרים ועוד
                     </p>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="form-inline">
+                      <label>אנא בחרו את הטופס הרלוונטי אליכם:</label>
+                      <select data-toggle="collapse" class="form-control">
+                      <option data-target="#W9" selected>W9</option>
+                      <option data-target="#uploadForm">W-8BEN-E</option>
+                      <option data-target="#uploadForm">W-8ECI</option>
+                      <option data-target="#uploadForm">W-8IMY</option>
+                      <option data-target="#uploadForm">W-8EXP</option>
+                    </select>
+                    </div>
                   </div>
 
                 </div>
                 <hr>
                 <div class="gui-tab-wrapper richtext">
-                  <div class="section-padding">
-                    <h5>ניתן למלא את הטופס באחת מהדרכים הבאות:</h5>
-                    <ol>
-                      <li>מילוי ידני – הדפסה של הטופס, מילוי ידני והעלאת טופס חתום למערכת</li>
-                      <li>מילוי ממוחשב – שמירת הטופס, מילוי ממוחשב כולל חתימה דיגיטלית (נדרש הליך רישום קצר) והעלאת טופס למערכת.</li>
-                    </ol>
+                  <div class="collapse in fade" id="W9">
+                    <div class="ltr en section-padding">
+                      <h3 class="en">Form W-9</h3>
+
+                      <div class="row section-padding">
+                        <div class="col-md-6 pull-left">
+                          <div class="form-group">
+                            <label>Name (as shown on your income tax return)</label>
+                            <input type="text" class="form-control" placeholder="Full name">
+                          </div>
+                        </div>
+
+                        <div class="col-md-6 pull-left">
+                          <div class="form-group">
+                            <label>Business name/disregarded entity name</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+
+                        <div class="col-sm-6 pull-left">
+                          <div class="form-group">
+                            <label>Check appropriate box for federal tax classification</label>
+                            <select class="form-control">
+                              <option selected disabled>Select federal tax classification</option>
+                              <option disabled>────────────────────</option>
+                              <option>Individual/sole proprietor or single-member LLC</option>
+                              <option>C Corporation</option>
+                              <option>S Corporation</option>
+                              <option>Partnership</option>
+                              <option>Trust/estate</option>
+                              <option>Limited liability company</option>
+                              <option>Other</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row section-padding">
+                        <div class=" col-sm-12">
+                          <h5 class="en">Exemptions <br /> <small>(codes apply only to certain entities, not individuals; see instructions on page 3)</small></h5>
+                        </div>
+                        <div class="col-md-6 pull-left">
+                          <div class="form-group">
+                            <label>Exempt payee code (if any)</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                        <div class="col-md-6 pull-left">
+                          <div class="form-group">
+                            <label>Exemption from FATCA reporting code (if any)</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                        <div class="col-md-8 pull-left">
+                          <div class="form-group">
+                            <label>Address</label>
+                            <input type="text" class="form-control" placeholder="Street, apt. / suite no., or rural route">
+                          </div>
+                        </div>
+                        <div class="col-md-4 pull-left">
+                          <div class="form-group">
+                            <label>City, state, and ZIP code</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                        <div class="col-md-6 pull-left">
+                          <div class="form-group">
+                            <label>Account numbers (optional)</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                        <div class="col-md-6 pull-left">
+                          <div class="form-group">
+                            <label>Requester’s name (optional)</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                        <div class="col-md-8 pull-left">
+                          <div class="form-group">
+                            <label>Requester’s address (optional)</label>
+                            <input type="text" class="form-control" placeholder="Street, apt. / suite no., or rural route">
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="section-padding">
+                        <h5 class="en">Taxpayer Identification Number (TIN)</h5>
+                        <p>
+                          Enter your TIN in the appropriate box. The TIN provided must match the name given
+                          on line 1 to avoid backup withholding. For individuals,
+                          this is generally your social security number (SSN). However,
+                          for a resident alien, sole proprietor, or disregarded entity,
+                          see the instructions for Part I, later. For other entities,
+                          it is your employer identification number (EIN). If you
+                          do not have a number, see How to get a TIN, later.
+                        </p>
+                        <p>
+                          <strong>Note:</strong> If the account is in more than one
+                          name, see the instructions for line 1. Also see What Name
+                          and Number To Give the Requester for guidelines on whose
+                          number to enter.
+                        </p>
+
+                        <div class="row section-padding">
+                          <div class="form-group col-sm-5">
+                            <input type="text" class="form-control" placeholder="Social security number">
+                          </div>
+                          <div class="col-sm-2 text-center" style="padding-top: 17.5px">
+                            <small>OR</small>
+                          </div>
+                          <div class="form-group col-sm-5">
+                            <input type="text" class="form-control" placeholder="Employer identification number">
+                          </div>
+                        </div>
+
+                        <div class="section-padding">
+                          <div class="box richtext">
+                            <label class="check">
+                              <input type="checkbox">
+                              <span></span>
+                              <span>I confirm that I have read the <a href data-toggle="modal" data-target="#generalInstructions">General Instruction</a></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="row section-padding">
+
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label>Signature</label>
+                              <input type="text" class="form-control form-control-sign">
+                            </div>
+                          </div>
+
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label>Date</label>
+                              <span class="x-form-control">05/08/2017</span>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
                   </div>
-                  <div class="section-padding">
-                    <button class="btn btn-default"><span class="icon-upload"></span>שמירת/הדפסת טופס</button>
-                    <button class="btn btn-default"><span class="icon-download-sm"></span>העלאת טופס חתום</button>
+                  <div class="collapse fade" id="uploadForm">
+                    <div class="section-padding">
+                      <h5>ניתן למלא את הטופס באחת מהדרכים הבאות:</h5>
+                      <ol>
+                        <li>מילוי ידני – הדפסה של הטופס, מילוי ידני והעלאת טופס חתום
+                          למערכת
+                        </li>
+                        <li>מילוי ממוחשב – שמירת הטופס, מילוי ממוחשב כולל חתימה דיגיטלית
+                          (נדרש הליך רישום קצר) והעלאת טופס למערכת.</li>
+                      </ol>
+                    </div>
+                    <div class="section-padding">
+                      <button class="btn btn-default"><span class="icon-upload"></span>שמירת/הדפסת טופס</button>
+                      <button class="btn btn-default"><span class="icon-download-sm"></span>העלאת טופס חתום</button>
+                    </div>
                   </div>
                 </div>
 
