@@ -3,27 +3,28 @@
 /* FONTS */
 
 @import url('https://fonts.googleapis.com/css?family=Assistant:400,600,700&subset=hebrew');
+
 @font-face {
   font-family: 'NarkisBlock';
-  src: url('../font/narkis/NarkisBlockCon-Thin_MFW.eot');
-  src: url('../font/narkis/NarkisBlockCon-Thin_MFW.eot?#iefix') format('embedded-opentype'), url('../font/narkis/NarkisBlockCon-Thin_MFW.woff') format('woff'), url('../font/narkis/NarkisBlockCon-Thin_MFW.ttf') format('truetype');
-  font-weight: 300;
+  src: url('https://pa1nd.github.io/as-ui/font/narkis/NarkisBlockCon-Thin_MFW.eot');
+  src: url('https://pa1nd.github.io/as-ui/font/narkis/NarkisBlockCon-Thin_MFW.eot?#iefix') format('embedded-opentype'), url('https://pa1nd.github.io/as-ui/font/narkis/NarkisBlockCon-Thin_MFW.woff') format('woff'), url('https://pa1nd.github.io/as-ui/font/narkis/NarkisBlockCon-Thin_MFW.ttf') format('truetype');
+  font-weight: lighter;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'NarkisBlock';
-  src: url('../font/narkis/NarkisBlock-Condensed_MFW.eot');
-  src: url('../font/narkis/NarkisBlock-Condensed_MFW.eot?#iefix') format('embedded-opentype'), url('../font/narkis/NarkisBlock-Condensed_MFW.woff') format('woff'), url('../font/narkis/NarkisBlock-Condensed_MFW.ttf') format('truetype');
-  font-weight: 400;
+  src: url('https://pa1nd.github.io/as-ui/font/narkis/NarkisBlock-Condensed_MFW.eot');
+  src: url('https://pa1nd.github.io/as-ui/font/narkis/NarkisBlock-Condensed_MFW.eot?#iefix') format('embedded-opentype'), url('https://pa1nd.github.io/as-ui/font/narkis/NarkisBlock-Condensed_MFW.woff') format('woff'), url('https://pa1nd.github.io/as-ui/font/narkis/NarkisBlock-Condensed_MFW.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'NarkisBlock';
-  src: url('../font/narkis/NarkisBlockCon-Bold_MFW.eot');
-  src: url('../font/narkis/NarkisBlockCon-Bold_MFW.eot?#iefix') format('embedded-opentype'), url('../font/narkis/NarkisBlockCon-Bold_MFW.woff') format('woff'), url('../font/narkis/NarkisBlockCon-Bold_MFW.ttf') format('truetype');
-  font-weight: 600;
+  src: url('https://pa1nd.github.io/as-ui/font/narkis/NarkisBlockCon-Bold_MFW.eot');
+  src: url('https://pa1nd.github.io/as-ui/font/narkis/NarkisBlockCon-Bold_MFW.eot?#iefix') format('embedded-opentype'), url('https://pa1nd.github.io/as-ui/font/narkis/NarkisBlockCon-Bold_MFW.woff') format('woff'), url('https://pa1nd.github.io/as-ui/font/narkis/NarkisBlockCon-Bold_MFW.ttf') format('truetype');
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -34,7 +35,10 @@
 @font-face {
   font-family: 'as-icons';
   src: url('../font/icons/as-icons.eot');
-  src: url('../font/icons/as-icons.eot#iefix') format('embedded-opentype'), url('../font/icons/as-icons.ttf') format('truetype'), url('../font/icons/as-icons.woff') format('woff'), url('../font/icons/as-icons.svg#as-icons') format('svg');
+  src: url('../font/icons/as-icons.eot#iefix') format('embedded-opentype'),
+  url('../font/icons/as-icons.ttf') format('truetype'),
+  url('../font/icons/as-icons.woff') format('woff'),
+  url('../font/icons/as-icons.svg#as-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -134,6 +138,11 @@
   content: "\e913";
 }
 
+
+
+
+
+
 /***********************************************************************/
 
 /* GENERAL */
@@ -189,14 +198,14 @@ h6 {
 
 h2 {
   font-family: 'NarkisBlock', Assistant, sans-serif;
-  font-weight: 600;
-  font-size: 45px;
+  font-weight: bold;
+  font-size: 49px;
   line-height: 50px;
 }
 
 h3 {
   font-family: 'NarkisBlock', Assistant, sans-serif;
-  font-weight: 600;
+  font-weight: lighter;
   font-size: 39px;
 }
 
@@ -210,33 +219,6 @@ h5 {
   font-size: 29px;
   font-weight: normal;
 }
-
-.en {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-h3 .en,
-h3.en {
-  font-weight: 600;
-  font-size: 29px;
-}
-
-h5 .en,
-h5.en {
-  font-weight: 500;
-  font-size: 22px;
-}
-
-.en label,
-.en p {
-  font-size: .875em;
-}
-
-.en .form-control {
-  font-size: 1em;
-}
-
-
 
 .container {
   width: 1380px;
@@ -281,10 +263,9 @@ ol {
   direction: ltr;
 }
 
-.bg-grey {
-  background-color: #F4F4F7;
-  border: 1px solid #E8E9ED;
-}
+
+
+
 
 /***********************************************************************/
 
@@ -385,6 +366,8 @@ ol {
   color: #C2C2C2;
 }
 
+
+
 .input-group-addon {
   background-color: white;
   width: 105px;
@@ -455,12 +438,7 @@ ol {
   font-size: 16px;
   line-height: 20px;
   min-width: 200px;
-  width: auto;
   text-align: right;
-}
-
-.big+.tooltip .tooltip-inner {
-  min-width: 400px;
 }
 
 input+.tooltip {
@@ -730,13 +708,15 @@ input+.tooltip .tooltip-inner {
   height: 56px;
   line-height: 56px;
   border-radius: 50px;
-  background-color: #006A52;
+  /*background-color: #006A52;*/
+  background: white;
+  /*color: white;*/
   text-align: center;
   font-size: 29px;
 }
 
 .bicon::before {
-  color: white;
+  color: #006A52;
   line-height: 56px;
 }
 
@@ -783,7 +763,7 @@ ul.file-list {
   display: inline-block;
   /*cursor: default;*/
   line-height: 48px;
-  padding: 0 50px;
+  padding: 0 50px ;
   border: 1px solid #E8E9ED;
   color: black;
   border-radius: 30px;
@@ -819,17 +799,6 @@ ul.file-list {
   position: absolute;
   left: 0;
   line-height: 20px;
-  transition: all .15s ease;
-}
-
-.uploaded-file:hover {
-  color: black;
-  border-color: #ccc;
-}
-
-.uploaded-file:hover .button-close.icon-close::before {
-  color: #6D6E71 !important;
-  transform: rotate(-90deg);
 }
 
 .switch input {
@@ -897,6 +866,12 @@ ul.file-list {
   transform: translateX(-40px);
 }
 
+
+
+
+
+
+
 /*Checkbox*/
 
 .check,
@@ -909,11 +884,6 @@ ul.file-list {
 .check *,
 .radio * {
   vertical-align: middle;
-}
-
-.check a,
-.radio a {
-  vertical-align: baseline;
 }
 
 .check>input,
@@ -1118,39 +1088,16 @@ ul.file-list {
 }
 
 .gui-accordion-header {
-  /*min-height: 130px;*/
+  min-height: 130px;
   padding: 20px;
   background: #F4F4F7;
   border-radius: 5px 5px 0 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.closed .gui-accordion-header:before {
-  content: "הגיוס הושלם!";
-  display: inline-block;
-  position: absolute;
-  top: 15px;
-  right: -55px;
-  z-index: 9;
-  background: #E87722;
-  font-size: 15px;
-  font-weight: bold;
-  width: 200px;
-  line-height: 30px;
-  text-align: center;
-  vertical-align: middle;
-  color: white;
-  -webkit-transform: rotate(30deg);
-  transform: rotate(30deg);
-  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
 }
 
 .gui-acc-profile-img {
   display: inline-block;
-  width: 60px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
   border-radius: 3px;
   background-size: cover;
   margin-left: 27px;
@@ -1279,6 +1226,12 @@ ul.file-list {
   padding-top: 133px;
 }
 
+
+
+
+
+
+
 /* SITE: */
 
 #header {
@@ -1346,10 +1299,6 @@ ul.file-list {
   margin-right: 200px;
 }
 
-#header .mobile-menu-holder>* {
-  float: right;
-}
-
 #header .btn+.btn {
   margin-right: 10px;
 }
@@ -1380,13 +1329,15 @@ ul.file-list {
   line-height: 50px;
 }
 
+
+
 /***********************************************************************/
 
 /* FIXED HEADER */
 
 #header.affix {
   width: 100%;
-  z-index: 1000;
+  z-index: 999;
   -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
   border-bottom: 1px solid #ddd;
@@ -1483,7 +1434,9 @@ ul.file-list {
 
 .hero {
   /*height: 540px; */
-  background: #2C3131;
+  /*background: #2C3131;*/
+  /*background: #6D6E71;*/
+  background: #6D6E71;
   position: relative;
   overflow: hidden;
 }
@@ -1507,13 +1460,6 @@ ul.file-list {
   transform: rotate(45deg);
   -webkit-box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
-}
-
-.hero-in.closed:before {
-  left: -200px;
-  right: auto;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
 }
 
 .dl-items-col {
@@ -1737,7 +1683,6 @@ ul.file-list {
 
 .hero-carousel {
   width: 100%;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
 .closed .hero-carousel {
@@ -2012,6 +1957,12 @@ ul.file-list {
   }
 }
 
+
+
+
+
+
+
 /* Dialogs */
 
 .modal-dialog {
@@ -2087,7 +2038,6 @@ ul.file-list {
   margin: 0;
   text-shadow: none;
   cursor: pointer;
-  z-index: 5000;
 }
 
 .modal .icon-close::before {
@@ -2122,6 +2072,12 @@ ul.file-list {
 .modal-body p+.btn {
   margin-top: 15px;
 }
+
+
+
+
+
+
 
 /* FORMS */
 
@@ -2220,17 +2176,11 @@ input::-webkit-contacts-auto-fill-button {
   font-size: 16px;
 }
 
-.richtext p .form-control,
-.richtext p .form-group {
+.richtext p .form-control {
   width: 200px;
   vertical-align: middle;
   display: inline-block;
   margin: 0 10px;
-}
-
-.richtext p .form-control.long {
-  width: 360px;
-  max-width: 100%;
 }
 
 .richtext-input-2 .form-control {
@@ -2294,6 +2244,12 @@ label {
   display: block;
   min-width: 0;
 }
+
+
+
+
+
+
 
 /* /FORMS */
 
@@ -2467,6 +2423,12 @@ label {
   opacity: 1 !important;
 }
 
+
+
+
+
+
+
 /*Steps*/
 
 .steps {
@@ -2557,6 +2519,7 @@ label {
   display: inline-block;
 }
 
+
 .form-inline label {
   margin-left: 15px;
 }
@@ -2600,6 +2563,10 @@ select {
   pointer-events: none;
 }
 
+
+
+
+
 /*.app-1-inline>* {
   margin-left: 15px;
 }*/
@@ -2640,7 +2607,8 @@ input:required:focus:invalid {
 
 .form-control-sign {
   background: #EAF4FF url(../img/pen.svg) no-repeat;
-  background-position: 10px center;
+  background-position: 90% center;
+  background-position: calc(100% - 10px) center;
   border-color: #75B5FF;
 }
 
@@ -2648,6 +2616,7 @@ input:required:focus:invalid {
   border-color: #75B5FF;
   -webkit-box-shadow: 0 0 0 2px rgba(117, 181, 255, 0.2);
   box-shadow: 0 0 0 2px rgba(117, 181, 255, 0.2);
+  background-image: none;
 }
 
 .x-form-control {
@@ -2674,86 +2643,4 @@ input:required:focus:invalid {
   width: 445px;
   max-width: 70%;
   max-width: calc(100% - 80px);
-}
-
-.ui-datepicker {
-  background: #F4F4F7;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  border: 1px solid #E8E9ED;
-}
-
-.ui-datepicker-calendar td {
-  background: white;
-  padding: 7px 10px;
-  border: 3px solid #F4F4F7;
-  cursor: pointer;
-}
-
-.ui-datepicker-calendar th {
-  text-align: center;
-}
-
-.ui-datepicker-calendar a {
-  color: #00A768;
-}
-
-td.ui-datepicker-current-day {
-  background: #FA8833;
-}
-
-a.ui-state-active {
-  color: white;
-  font-weight: bold;
-}
-
-.ui-datepicker-header {
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.ui-datepicker-title {
-  display: inline-block;
-}
-
-.ui-datepicker-next,
-.ui-datepicker-prev,
-.ui-datepicker-month,
-.ui-datepicker-year {
-  cursor: pointer;
-  line-height: 2em;
-  vertical-align: middle;
-  padding: 5px 0;
-}
-
-.ui-datepicker-prev,
-.ui-datepicker-next {
-  color: #00A768;
-  font-weight: bold;
-}
-
-.ui-datepicker-prev:hover,
-.ui-datepicker-next:hover {
-  color: #00A768;
-}
-
-.ui-datepicker-prev {
-  float: right;
-}
-
-.ui-datepicker-next {
-  float: left;
-}
-
-.ui-datepicker-month,
-.ui-datepicker-year {
-  margin: 0 -1px;
-  border: 1px solid #ccc;
-  border-radius: 0;
-  padding: 5px 20px;
-}
-
-.datepicker {
-  background: url(../img/calendar.svg) no-repeat;
-  background-position: 10px center;
 }
