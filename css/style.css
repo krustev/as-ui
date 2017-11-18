@@ -430,6 +430,10 @@ ol {
   .box {
     padding: 20px;
   }
+  .success-mark {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 @media (max-width:480px) {
@@ -451,7 +455,7 @@ ol {
 
 .tooltip-inner {
   -webkit-box-shadow: 0 4px 12px rgba(198, 199, 209, 0.5);
-          box-shadow: 0 4px 12px rgba(198, 199, 209, 0.5)
+  box-shadow: 0 4px 12px rgba(198, 199, 209, 0.5)
 }
 
 .tooltip-inner {
@@ -837,7 +841,7 @@ ul.file-list {
 .uploaded-file:hover .button-close.icon-close::before {
   color: #6D6E71 !important;
   -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .switch input {
@@ -1104,7 +1108,7 @@ ul.file-list {
   left: 50%;
   content: '';
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .plus-icon:before {
@@ -1418,8 +1422,6 @@ ul.file-list {
 
 .mobile-menu-holder,
 .menu-title,
-/*#header .btn,*/
-/*#header h2,*/
 #mobile-menu {
   -webkit-transition: all .25s ease;
   transition: all .25s ease;
@@ -1448,7 +1450,7 @@ ul.file-list {
 }
 
 #header .btn+.btn {
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #header .share {
@@ -1842,7 +1844,7 @@ ul.file-list {
 .hero-carousel {
   width: 100%;
   -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
 .closed .hero-carousel {
@@ -2044,7 +2046,7 @@ ul.file-list {
     transform: scale(1);
   }
   .mobile-menu-holder .btn {
-    /*margin: 10px 0;*/
+    margin: 10px 0;
     display: block !important;
     float: none !important;
   }
@@ -2072,18 +2074,18 @@ ul.file-list {
     text-align: center;
     /*transform: rotate(45deg);*/
     -webkit-transform-origin: center;
-            transform-origin: center;
+    transform-origin: center;
   }
   .mobile-menu-active #mobile-menu span:nth-child(1) {
     -webkit-transform: translate(0, 8px) rotate(45deg);
-            transform: translate(0, 8px) rotate(45deg);
+    transform: translate(0, 8px) rotate(45deg);
   }
   .mobile-menu-active #mobile-menu span:nth-child(2) {
     opacity: 0;
   }
   .mobile-menu-active #mobile-menu span:nth-child(3) {
     -webkit-transform: translate(0, -8px) rotate(-45deg);
-            transform: translate(0, -8px) rotate(-45deg);
+    transform: translate(0, -8px) rotate(-45deg);
   }
   .menu-title h2 {
     margin-left: 80px
@@ -2362,6 +2364,28 @@ ul.file-list {
 
 .modal-body p+.btn {
   margin-top: 15px;
+}
+
+@media (max-width: 767px) {
+  .modal-dialog {
+    margin: 5vh auto;
+    padding: 0 10px;
+  }
+  .modal-dialog .btn.btn-lg {
+    width: 100%;
+  }
+  .modal-body .success-mark {
+    margin: 20px auto 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-header {
+    padding: 20px 20px 15px 30px;
+  }
+  .modal-body {
+    padding: 15px 20px;
+  }
 }
 
 /* FORMS */
@@ -3021,7 +3045,7 @@ input:required:focus:invalid {
 .ui-datepicker {
   background: #F4F4F7;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   padding: 20px;
   border: 1px solid #E8E9ED;
   display: none;
