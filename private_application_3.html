@@ -553,6 +553,7 @@
                   <!-- W9 -->
                   <div class="collapse in fade" id="W9">
                     <div class="ltr en section-padding">
+                      <h4 class="en" for="">Request for Taxpayer Identification Number and Certification</h4>
                       <h3 class="en">Form W-9</h3>
 
                       <div class="row section-padding">
@@ -574,24 +575,61 @@
                         <div class="col-md-6 col-sm-8 pull-left">
                           <div class="form-group">
                             <label>Check appropriate box for federal tax classification</label>
-                            <select class="form-control">
+                            <select data-toggle="collapse" class="form-control">
                               <option selected disabled>Select federal tax classification</option>
                               <option disabled>────────────────────</option>
-                              <option>Individual/sole proprietor or single-member LLC</option>
-                              <option>C Corporation</option>
-                              <option>S Corporation</option>
-                              <option>Partnership</option>
-                              <option>Trust/estate</option>
-                              <option>Limited liability company</option>
-                              <option>Other</option>
+                              <option data-target>Individual/sole proprietor or single-member LLC</option>
+                              <option data-target>C Corporation</option>
+                              <option data-target>S Corporation</option>
+                              <option data-target>Partnership</option>
+                              <option data-target>Trust/estate</option>
+                              <option data-target="#llc">Limited liability company</option>
+                              <option data-target="#other">Other</option>
                             </select>
                           </div>
                         </div>
+
+                        <div class="col-sm-12">
+                          <div id="llc" class="collapse fade row">
+                            <div class="col-md-6 col-sm-8 pull-left">
+                              <div class="form-group">
+                                <label>Limited liability company. Enter the tax classification</label>
+                                <select class="form-control">
+                                  <option selected disabled>Select</option>
+                                  <option disabled>────────────────────</option>
+                                  <option>C corporation</option>
+                                  <option>S Corporation</option>
+                                  <option>Partnership</option>
+                                </select>
+                              </div>
+                            </div>
+                            <p class="col-sm-12">
+                              <strong>Note:</strong> Check the appropriate box in
+                              the line above for the tax classification of the single-member
+                              owner. Do not check LLC if the LLC is classified as
+                              a single-member LLC that is disregarded from the owner
+                              unless the owner of the LLC is another LLC that is
+                              not disregarded from the owner for U.S. federal tax
+                              purposes. Otherwise, a single-member LLC that is disregarded
+                              from the owner should check the appropriate box for
+                              the tax classification of its owner.
+                            </p>
+                          </div>
+                          <div id="other" class="collapse fade row">
+                            <div class="col-sm-12">
+                              <div class="form-group">
+                                <input type="text" class="form-control">
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+
                       </div>
 
                       <div class="row section-padding">
                         <div class="col-sm-12">
-                          <h5 class="en">Exemptions <br /> <small>(codes apply only to certain entities, not individuals; see instructions on page 3)</small></h5>
+                          <p class="en">Exemptions <br /> <small>(codes apply only to certain entities, not individuals; see instructions on page 3)</small></p>
                         </div>
                         <div class="col-md-6 col-sm-8 pull-left">
                           <div class="form-group">
@@ -608,7 +646,7 @@
                         <div class="col-sm-8 pull-left">
                           <div class="form-group">
                             <label>Address</label>
-                            <input type="text" class="form-control" placeholder="Street, apt. / suite no., or rural route">
+                            <input type="text" class="form-control" placeholder="street, apt. or suite no., or rural route">
                           </div>
                         </div>
                         <div class="col-sm-4 pull-left">
@@ -632,7 +670,7 @@
                         <div class="col-sm-8 pull-left">
                           <div class="form-group">
                             <label>Requester’s address (optional)</label>
-                            <input type="text" class="form-control" placeholder="Street, apt. / suite no., or rural route">
+                            <input type="text" class="form-control" placeholder="street, apt. or suite no., or rural route">
                           </div>
                         </div>
 
@@ -657,13 +695,13 @@
                         </p>
 
                         <div class="row section-padding">
-                          <div class="form-group col-sm-5">
+                          <div class="form-group col-sm-5 form-coupled">
                             <input type="text" class="form-control" placeholder="Social security number">
                           </div>
                           <div class="col-sm-2 text-center" style="padding-top: 17.5px">
                             <small>OR</small>
                           </div>
-                          <div class="form-group col-sm-5">
+                          <div class="form-group col-sm-5 form-coupled">
                             <input type="text" class="form-control" placeholder="Employer identification number">
                           </div>
                         </div>
@@ -681,17 +719,19 @@
 
                           <div class="col-sm-6">
                             <div class="form-group">
-                              <label>Signature</label>
-                              <input type="text" class="form-control form-control-sign">
+                              <label>Date</label>
+                              <span class="x-form-control">05/08/2017</span>
                             </div>
                           </div>
 
                           <div class="col-sm-6">
                             <div class="form-group">
-                              <label>Date</label>
-                              <span class="x-form-control">05/08/2017</span>
+                              <label>Signature</label>
+                              <input type="text" class="form-control form-control-sign">
                             </div>
                           </div>
+
+
                         </div>
 
                       </div>
@@ -702,6 +742,7 @@
                   <!-- W-8BEN -->
                   <div class="collapse fade" id="W-8BEN">
                     <div class="ltr en section-padding">
+                      <h4 class="en">Certificate of Foreign Status of Beneficial Owner for United States Tax Withholding and Reporting (Individuals)</h4>
                       <h3 class="en">W-8BEN</h3>
 
                       <div class="row section-padding">
@@ -830,8 +871,7 @@
                           <input type="text" class="form-control"> of the treaty
                           identified on line 9 above to claim a <input type="number"
                             class="form-control"> % rate of withholding on (specify
-                          type of income): <input type="text" class="form-control long">
-                          Explain the additional conditions in the Article and paragraph
+                          type of income): <input type="text" class="form-control long">                          Explain the additional conditions in the Article and paragraph
                           the beneficial owner meets to be eligible for the rate
                           of withholding: <input type="text" class="form-control block">
                         </p>
@@ -850,17 +890,19 @@
 
                           <div class="col-sm-6">
                             <div class="form-group">
-                              <label>Signature</label>
-                              <input type="text" class="form-control form-control-sign">
+                              <label>Date</label>
+                              <span class="x-form-control">05/08/2017</span>
                             </div>
                           </div>
 
                           <div class="col-sm-6">
                             <div class="form-group">
-                              <label>Date</label>
-                              <span class="x-form-control">05/08/2017</span>
+                              <label>Signature</label>
+                              <input type="text" class="form-control form-control-sign">
                             </div>
                           </div>
+
+
                         </div>
 
                       </div>

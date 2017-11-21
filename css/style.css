@@ -1386,7 +1386,7 @@ ul.file-list {
   z-index: 99
 }
 
-#header.header-small {
+#header {
   border-bottom: 1px solid #ddd;
 }
 
@@ -2601,7 +2601,7 @@ label {
 }
 
 .info:first-of-type {
-  padding-top: 10px;
+  /*padding-top: 10px;*/
 }
 
 .gui-form-holder {
@@ -3014,6 +3014,10 @@ input:required:focus:invalid {
   border-color: #75B5FF;
   -webkit-box-shadow: 0 0 0 2px rgba(117, 181, 255, 0.2);
   box-shadow: 0 0 0 2px rgba(117, 181, 255, 0.2);
+}
+
+.disabled input {
+  background-color: #eee;
 }
 
 .x-form-control {
