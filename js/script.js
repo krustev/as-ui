@@ -82,18 +82,23 @@
       links.filter('[href="' + location.hash + '"]').click()
     },
     phoneCode: function() {
-      $("input[maxlength]").keyup(function() {
-        if (this.value.length == this.maxLength) {
-          $(this).next('input').focus();
+      $("input[maxlength]").keyup(function(e) {
+        if (!(e.keyCode == 16 || e.keyCode == 9)) {
+          if (this.value.length == this.maxLength) {
+            $(this).nextAll('input').first().focus();
+          }
         }
       });
     },
     coupledFields: function() {
       var coupled = $(".form-coupled");
       if (coupled.length > 0) {
+
         coupled.find('input').focus(function() {
-          $(this).parent(".form-coupled").removeClass("disabled");
-          $(this).parent(".form-coupled").siblings(".form-coupled").addClass("disabled").find("input").val("");
+          $(this).parents(".form-coupled").removeClass("disabled");
+          $(this).parents(".form-coupled").siblings(".form-coupled").addClass("disabled").find(
+            "input"
+          ).val("");
         });
       }
     },

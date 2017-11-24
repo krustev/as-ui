@@ -3,6 +3,7 @@
 /* FONTS */
 
 /*@import url('https://fonts.googleapis.com/css?family=Assistant:400,600,700&subset=hebrew');*/
+
 @font-face {
   font-family: 'NarkisBlock';
   src: url('../font/narkis/NarkisBlockCon-Thin_MFW.eot');
@@ -28,33 +29,33 @@
 }
 
 @font-face {
-    font-family: 'Helvetica Neue Condensed';
-    src: url('../font/helvetica/HelveticaNeue-CondensedLight.eot');
-    src: url('../font/helvetica/HelveticaNeue-CondensedLight.eot?#iefix') format('embedded-opentype'),
-        url('../font/helvetica/HelveticaNeue-CondensedLight.woff') format('woff'),
-        url('../font/helvetica/HelveticaNeue-CondensedLight.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
+  font-family: 'Helvetica Neue Condensed';
+  src: url('../font/helvetica/HelveticaNeue-CondensedLight.eot');
+  src: url('../font/helvetica/HelveticaNeue-CondensedLight.eot?#iefix') format('embedded-opentype'),
+  url('../font/helvetica/HelveticaNeue-CondensedLight.woff') format('woff'),
+  url('../font/helvetica/HelveticaNeue-CondensedLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Helvetica Neue Condensed';
-    src: url('../font/helvetica/HelveticaNeue-Condensed.eot');
-    src: url('../font/helvetica/HelveticaNeue-Condensed.eot?#iefix') format('embedded-opentype'),
-        url('../font/helvetica/HelveticaNeue-Condensed.woff') format('woff'),
-        url('../font/helvetica/HelveticaNeue-Condensed.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
+  font-family: 'Helvetica Neue Condensed';
+  src: url('../font/helvetica/HelveticaNeue-Condensed.eot');
+  src: url('../font/helvetica/HelveticaNeue-Condensed.eot?#iefix') format('embedded-opentype'),
+  url('../font/helvetica/HelveticaNeue-Condensed.woff') format('woff'),
+  url('../font/helvetica/HelveticaNeue-Condensed.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Helvetica Neue Condensed';
-    src: url('../font/helvetica/HelveticaNeue-CondensedBold.eot');
-    src: url('../font/helvetica/HelveticaNeue-CondensedBold.eot?#iefix') format('embedded-opentype'),
-        url('../font/helvetica/HelveticaNeue-CondensedBold.woff') format('woff'),
-        url('../font/helvetica/HelveticaNeue-CondensedBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
+  font-family: 'Helvetica Neue Condensed';
+  src: url('../font/helvetica/HelveticaNeue-CondensedBold.eot');
+  src: url('../font/helvetica/HelveticaNeue-CondensedBold.eot?#iefix') format('embedded-opentype'),
+  url('../font/helvetica/HelveticaNeue-CondensedBold.woff') format('woff'),
+  url('../font/helvetica/HelveticaNeue-CondensedBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
 }
 
 /***********************************************************************/
@@ -431,7 +432,7 @@ p {
 
 .section-control .form-control {
   display: inline-block;
-  width: auto;
+  /*width: auto;*/
 }
 
 .section-control .small {
@@ -444,6 +445,12 @@ p {
 
 .section-control .form-control+.form-control {
   margin-left: -1px;
+}
+
+.form-dash {
+  font-size: 1em;
+  padding: 0 5px;
+  opacity: .5
 }
 
 .form-intext {
@@ -2406,6 +2413,12 @@ ul.file-list {
   .modal-body {
     padding: 15px 20px;
   }
+}
+
+.modal object {
+  width: 100%;
+  min-height: 480px;
+  height: 75vh;
 }
 
 /* FORMS */
