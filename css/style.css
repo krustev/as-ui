@@ -2961,6 +2961,10 @@ select {
   appearance: none;
 }
 
+select::-ms-expand {
+    display: none;
+}
+
 .select:after {
   display: block;
   content: "\e900";
