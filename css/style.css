@@ -1865,8 +1865,8 @@ ul.file-list {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
-.closed .hero-carousel {
-  opacity: .5;
+/*.closed .hero-carousel {*/
+  /*opacity: .5;*/
 }
 
 @media (max-width: 991px) {
@@ -2120,6 +2120,7 @@ ul.file-list {
   top: 0;
   left: 0;
   position: absolute;
+  border-radius: 5px;
 }
 
 .box-map {
@@ -2130,8 +2131,6 @@ ul.file-list {
 
 .hero-in .box-map {
   height: 220px;
-  border-radius: 5px;
-  overflow: hidden;
   margin: 20px 0
 }
 
@@ -2930,7 +2929,7 @@ label {
 }
 
 .form-inline .select .form-control {
-  width: 100%;
+  /*width: 90%;*/
 }
 
 .form-inline .select {
@@ -2960,6 +2959,10 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
 }
 
 .select:after {
