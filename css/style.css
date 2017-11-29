@@ -2477,9 +2477,6 @@ select.form-control {
 
 select option {
   padding: 5px 10px;
-  display: inline;
-  font-size: 2em;
-  width: 99%;
 }
 
 .form-control {
@@ -2933,7 +2930,7 @@ label {
 }
 
 .form-inline .select .form-control {
-  width: 100%;
+
 }
 
 .form-inline .select {
