@@ -2477,7 +2477,9 @@ select.form-control {
 
 select option {
   padding: 5px 10px;
-  border: 1px solid red;
+  display: inline;
+  font-size: 2em;
+  width: 99%;
 }
 
 .form-control {
