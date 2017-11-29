@@ -2120,6 +2120,7 @@ ul.file-list {
   top: 0;
   left: 0;
   position: absolute;
+  border-radius: 5px;
 }
 
 .box-map {
@@ -2130,8 +2131,6 @@ ul.file-list {
 
 .hero-in .box-map {
   height: 220px;
-  border-radius: 5px;
-  overflow: hidden;
   margin: 20px 0
 }
 
@@ -2930,7 +2929,7 @@ label {
 }
 
 .form-inline .select .form-control {
-
+  width: 90%;
 }
 
 .form-inline .select {
