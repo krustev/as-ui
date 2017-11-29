@@ -1865,8 +1865,8 @@ ul.file-list {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
-.closed .hero-carousel {
-  opacity: .5;
+/*.closed .hero-carousel {*/
+  /*opacity: .5;*/
 }
 
 @media (max-width: 991px) {
