@@ -263,7 +263,8 @@ h5.en {
 }
 
 .en label,
-.en p {
+.en p,
+.en ul {
   font-size: .9em;
 }
 
@@ -2166,19 +2167,20 @@ ul.file-list {
 
 .richtext *+ul {
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.richtext>ul {
+.richtext ul {
   list-style: none;
 }
 
-.richtext>ul li {
+.richtext ul li {
   padding-bottom: 5px;
   position: relative;
   padding-right: 17px;
 }
 
-.richtext>ul li:before {
+.richtext ul li:before {
   content: '';
   background-color: #00A768;
   display: inline-block;
@@ -2188,6 +2190,16 @@ ul.file-list {
   position: absolute;
   top: 13px;
   right: 0;
+}
+
+.richtext .ltr ul li {
+  padding-right: auto;
+  padding-left: 17px;
+}
+
+.richtext .ltr ul li:before {
+  left: 0;
+  right: auto;
 }
 
 .richtext h3,
@@ -2600,13 +2612,18 @@ label {
   width: 26.666%
 }
 
+.ifg-5 {
+  width: 33.333%
+}
+
 @media (max-width: 768px) {
   .ifg-1,
   .ifg-2 {
     width: 50%
   }
   .ifg-3,
-  .ifg-4 {
+  .ifg-4,
+  .ifg-5 {
     width: 100%
   }
   .inline-form-group {
