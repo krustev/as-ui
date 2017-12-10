@@ -6,15 +6,16 @@
     <meta charset="UTF-8">
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/ui/datepicker-he.js"></script>
     <script src="js/bootstrap/bootstrap.min.js"></script>
     <script src="js/slick/slick.min.js"></script>
     <script src="js/script.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit'></script>
   </head>
 
   <body>
@@ -30,7 +31,8 @@
           </div>
           <div class="mobile-menu-holder col-sm-3 text-left">
             <a href="" class="share">Share</a>
-            <a href="" class="btn btn-default"><span class="icon-lock"></span>לכניסה לחשבונך</a>
+            <a href="" class="btn btn-default">
+              <span class="icon-lock"></span>לכניסה לחשבונך</a>
           </div>
         </div>
       </header>
@@ -38,11 +40,21 @@
       <!-- INTRO -->
       <section class="info richtext">
         <div class="container">
-          <h5> ברוכים הבאים לאלטשולר שחם פרופרטיז.</h5>
-          <p>נפתחה ההרשמה להשקעה. בעמוד זה תוכלו להירשם ולהתקדם איתנו צעד נוסף בדרך
-            להיות שותפים להשקעה. בשלבים הבאים תידרשו להזין פרטים מקיפים נוספים. לאחר
-            קליטתם יישלח אליכם אישור ומרגע זה פרטיכם שמורים אצלנו במערכת. לתשומת
-            ליבכם- מקומכם יובטח רק לאחר העברת הכספים לחשבון.</p>
+          <h3>ברוכים הבאים לאלטשולר שחם פרופרטיז.</h3>
+          <p>נפתחה ההרשמה להשקעה. בעמוד זה תוכלו להירשם ולהתקדם איתנו צעד נוסף בדרך להיות שותפים להשקעה. בשלבים הבאים תידרשו להזין פרטים מקיפים נוספים. לאחר קליטתם יישלח אליכם אישור ומרגע זה פרטיכם שמורים אצלנו במערכת. לתשומת ליבכם- מקומכם יובטח רק לאחר העברת
+            הכספים לחשבון.</p>
+          <br>
+          <h5>המלצת אלטשולר שחם היא להשקיע בנדל"ן עד 10% מתיק ההשקעות הכולל.</h5>
+          <p>
+            כמה דברים שכדאי להכין לפני שמתחילים ברישום:
+            <ul>
+              <li>צילום תעודת זהות (או דרכון במידה ואינך ישראלי)</li>
+              <li>פרטי חשבון בנק ממנו יועברו הכספים</li>
+              <li>להשלים</li>
+              <li>להשלים</li>
+              <li>להשלים</li>
+            </ul>
+          </p>
         </div>
       </section>
 
@@ -52,10 +64,10 @@
           <div class="h-grid-col-half-2 hero-carousel-side">
             <div class="hero-carousel">
               <div class="hc-slide">
-                <img src="img/hero2.jpg" alt="" />
+                <img src="img/hero2.jpg" alt=""/>
               </div>
               <div class="hc-slide">
-                <img src="img/hero1.jpg" alt="" />
+                <img src="img/hero1.jpg" alt=""/>
               </div>
             </div>
           </div>
@@ -63,41 +75,46 @@
             <div class="dl-item">
               <span class="bicon icon-property"></span>
               <span class="dl-item-text">
-                    <span class="dl-item-title">סוג עסקה </span>
-              <span class="dl-item-desc">נדל"ן מניב</span>
+                <span class="dl-item-title">סוג עסקה
+                </span>
+                <span class="dl-item-desc">נדל"ן מניב</span>
               </span>
             </div>
             <div class="dl-item">
               <span class="bicon icon-date"></span>
               <span class="dl-item-text">
-                    <span class="dl-item-title">תחילת הצטרפות להשקעה</span>
-              <span class="dl-item-desc">18.9.2017</span>
+                <span class="dl-item-title">תחילת הצטרפות להשקעה</span>
+                <span class="dl-item-desc">18.9.2017</span>
               </span>
             </div>
             <div class="dl-item">
               <span class="bicon icon-briefcase"></span>
               <span class="dl-item-text">
-                    <span class="dl-item-title">היקף השקעה כולל</span>
-              <span class="dl-item-desc">₪ 500,000</span>
+                <span class="dl-item-title">היקף השקעה כולל</span>
+                <span class="dl-item-desc">₪ 500,000</span>
               </span>
             </div>
             <div class="dl-item">
               <span class="bicon icon-card"></span>
               <span class="dl-item-text">
-                    <span class="dl-item-title">סכום מינימלי להשקעה </span>
-              <span class="dl-item-desc">₪ 100,000</span>
+                <span class="dl-item-title">סכום מינימלי להשקעה
+                </span>
+                <span class="dl-item-desc">₪ 100,000</span>
               </span>
             </div>
             <div class="dl-item">
               <span class="bicon icon-location"></span>
               <span class="dl-item-text">
-                    <span class="dl-item-title">מיקום</span>
-              <span class="dl-item-desc">בון, גרמניה</span>
+                <span class="dl-item-title">מיקום</span>
+                <span class="dl-item-desc">בון, גרמניה</span>
               </span>
             </div>
             <div class="box-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.6240473602193!2d-74.0085069851764!3d40.704276846025905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a16025e2d93%3A0x72749d94e958edf7!2zMjEyIFdhbGwgU3QsIE5ldyBZb3JrLCBOWSAxMDAwNSwg0KHRitC10LTQuNC90LXQvdC4INGJ0LDRgtC4!5e0!3m2!1sbg!2sbg!4v1508183120853"
-                frameborder="0" style="border:0" allowfullscreen></iframe>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.6240473602193!2d-74.0085069851764!3d40.704276846025905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a16025e2d93%3A0x72749d94e958edf7!2zMjEyIFdhbGwgU3QsIE5ldyBZb3JrLCBOWSAxMDAwNSwg0KHRitC10LTQuNC90LXQvdC4INGJ0LDRgtC4!5e0!3m2!1sbg!2sbg!4v1508183120853"
+                frameborder="0"
+                style="border:0"
+                allowfullscreen="allowfullscreen"></iframe>
             </div>
           </div>
         </div>
@@ -118,13 +135,16 @@
               <!-- TAB - PRIVATE -->
               <div class="gui-tab" id="user-register">
                 <form>
+
                   <div class="gui-tab-wrapper richtext">
 
                     <div class="section-padding">
                       <h5>מילוי פרטים</h5>
-                      <p>אנא מלאו את פרטיכם האישיים. שימו לב כי הפרטים מוזנים באופן
-                        מדויק - הפרטים הכרחיים להמשך התהליך וישמשו לזיהוי שלכם מול
-                        החברה.</p>
+                      <p>אנא מלאו את פרטיכם האישיים. שימו לב כי הפרטים מוזנים באופן מדויק - הפרטים הכרחיים להמשך התהליך וישמשו לזיהוי שלכם מול החברה.</p>
+                    </div>
+
+                    <div class="section-padding">
+                      <div id="Recaptcha1"></div>
                     </div>
 
                     <div class="section-padding row">
@@ -137,14 +157,13 @@
                       <div class="col-sm-6">
                         <div class="form-group">
                           <label>שם פרטי בעברית</label>
-                          <input type="text" class="form-control" placeholder="אברם" title="לתשומת ליבך - בכדי להשלים את התהליך במלואו יש להשלים את השדות החסרים"
-                            required>
+                          <input type="text" class="form-control" placeholder="אברם" title="לתשומת ליבך - בכדי להשלים את התהליך במלואו יש להשלים את השדות החסרים" required="required">
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="form-group">
                           <label>שם התאגיד</label>
-                          <input type="text" class="form-control" required>
+                          <input type="text" class="form-control" required="required">
                         </div>
                       </div>
                       <div class="col-sm-6">
@@ -157,9 +176,9 @@
                         <div class="form-group">
                           <label>סוג זיהוי</label>
                           <select class="form-control">
-                          <option>ת.ז.</option>
-                          <option>דרכון</option>
-                        </select>
+                            <option>ת.ז.</option>
+                            <option>דרכון</option>
+                          </select>
                         </div>
                       </div>
                       <div class="col-sm-6">
@@ -168,12 +187,7 @@
                           <input type="text" class="form-control" placeholder="9 ספרות כולל ספרת ביקורת">
                         </div>
                       </div>
-                      <!-- <div class="col-md-6 col-md-offset-6">
-                        <div class="form-group">
-                          <label>מספר ת.ז.</label>
-                          <input type="text" class="form-control" placeholder="9 ספרות כולל ספרת ביקורת">
-                        </div>
-                      </div> -->
+                      <!-- <div class="col-md-6 col-md-offset-6"> <div class="form-group"> <label>מספר ת.ז.</label> <input type="text" class="form-control" placeholder="9 ספרות כולל ספרת ביקורת"> </div> </div> -->
                       <div class="col-sm-6">
                         <div class="form-group">
                           <label>תאריך לידה</label>
@@ -184,9 +198,9 @@
                         <div class="form-group">
                           <label>מין</label>
                           <select class="form-control">
-                          <option>1</option>
-                          <option>2</option>
-                        </select>
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
                         </div>
                       </div>
                     </div>
@@ -219,9 +233,9 @@
                         <div class="form-group ifg-4">
                           <label>מדינה</label>
                           <select class="form-control">
-                              <option>A</option>
-                              <option>B</option>
-                            </select>
+                            <option>A</option>
+                            <option>B</option>
+                          </select>
                         </div>
                       </div>
                     </div>
@@ -231,14 +245,15 @@
                       <div class="col-sm-6 col-sm-offset-6">
                         <div class="form-group">
                           <label>כתובת דוא"ל</label>
-                          <input type="email" class="form-control ltr" placeholder="name@domain.com" required>
+                          <input type="email" class="form-control ltr" placeholder="name@domain.com" required="required">
                         </div>
                       </div>
 
                       <!-- PHONE #1 -->
                       <div class="col-sm-12">
                         <div class="row form-group">
-                          <label class="col-sm-12">טלפון נייד </label>
+                          <label class="col-sm-12">טלפון נייד
+                          </label>
                           <div class="col-sm-6">
                             <div class="input-group section-control ltr">
                               <input type="text" class="form-control small ltr" placeholder="+050" maxlength="3">
@@ -255,7 +270,8 @@
                       <div class="col-sm-12">
                         <div class="row form-group">
 
-                          <label class="col-sm-12">טלפון נייד </label>
+                          <label class="col-sm-12">טלפון נייד
+                          </label>
 
                           <div class="col-sm-6">
                             <div class="input-group section-control ltr">
@@ -279,7 +295,8 @@
                       <div class="col-sm-12">
                         <div class="row form-group">
 
-                          <label class="col-sm-12">טלפון נייד </label>
+                          <label class="col-sm-12">טלפון נייד
+                          </label>
 
                           <div class="col-sm-6">
                             <div class="input-group section-control ltr">
@@ -303,7 +320,8 @@
                       <div class="col-sm-12">
                         <div class="row form-group">
 
-                          <label class="col-sm-12">טלפון נייד </label>
+                          <label class="col-sm-12">טלפון נייד
+                          </label>
 
                           <div class="col-sm-6">
                             <div class="input-group section-control ltr">
@@ -333,23 +351,22 @@
                     <div class="section-padding">
                       <!-- SWITCH -->
                       <div class="form-group">
-                        <label class="label-switch" for="switch-referrer-private"> האם הגעת דרך גורם מפנה?
-                        <span class="switch">
-                          <input id="switch-referrer-private" type="checkbox" data-toggle="collapse" data-target="#referrer-content-private" autocomplete="off">
-                          <span class="switch-labels">
-                            <span class="switch-label-no">לא</span>
-                            <span class="switch-label-yes">כן</span>
+                        <label class="label-switch" for="switch-referrer-private">
+                          האם הגעת דרך גורם מפנה?
+                          <span class="switch">
+                            <input id="switch-referrer-private" type="checkbox" data-toggle="collapse" data-target="#referrer-content-private" autocomplete="off">
+                            <span class="switch-labels">
+                              <span class="switch-label-no">לא</span>
+                              <span class="switch-label-yes">כן</span>
+                            </span>
                           </span>
-                        </span>
-                      </label>
+                        </label>
                       </div>
                       <!-- REFERRER CONTENT -->
                       <div id="referrer-content-private" class="richtext collapse fade">
                         <p>
                           אני מאשר להעביר מידע אודות השקעתי באלטשולר שחם פרופרטיז לגורם המפנה:
-                          <!-- <br> שם מלא<input type="text" class="form-control long" placeholder="">
-                          <br> ת.ז/ח.פ <input type="text" class="form-control" placeholder="">
-                          <br> מס' נייד/מס' טלפון -->
+                          <!-- <br> שם מלא<input type="text" class="form-control long" placeholder=""> <br> ת.ז/ח.פ <input type="text" class="form-control" placeholder=""> <br> מס' נייד/מס' טלפון -->
                         </p>
 
                         <div class="row">
@@ -383,28 +400,25 @@
                     <div class="section-padding">
                       <div class="box richtext">
                         <p class="richtext">
-                          ידוע לי ואני מסכים בזאת כי המידע אשר יימסר על ידי ישמר במאגרי המידע של החברה וישמש
-                          לצורך ניהול, תפעול ושיווק של נכסי הנדל"ן שבניהול החברה,
-                          ניהול קשרי לקוחות, והפקת מידע סטטיסטי ועיבוד נתונים וכן
-                          יימסר לצדדים שלישיים לצורך קיום מימוש המטרות המאגרים הנ"ל.
-                          מסירת המידע לחברה נעשית מרצוני ובהסכמתי, ובכלל זה מידע
-                          שחלה עלי חובה למוסרו על פי דין לצורך קבלת שירותים דלעיל.
+                          ידוע לי ואני מסכים בזאת כי המידע אשר יימסר על ידי ישמר במאגרי המידע של החברה וישמש לצורך ניהול, תפעול ושיווק של נכסי הנדל"ן שבניהול החברה, ניהול קשרי לקוחות, והפקת מידע סטטיסטי ועיבוד נתונים וכן יימסר לצדדים שלישיים לצורך קיום מימוש המטרות המאגרים
+                          הנ"ל. מסירת המידע לחברה נעשית מרצוני ובהסכמתי, ובכלל זה מידע שחלה עלי חובה למוסרו על פי דין לצורך קבלת שירותים דלעיל.
                         </p>
                         <br>
                         <p>
                           <label class="check check-rtl">
-                        <span>הריני מסכים בזאת לקבל הודעות שיווקיות ודברי פרסומת בכל דרך לרבות באמצעות הודעות דואר אלקטרוניות, הודעות פקס, מסרונים, מערכת חיוג אוטומטית או אמצעי דיגיטאלי אחר. ידוע לי כי אני רשאי לפנות לחברה בכל עת ולבטל הסכמתי זו באמצעות פנייה לחברה בכתב או באופן שבו שוגרה הפנייה.</span>
-                        <input type="checkbox">
-                        <span></span>
-                      </label>
+                            <span>הריני מסכים בזאת לקבל הודעות שיווקיות ודברי פרסומת בכל דרך לרבות באמצעות הודעות דואר אלקטרוניות, הודעות פקס, מסרונים, מערכת חיוג אוטומטית או אמצעי דיגיטאלי אחר. ידוע לי כי אני רשאי לפנות לחברה בכל עת ולבטל הסכמתי זו באמצעות פנייה לחברה בכתב או
+                              באופן שבו שוגרה הפנייה.</span>
+                            <input type="checkbox">
+                            <span></span>
+                          </label>
                         </p>
                         <br>
                         <p>
                           <label class="check check-rtl">
-                        <span>הריני מסכים כי החברה ו/או חברות מקבוצת החברות בה מנויה החברה ו/או מי מטעמן יהיו רשאיות לעשות שימוש במידע שמסרתי ו/או אשר נאגר ו/או נוצר אודותיי לצורך שיווק מוצרים ושירותים פנסיוניים ו/או פיננסיים, לרבות בדרך של מתן שירותי דיוור ישיר.</span>
-                        <input type="checkbox">
-                        <span></span>
-                      </label>
+                            <span>הריני מסכים כי החברה ו/או חברות מקבוצת החברות בה מנויה החברה ו/או מי מטעמן יהיו רשאיות לעשות שימוש במידע שמסרתי ו/או אשר נאגר ו/או נוצר אודותיי לצורך שיווק מוצרים ושירותים פנסיוניים ו/או פיננסיים, לרבות בדרך של מתן שירותי דיוור ישיר.</span>
+                            <input type="checkbox">
+                            <span></span>
+                          </label>
                         </p>
                       </div>
                     </div>
@@ -412,7 +426,9 @@
                   </div>
                   <div class="submit-section">
                     <div class="gui-tab-wrapper">
-                      <button type="submit" class="btn btn-primary btn-al"> לתהליך ההצטרפות </button>
+                      <button type="submit" class="btn btn-primary btn-al">
+                        לתהליך ההצטרפות
+                      </button>
                     </div>
                   </div>
                 </form>
@@ -426,29 +442,34 @@
                   <div class="gui-tab-wrapper richtext">
 
                     <div class="section-padding">
-                      <h5>  כוונה לביצוע הזמנה – מילוי פרטים  </h5>
-                      <p>אנא מלאו את פרטי התאגיד ופרטיכם האישיים לטובת יצירת קשר. שימו
-                        לב כי הפרטים מוזנים באופן מדויק - הפרטים הכרחיים להמשך התהליך
-                        וישמשו לזיהוי שלכם מול החברה. </p>
+                      <h5>
+                        כוונה לביצוע הזמנה – מילוי פרטים
+                      </h5>
+                      <p>אנא מלאו את פרטי התאגיד ופרטיכם האישיים לטובת יצירת קשר. שימו לב כי הפרטים מוזנים באופן מדויק - הפרטים הכרחיים להמשך התהליך וישמשו לזיהוי שלכם מול החברה.
+                      </p>
+                    </div>
+
+                    <div class="section-padding">
+                      <div id="Recaptcha2"></div>
                     </div>
 
                     <div class="section-padding row">
                       <div class="col-sm-6">
                         <div class="form-group">
                           <label>מספר התאגיד</label>
-                          <input type="text" class="form-control" required>
+                          <input type="text" class="form-control" required="required">
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="form-group">
                           <label>שם התאגיד</label>
-                          <input type="text" class="form-control" required>
+                          <input type="text" class="form-control" required="required">
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="form-group">
                           <label>שם תאגיד באנגלית</label>
-                          <input type="text" class="form-control" required>
+                          <input type="text" class="form-control" required="required">
                         </div>
                       </div>
                       <div class="col-sm-6">
@@ -541,7 +562,8 @@
                         <!-- PHONE #1 -->
                         <div class="col-sm-12">
                           <div class="row form-group">
-                            <label class="col-sm-12">טלפון נייד </label>
+                            <label class="col-sm-12">טלפון נייד
+                            </label>
                             <div class="col-sm-6">
                               <div class="input-group section-control ltr">
                                 <input type="text" class="form-control small ltr" placeholder="+050" maxlength="3">
@@ -565,15 +587,16 @@
                     <div class="section-padding">
                       <!-- SWITCH -->
                       <div class="form-group">
-                        <label class="label-switch" for="switch-referrer-corporate"> האם הגעת דרך גורם מפנה?
-                        <span class="switch">
-                          <input id="switch-referrer-corporate" type="checkbox" data-toggle="collapse" data-target="#referrer-content-corporate" autocomplete="off">
-                          <span class="switch-labels">
-                            <span class="switch-label-no">לא</span>
-                            <span class="switch-label-yes">כן</span>
+                        <label class="label-switch" for="switch-referrer-corporate">
+                          האם הגעת דרך גורם מפנה?
+                          <span class="switch">
+                            <input id="switch-referrer-corporate" type="checkbox" data-toggle="collapse" data-target="#referrer-content-corporate" autocomplete="off">
+                            <span class="switch-labels">
+                              <span class="switch-label-no">לא</span>
+                              <span class="switch-label-yes">כן</span>
+                            </span>
                           </span>
-                        </span>
-                    </label>
+                        </label>
                       </div>
                       <!-- REFERRER CONTENT -->
                       <div id="referrer-content-corporate" class="richtext collapse fade">
@@ -587,9 +610,9 @@
                             <div class="form-group">
                               <label>סוג זיהוי</label>
                               <select class="form-control">
-                              <option>ת.ז.</option>
-                              <option>ח.פ.</option>
-                            </select>
+                                <option>ת.ז.</option>
+                                <option>ח.פ.</option>
+                              </select>
                             </div>
                           </div>
                           <div class="col-sm-6">
@@ -623,32 +646,28 @@
                     <div class="section-padding">
                       <div class="box richtext">
                         <p class="richtext">
-                          ידוע לי ואני מסכים בזאת כי המידע אשר יימסר על ידי ישמר במאגרי המידע של החברה וישמש
-                          לצורך ניהול, תפעול ושיווק של נכסי הנדל"ן שבניהול החברה,
-                          ניהול קשרי לקוחות, והפקת מידע סטטיסטי ועיבוד נתונים וכן
-                          יימסר לצדדים שלישיים לצורך קיום מימוש המטרות המאגרים הנ"ל.
-                          מסירת המידע לחברה נעשית מרצוני ובהסכמתי, ובכלל זה מידע
-                          שחלה עלי חובה למוסרו על פי דין לצורך קבלת שירותים דלעיל.
+                          ידוע לי ואני מסכים בזאת כי המידע אשר יימסר על ידי ישמר במאגרי המידע של החברה וישמש לצורך ניהול, תפעול ושיווק של נכסי הנדל"ן שבניהול החברה, ניהול קשרי לקוחות, והפקת מידע סטטיסטי ועיבוד נתונים וכן יימסר לצדדים שלישיים לצורך קיום מימוש המטרות המאגרים
+                          הנ"ל. מסירת המידע לחברה נעשית מרצוני ובהסכמתי, ובכלל זה מידע שחלה עלי חובה למוסרו על פי דין לצורך קבלת שירותים דלעיל.
                         </p>
                         <br>
                         <p>
                           <label class="check check-rtl">
-                        <span>הריני מסכים בזאת לקבל הודעות שיווקיות ודברי פרסומת בכל דרך לרבות באמצעות הודעות דואר אלקטרוניות, הודעות פקס, מסרונים, מערכת חיוג אוטומטית או אמצעי דיגיטאלי אחר. ידוע לי כי אני רשאי לפנות לחברה בכל עת ולבטל הסכמתי זו באמצעות פנייה לחברה בכתב או באופן שבו שוגרה הפנייה.</span>
-                        <input type="checkbox">
-                        <span></span>
-                      </label>
+                            <span>הריני מסכים בזאת לקבל הודעות שיווקיות ודברי פרסומת בכל דרך לרבות באמצעות הודעות דואר אלקטרוניות, הודעות פקס, מסרונים, מערכת חיוג אוטומטית או אמצעי דיגיטאלי אחר. ידוע לי כי אני רשאי לפנות לחברה בכל עת ולבטל הסכמתי זו באמצעות פנייה לחברה בכתב או
+                              באופן שבו שוגרה הפנייה.</span>
+                            <input type="checkbox">
+                            <span></span>
+                          </label>
                         </p>
                         <br>
                         <p>
                           <label class="check check-rtl">
-                        <span>הריני מסכים כי החברה ו/או חברות מקבוצת החברות בה מנויה החברה ו/או מי מטעמן יהיו רשאיות לעשות שימוש במידע שמסרתי ו/או אשר נאגר ו/או נוצר אודותיי לצורך שיווק מוצרים ושירותים פנסיוניים ו/או פיננסיים, לרבות בדרך של מתן שירותי דיוור ישיר.</span>
-                        <input type="checkbox">
-                        <span></span>
-                      </label>
+                            <span>הריני מסכים כי החברה ו/או חברות מקבוצת החברות בה מנויה החברה ו/או מי מטעמן יהיו רשאיות לעשות שימוש במידע שמסרתי ו/או אשר נאגר ו/או נוצר אודותיי לצורך שיווק מוצרים ושירותים פנסיוניים ו/או פיננסיים, לרבות בדרך של מתן שירותי דיוור ישיר.</span>
+                            <input type="checkbox">
+                            <span></span>
+                          </label>
                         </p>
                       </div>
                     </div>
-
 
                   </div>
 
@@ -676,7 +695,13 @@
       </footer>
     </div>
 
-
+    <script type="text/javascript">
+      // Render recaptchas
+      var CaptchaCallback = function () {
+        grecaptcha.render('Recaptcha1', {'sitekey': '6LdacjwUAAAAACxColA3yDflUgWIHNM5BwQCxZLp'});
+        grecaptcha.render('Recaptcha2', {'sitekey': '6LdacjwUAAAAACxColA3yDflUgWIHNM5BwQCxZLp'});
+      };
+    </script>
   </body>
 
 </html>
