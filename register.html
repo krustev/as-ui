@@ -706,12 +706,18 @@
     </div>
 
     <script type="text/javascript">
+      // Show loading spinner demo
+      $("button[type='submit']").click(function () {
+        $(".loading").removeClass("hide");
+      })
+
       // Render recaptchas
       var CaptchaCallback = function () {
         grecaptcha.render('Recaptcha1', {'sitekey': '6LdacjwUAAAAACxColA3yDflUgWIHNM5BwQCxZLp'});
         grecaptcha.render('Recaptcha2', {'sitekey': '6LdacjwUAAAAACxColA3yDflUgWIHNM5BwQCxZLp'});
       };
     </script>
+
   </body>
 
 </html>

@@ -509,6 +509,10 @@ p {
   padding-right: 0;
 }
 
+.tooltip {
+  z-index: 900;
+}
+
 .tooltip-inner {
   -webkit-box-shadow: 0 4px 12px rgba(198, 199, 209, 0.5);
   box-shadow: 0 4px 12px rgba(198, 199, 209, 0.5)
