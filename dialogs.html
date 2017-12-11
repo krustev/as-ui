@@ -6,9 +6,9 @@
     <meta charset="UTF-8">
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/ui/datepicker-he.js"></script>
@@ -21,73 +21,61 @@
 
     <script>
       dialogs = {
-        login: function() {
+        login: function () {
           $('.dialog-login').modal();
         },
-        registrationClosed: function() {
+        registrationClosed: function () {
           $('.dialog-registration-closed').modal();
         },
-        registrationConfirmed: function() {
+        registrationConfirmed: function () {
 
-          $('.dialog-registration-confirmed-normal')
-            .modal()
-            .on('show.bs.modal', function() {
-              $(".modal-backdrop").addClass('overlay-registration-confirmed')
-            })
-            .on('shown.bs.modal', function() {
-              $(".modal-backdrop").addClass('overlay-registration-confirmed')
-            });
+          $('.dialog-registration-confirmed-normal').modal().on('show.bs.modal', function () {
+            $(".modal-backdrop").addClass('overlay-registration-confirmed')
+          }).on('shown.bs.modal', function () {
+            $(".modal-backdrop").addClass('overlay-registration-confirmed')
+          });
         },
-        registrationConfirmedEarly: function() {
+        registrationConfirmedEarly: function () {
 
-          $('.dialog-registration-confirmed-early')
-            .modal()
-            .on('show.bs.modal', function() {
-              $(".modal-backdrop").addClass('overlay-registration-confirmed-early')
-            })
-            .on('shown.bs.modal', function() {
-              $(".modal-backdrop").addClass('overlay-registration-confirmed-early')
-            });
+          $('.dialog-registration-confirmed-early').modal().on('show.bs.modal', function () {
+            $(".modal-backdrop").addClass('overlay-registration-confirmed-early')
+          }).on('shown.bs.modal', function () {
+            $(".modal-backdrop").addClass('overlay-registration-confirmed-early')
+          });
         },
-        applicationConfirmed: function() {
+        applicationConfirmed: function () {
 
-          $('.dialog-application-confirmed')
-            .modal()
-            .on('show.bs.modal', function() {
-              $(".modal-backdrop").addClass('overlay-application-confirmed')
-            })
-            .on('shown.bs.modal', function() {
-              $(".modal-backdrop").addClass('overlay-application-confirmed')
-            });
+          $('.dialog-application-confirmed').modal().on('show.bs.modal', function () {
+            $(".modal-backdrop").addClass('overlay-application-confirmed')
+          }).on('shown.bs.modal', function () {
+            $(".modal-backdrop").addClass('overlay-application-confirmed')
+          });
         }
 
       }
-
     </script>
-
 
     <!-- DIALOGS -->
 
     <p style="text-align: center">
       <br><br><br>
 
-      <button onclick="dialogs.login()" class="btn btn-default">Login</button> <br><br><br>
-      <button onclick="dialogs.registrationClosed()" class="btn btn-default">Registration Closed</button> <br><br><br>
-      <button onclick="dialogs.registrationConfirmed()" class="btn btn-default">Registration Confirmed</button> <br><br><br>
-      <button onclick="dialogs.registrationConfirmedEarly()" class="btn btn-default">Registration Confirmed Early</button> <br><br><br>
-      <button onclick="dialogs.applicationConfirmed()" class="btn btn-default">Application Confirmed</button> <br><br><br>
-
+      <button onclick="dialogs.login()" class="btn btn-default">Login</button>
+      <br><br><br>
+      <button onclick="dialogs.registrationClosed()" class="btn btn-default">Registration Closed</button>
+      <br><br><br>
+      <button onclick="dialogs.registrationConfirmed()" class="btn btn-default">Registration Confirmed</button>
+      <br><br><br>
+      <button onclick="dialogs.registrationConfirmedEarly()" class="btn btn-default">Registration Confirmed Early</button>
+      <br><br><br>
+      <button onclick="dialogs.applicationConfirmed()" class="btn btn-default">Application Confirmed</button>
+      <br><br><br>
 
     </p>
 
-
     <div id="the__dialogs">
 
-      <!--
-    **********************
-        Application confirmed
-    **********************
-    -->
+      <!-- ********************** Application confirmed ********************** -->
       <div class="modal fade dialog-registration-confirmed dialog-application-confirmed">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -99,25 +87,22 @@
                 הטפסים נקלטו בהצלחה ומועברים לאישור החברה. סטטוס הרישום ישלח אליכם במייל תוך 72 שעות. לתשומת ליבכם, מקומכם יובטח בהשקעה בה התעניינתם רק לאחר העברת הכספים לחשבון.
               </p>
               <p>
-                בברכה, <br> אלטשולר שחם פרופרטיז
+                בברכה,
+                <br>
+                אלטשולר שחם פרופרטיז
               </p>
               <a href="" class="btn btn-default btn-sm btn-al">לצפיה במסמכים החתומים</a>
             </div>
             <div class="modal-footer">
               <a href="">
-                <img src="img/logo-horizontal.png" alt="" />
+                <img src="img/logo-horizontal.png" alt=""/>
               </a>
             </div>
           </div>
         </div>
       </div>
 
-
-      <!--
-    **********************
-        Registration confirmed Early
-    **********************
-    -->
+      <!-- ********************** Registration confirmed Early ********************** -->
       <div class="modal fade dialog-registration-confirmed dialog-registration-confirmed-early">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -130,18 +115,14 @@
             </div>
             <div class="modal-footer">
               <a href="">
-            <img src="img/logo-horizontal.png" alt="" />
-          </a>
+                <img src="img/logo-horizontal.png" alt=""/>
+              </a>
             </div>
           </div>
         </div>
       </div>
 
-      <!--
-    **********************
-        Registration confirmed
-    **********************
-    -->
+      <!-- ********************** Registration confirmed ********************** -->
       <div class="modal fade dialog-registration-confirmed dialog-registration-confirmed-normal">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -154,29 +135,26 @@
             </div>
             <div class="modal-footer">
               <a href="">
-              <img src="img/logo-horizontal.png" alt="" />
-            </a>
+                <img src="img/logo-horizontal.png" alt=""/>
+              </a>
             </div>
           </div>
         </div>
       </div>
 
-      <!--
-    **********************
-        Registration disabled
-    **********************
-    -->
+      <!-- ********************** Registration disabled ********************** -->
       <div class="modal fade dialog-registration-closed">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <span class="close" data-dismiss="modal"></span>
+              <span class="icon-close" data-dismiss="modal"></span>
               <h4 class="modal-title">הגיוס הושלם!</h4>
             </div>
             <div class="modal-body">
               <div class="section-padding">
                 <button type="button" class="btn btn-lg btn-primary">הרשמה למידע עבור השקעות עתידיות</button>
-                <button type="button" class="btn btn-lg btn-default"><span class="icon-lock"></span>לכניסה לחשבונך</button>
+                <button type="button" class="btn btn-lg btn-default">
+                  <span class="icon-lock"></span>לכניסה לחשבונך</button>
               </div>
 
             </div>
@@ -185,18 +163,14 @@
         </div>
       </div>
 
-
-      <!--
-    **********************
-        SMS Log in
-    **********************
-    -->
+      <!-- ********************** SMS Log in ********************** -->
       <div class="modal fade dialog-login">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <span class="icon-close" data-dismiss="modal"></span>
-              <h4 class="modal-title"><span class="modal-title-icon icon-profile"></span>כניסה למשקיע קיים</h4>
+              <h4 class="modal-title">
+                <span class="modal-title-icon icon-profile"></span>כניסה למשקיע קיים</h4>
             </div>
             <div class="modal-body">
               <form novalidate="novalidate">
@@ -205,10 +179,12 @@
                   <input type="text" class="form-control" placeholder="ת.ז. / מספר תאגיד">
                 </div>
                 <div class="recaptcha">
-                  <img src="img/recaptcha.jpg" alt="" />
+                  <img src="img/recaptcha.jpg" alt=""/>
                 </div>
                 <button type="submit" class="btn btn-lg btn-primary btn-al">שלח סיסמא ב-SMS</button>
-                <p class="form-footer">רוצים להירשם לעסקה? <a href="">הירשמו כעת</a>!</p>
+                <p class="form-footer">רוצים להירשם להשקעה?
+                  <a href="">הירשמו כעת!</a>
+                </p>
               </form>
             </div>
 

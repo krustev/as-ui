@@ -20,6 +20,8 @@
 
   <body>
 
+    <div class="loading hide">Loading...</div>
+
     <div id="content">
 
       <!-- HEADER -->
@@ -27,7 +29,7 @@
         <div class="container-fluid">
           <a href="" id="logo"></a>
           <div class="menu-title col-md-9 col-sm-11">
-            <h2>עסקת נדל"ן בבון (גרמניה)</h2>
+            <h2>השקעת נדל"ן בבון (גרמניה)</h2>
           </div>
           <div class="mobile-menu-holder col-sm-3 text-left">
             <a href="" class="share">Share</a>
@@ -157,19 +159,19 @@
                       <div class="col-sm-6">
                         <div class="form-group">
                           <label>שם פרטי בעברית</label>
-                          <input type="text" class="form-control" placeholder="אברם" title="לתשומת ליבך - בכדי להשלים את התהליך במלואו יש להשלים את השדות החסרים" required="required">
+                          <input type="text" class="form-control" placeholder="כפי שמופיע בת.ז." title="לתשומת ליבך - בכדי להשלים את התהליך במלואו יש להשלים את השדות החסרים" required="required">
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="form-group">
-                          <label>שם התאגיד</label>
-                          <input type="text" class="form-control" required="required">
+                          <label>שם משפחה באנגלית</label>
+                          <input type="text" class="form-control" required="required" placeholder="כפי שמופיע בדרכון">
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="form-group">
                           <label>שם פרטי באנגלית</label>
-                          <input type="text" class="form-control" placeholder="כפי z בדרכון">
+                          <input type="text" class="form-control" placeholder="כפי שמופיע בדרכון">
                         </div>
                       </div>
                       <div class="col-sm-6">
@@ -256,7 +258,7 @@
                           </label>
                           <div class="col-sm-6">
                             <div class="input-group section-control ltr">
-                              <input type="text" class="form-control small ltr" placeholder="+050" maxlength="3">
+                              <input type="text" class="form-control small ltr" maxlength="3">
                               <input type="text" class="form-control">
                             </div>
                           </div>
@@ -275,7 +277,7 @@
 
                           <div class="col-sm-6">
                             <div class="input-group section-control ltr">
-                              <input type="text" class="form-control small ltr" placeholder="+050" maxlength="3">
+                              <input type="text" class="form-control small ltr" maxlength="3">
                               <input type="text" class="form-control">
                             </div>
                           </div>
@@ -300,7 +302,7 @@
 
                           <div class="col-sm-6">
                             <div class="input-group section-control ltr">
-                              <input type="text" class="form-control small ltr" placeholder="+050" maxlength="3">
+                              <input type="text" class="form-control small ltr" maxlength="3">
                               <input type="text" class="form-control">
                             </div>
                           </div>
@@ -325,7 +327,7 @@
 
                           <div class="col-sm-6">
                             <div class="input-group section-control ltr">
-                              <input type="text" class="form-control small ltr" placeholder="+050" maxlength="3">
+                              <input type="text" class="form-control small ltr" maxlength="3">
                               <input type="text" class="form-control">
                             </div>
                           </div>
@@ -366,31 +368,41 @@
                       <div id="referrer-content-private" class="richtext collapse fade">
                         <p>
                           אני מאשר להעביר מידע אודות השקעתי באלטשולר שחם פרופרטיז לגורם המפנה:
-                          <!-- <br> שם מלא<input type="text" class="form-control long" placeholder=""> <br> ת.ז/ח.פ <input type="text" class="form-control" placeholder=""> <br> מס' נייד/מס' טלפון -->
                         </p>
 
                         <div class="row">
-                          <div class="col-md-4 col-sm-6">
+
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                              <label>סוג זיהוי</label>
+                              <select class="form-control">
+                                <option>ת.ז.</option>
+                                <option>ח.פ.</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                              <label>מספר זיהוי</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
                             <div class="form-group">
                               <label>שם מלא</label>
                               <input type="text" class="form-control">
                             </div>
                           </div>
-                          <div class="col-md-4 col-sm-6">
-                            <div class="form-group">
-                              <label>ת.ז./ח.פ.</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="col-md-4 col-sm-6">
+                          <div class="col-sm-6">
                             <div class="form-group">
                               <label>מס' נייד/מס' טלפון</label>
                               <div class="input-group section-control ltr">
-                                <input type="text" class="form-control small ltr" placeholder="+050" maxlength="3">
+                                <input type="text" class="form-control small ltr" maxlength="3">
                                 <input type="text" class="form-control">
                               </div>
                             </div>
                           </div>
+
                         </div>
 
                       </div>
@@ -442,9 +454,7 @@
                   <div class="gui-tab-wrapper richtext">
 
                     <div class="section-padding">
-                      <h5>
-                        כוונה לביצוע הזמנה – מילוי פרטים
-                      </h5>
+                      <h5>מילוי פרטים</h5>
                       <p>אנא מלאו את פרטי התאגיד ופרטיכם האישיים לטובת יצירת קשר. שימו לב כי הפרטים מוזנים באופן מדויק - הפרטים הכרחיים להמשך התהליך וישמשו לזיהוי שלכם מול החברה.
                       </p>
                     </div>
@@ -468,7 +478,7 @@
                       </div>
                       <div class="col-sm-6">
                         <div class="form-group">
-                          <label>שם תאגיד באנגלית</label>
+                          <label>שם משפחה באנגלית</label>
                           <input type="text" class="form-control" required="required">
                         </div>
                       </div>
@@ -482,7 +492,7 @@
                       <div class="col-sm-6">
                         <div class="form-group">
                           <label>תאריך התאגדות</label>
-                          <input type="text" class="form-control datepicker">
+                          <input type="text" class="form-control datepicker" placeholder="כפי שרשום בתעודת ההתאגדות">
                         </div>
                       </div>
 
@@ -522,7 +532,7 @@
                     </div>
 
                     <div class="section-padding">
-                      <h5>פרטי מורשה חתימה</h5>
+                      <h5>פרטי איש קשר</h5>
 
                       <div class="row">
                         <div class="col-sm-6">
@@ -566,7 +576,7 @@
                             </label>
                             <div class="col-sm-6">
                               <div class="input-group section-control ltr">
-                                <input type="text" class="form-control small ltr" placeholder="+050" maxlength="3">
+                                <input type="text" class="form-control small ltr" maxlength="3">
                                 <input type="text" class="form-control">
                               </div>
                             </div>
@@ -631,7 +641,7 @@
                             <div class="form-group">
                               <label>מס' נייד/מס' טלפון</label>
                               <div class="input-group section-control ltr">
-                                <input type="text" class="form-control small ltr" placeholder="+050" maxlength="3">
+                                <input type="text" class="form-control small ltr" maxlength="3">
                                 <input type="text" class="form-control">
                               </div>
                             </div>
