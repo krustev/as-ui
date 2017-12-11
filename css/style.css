@@ -2383,7 +2383,8 @@ ul.file-list {
   }
 }
 
-.modal object {
+.modal object,
+.modal embed {
   width: 100%;
   min-height: 480px;
   height: 75vh;
