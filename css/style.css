@@ -1411,15 +1411,21 @@ ul.file-list {
   padding-top: 120px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 991px) {
   #content {
-    padding-top: 145px;
+    padding-top: 136px;
   }
+}
+
+@media (max-width: 640px) {
+  /*#content {
+    padding-top: 145px;
+  }*/
 }
 
 @media (max-width: 480px) {
   #content {
-    padding-top: 130px;
+    padding-top: 132px;
   }
 }
 
@@ -1427,7 +1433,7 @@ ul.file-list {
 
 /* HEADER */
 
-.mobile-menu-holder, .menu-title, #mobile-menu {
+.menu-title, .menu-left, #mobile-menu, #logo {
   -webkit-transition: all .25s ease;
   transition: all .25s ease;
 }
@@ -1468,14 +1474,13 @@ ul.file-list {
   width: 160px;
   border-left: 1px solid #DDDDDD;
   background: url(../img/logo.png) no-repeat center;
-  -webkit-transition: height .5s ease;
-  transition: height .5s ease;
   background-size: contain;
 }
 
 .menu-title h2 {
-  /*vertical-align: middle;*/
   display: inline-block;
+  float: right;
+  line-height: 1.12;
   margin-right: 180px;
 }
 
@@ -1493,22 +1498,7 @@ ul.file-list {
   display: inline-block;
 }
 
-/*
-#header .container-fluid>.h1, #header .container-fluid>.h2, #header .container-fluid>.h3, #header .container-fluid>h1, #header .container-fluid>h2, #header .container-fluid>h3 {
-  margin: 0;
-}*/
-
-/*#header .container-fluid .mobile-menu-holder, #header .container-fluid .share, #header .container-fluid #logo, #header .container-fluid .btn {
-  vertical-align: middle;
-  display: inline-block;
-}*/
-
 /* HEADER SMALL / AFFIX */
-
-/*#header.header-small .container-fluid, #header.affix .container-fluid {
-  padding: 0;
-  line-height: 40px;
-}
 
 #header.affix {
   width: 100%;
@@ -1521,17 +1511,11 @@ ul.file-list {
 .header-small #logo, .affix #logo {
   background: url(../img/logo-horizontal.png) no-repeat center;
   background-size: contain;
-  -webkit-transition: none;
-  transition: none;
+  height: 75px;
 }
 
-.affix .mobile-menu-holder, .affix .menu-title, .header-small .mobile-menu-holder, .header-small .menu-title {
-  padding: 20px 15px;
-}
-
-.affix .btn, .header-small .btn {
-  line-height: 44px;
-  height: 50px;
+.affix .menu-title, .header-small .menu-title, .affix .menu-left, .header-small .menu-left {
+  padding: 12.5px 15px;
 }
 
 .affix h2, .header-small h2 {
@@ -1539,47 +1523,33 @@ ul.file-list {
 }
 
 .affix #mobile-menu, .header-small #mobile-menu {
-  margin: 15px 0;
-}*/
+  margin: 12.5px 0;
+}
 
 /* RESPONSIVE HEADER */
 
-@media (max-width:500px) {
-  /*#header.affix {
-    border-bottom: 0;
-  }
-  #header.affix .menu-title {
-    padding-top: 0;
-    padding-bottom: 0;
-    overflow: hidden;
-    height: 0;
-  }
-  #header.affix .menu-title h2 {
-    line-height: 0;
-  }*/
-}
-
-@media (max-width: 950px) {
+@media (max-width: 991px) {
   #logo {
     position: relative;
     height: 75px;
     background: url(../img/logo-horizontal.png) no-repeat center;
     background-size: contain;
   }
-  .menu-title {
+  .menu-title, .affix .menu-title, .header-small .menu-title {
     border-top: 1px solid #ddd;
-    padding: 10px 15px;
+    padding: 15px;
     width: 100%;
   }
   .menu-title h2 {
     margin: 0 !important;
     font-size: 30px;
+    line-height: 1;
   }
   .menu-left {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 12.5px;
+    padding: 12.5px 15px;
     width: auto;
   }
   #mobile-menu {
@@ -1597,8 +1567,19 @@ ul.file-list {
   #header .btn+.btn {
     margin-right: 5px;
   }
-  .menu-left {
+  .menu-left, .affix .menu-left, .header-small .menu-left {
     padding: 12.5px 0;
+  }
+  #header.affix, #header.header-small {
+    border-bottom: none;
+  }
+  .affix .menu-title, .header-small .menu-title {
+    height: 0;
+    padding: 0 15px;
+    margin-bottom: -1px;
+  }
+  .affix h2, .header-small h2 {
+    font-size: 0;
   }
 }
 
@@ -1609,16 +1590,18 @@ ul.file-list {
     line-height: 32px;
     font-size: 16px
   }
-  #logo {
+  #logo, .affix #logo, .header-small #logo {
     width: 120px;
     height: 70px;
+    border: none;
   }
-  .menu-left {
+  .menu-left, .affix .menu-left, .header-small .menu-left {
     padding: 10px 0;
   }
-  .menu-title {
+  /*.menu-title, .affix .menu-title, .header-small .menu-title {
     padding: 5px 15px;
-  }
+  }*/
+
 }
 
 /* MOBILE MENU */
@@ -1751,11 +1734,11 @@ ul.file-list {
 
 @media (max-width: 480px) {
   #mobile-menu {
-    width: 20px;
+    width: 16px;
     padding: 7.5px 0;
   }
   .menu-buttons {
-    margin-left: 40px;
+    margin-left: 32px;
   }
 }
 
