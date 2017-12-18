@@ -1652,6 +1652,9 @@ ul.file-list {
 }
 
 @media (max-width: 640px) {
+  #logo {
+    float: left;
+  }
   #header .btn {
     padding: 0 15px 2px;
     height: 40px;
@@ -1665,6 +1668,8 @@ ul.file-list {
   .affix .menu-left,
   .header-small .menu-left {
     padding: 12.5px 0;
+    left: auto;
+    right: 0;
   }
   #header.affix {
     border-bottom: none;
@@ -1681,10 +1686,11 @@ ul.file-list {
 
 @media (max-width: 480px) {
   #header .btn {
-    padding: 0 12.5px 2px;
+    padding: 0 10px 2px;
     height: 36px;
     line-height: 32px;
-    font-size: 16px
+    font-size: 15px;
+    min-width: auto;
   }
   #logo,
   .affix #logo,
@@ -1701,6 +1707,13 @@ ul.file-list {
   /*.menu-title, .affix .menu-title, .header-small .menu-title {
     padding: 5px 15px;
   }*/
+}
+
+@media (max-width: 360px) {
+  #logo,
+  .affix #logo {
+    width: 95px;
+  }
 }
 
 /* MOBILE MENU */
@@ -1764,14 +1777,13 @@ ul.file-list {
     white-space: normal !important;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-    padding: 100px 20px 80px !important;
+    padding: 100px 20px 80px;
     margin-top: 0px !important;
     display: block;
   }
   .mobile-menu-active .mobile-menu-holder {
     visibility: visible;
     opacity: 1;
-    left: 0;
     -webkit-transform: scale(1);
     transform: scale(1);
   }
@@ -1824,10 +1836,16 @@ ul.file-list {
 
 @media (max-width: 640px) {
   #mobile-menu {
-    left: 10px;
+    right: 10px;
+    left: auto;
+  }
+  .mobile-menu-holder {
+    left: auto;
+    right: 0;
   }
   .menu-buttons {
-    margin-left: 45px;
+    margin-right: 45px;
+    margin-left: 10px;
   }
 }
 
@@ -1837,7 +1855,7 @@ ul.file-list {
     padding: 7.5px 0;
   }
   .menu-buttons {
-    margin-left: 32px;
+    margin-right: 35px;
   }
 }
 
@@ -2687,8 +2705,15 @@ label {
   padding-top: 45px;
 }
 
-.recaptcha {
+.modal .recaptcha {
   padding-bottom: 35px;
+}
+
+@media (max-width: 480px) {
+  .recaptcha {
+    transform: scale(0.875);
+    transform-origin: right;
+  }
 }
 
 .inline-form-group::before {
