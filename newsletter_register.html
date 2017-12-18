@@ -21,16 +21,18 @@
 
   <body>
 
+    <div class="loading hide">Loading...</div>
+
     <div id="content" class="inner">
 
       <!-- HEADER -->
       <header id="header" class="header-small" data-spy="affix" data-offset-top="100">
         <div class="container-fluid">
           <a href="" id="logo"></a>
-          <div class="menu-title col-lg-6 col-sm-7 col-xs-12">
+          <div class="menu-title col-sm-9 col-xs-12">
             <h2>הרשמה לקבלת מידע עבור השקעות עתידיות שיפורסמו</h2>
           </div>
-          <div class="menu-left col-lg-6 col-sm-5 text-left">
+          <div class="menu-left col-sm-3 text-left">
             <div class="mobile-menu-holder">
               <a href="" class="share">Share</a>
               <a href="" class="btn btn-default">
@@ -191,7 +193,7 @@
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label>שם משפחה באנגלית</label>
+                          <label>שם תאגיד באנגלית</label>
                           <input type="text" class="form-control" required="required">
                         </div>
                       </div>
@@ -331,6 +333,15 @@
         grecaptcha.render('Recaptcha1', {'sitekey': '6LdacjwUAAAAACxColA3yDflUgWIHNM5BwQCxZLp'});
         grecaptcha.render('Recaptcha2', {'sitekey': '6LdacjwUAAAAACxColA3yDflUgWIHNM5BwQCxZLp'});
       };
+    </script>
+
+    <script>
+      // Show loading spinner demo
+      $("button[type='submit']").click(function (event) {
+        event.preventDefault();
+        $(".loading").removeClass("hide");
+
+      })
     </script>
 
   </body>
