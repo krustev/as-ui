@@ -2222,7 +2222,6 @@ ul.file-list {
   top: 0;
   left: 0;
   position: absolute;
-  border-radius: 5px;
 }
 
 .box-map {
@@ -2234,6 +2233,10 @@ ul.file-list {
 .hero-in .box-map {
   height: 220px;
   margin: 20px 0
+}
+
+.hero-in .box-map iframe {
+  border-radius: 5px;
 }
 
 @media (max-width:991px) {
