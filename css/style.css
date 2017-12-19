@@ -2185,15 +2185,27 @@ ul.file-list {
     -webkit-columns: 1;
     columns: 1;
   } */
-  .dl-item {
-    padding: 10px 15px;
+  .hero-side, .hero-in .hero-side {
+    -webkit-column-gap: 5px;
+    -moz-column-gap: 5px;
+    column-gap: 5px;
   }
+  .dl-item-text,
+  .hero:not(.hero-in) .dl-item-text {
+    padding: 0;
+    max-width: 60%;
+  }
+  .dl-item {
+    padding: 10px 0;
+  }
+  .hero-in .bicon,
   .bicon {
     width: 40px;
     height: 40px;
     line-height: 40px;
     font-size: 20px;
   }
+  .hero-in .bicon::before,
   .bicon::before {
     color: white;
     line-height: 40px;
