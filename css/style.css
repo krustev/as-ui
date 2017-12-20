@@ -34,6 +34,7 @@
   src: url('../font/helvetica/HelveticaNeue-CondensedLight.eot?#iefix') format('embedded-opentype'), url('../font/helvetica/HelveticaNeue-CondensedLight.woff') format('woff'), url('../font/helvetica/HelveticaNeue-CondensedLight.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
+  unicode-range: U+41-5A, U+61-7A
 }
 
 @font-face {
@@ -42,6 +43,7 @@
   src: url('../font/helvetica/HelveticaNeue-Condensed.eot?#iefix') format('embedded-opentype'), url('../font/helvetica/HelveticaNeue-Condensed.woff') format('woff'), url('../font/helvetica/HelveticaNeue-Condensed.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
+  unicode-range: U+41-5A, U+61-7A
 }
 
 @font-face {
@@ -50,6 +52,7 @@
   src: url('../font/helvetica/HelveticaNeue-CondensedBold.eot?#iefix') format('embedded-opentype'), url('../font/helvetica/HelveticaNeue-CondensedBold.woff') format('woff'), url('../font/helvetica/HelveticaNeue-CondensedBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
+  unicode-range: U+41-5A, U+61-7A
 }
 
 /***********************************************************************/
