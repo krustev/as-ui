@@ -20,6 +20,8 @@
 
   <body>
 
+    <div class="loading hide">Loading...</div>
+
     <!-- MODAL -->
     <div id="generalInstructions" class="modal fade ltr">
       <div class="modal-dialog modal-lg" role="document">
@@ -80,15 +82,14 @@
 
     <div id="content" class="inner">
 
-
       <!-- HEADER -->
       <header id="header" class="header-small" data-spy="affix" data-offset-top="100">
         <div class="container-fluid">
           <a href="" id="logo"></a>
-          <div class="menu-title col-lg-6 col-sm-7 col-xs-12">
+          <div class="menu-title col-sm-9 col-xs-12">
             <h2>הצטרפות להשקעת נדל"ן בעיר (מדינה)</h2>
           </div>
-          <div class="menu-left col-lg-6 col-sm-5 text-left">
+          <div class="menu-left col-sm-3 text-left">
             <div class="mobile-menu-holder">
               <a href="" class="share">Share</a>
               <a href="" class="btn btn-default">
@@ -97,7 +98,6 @@
           </div>
         </div>
       </header>
-
 
       <main>
 
@@ -147,7 +147,7 @@
                     </p>
                     <p>
                       <strong>טופס W-8BEN-E —</strong>
-                    מיועד למי שאינו אזרח/תושב ארה"ב ואינו מפעיל עסק בארה"ב
+                      מיועד למי שאינו אזרח/תושב ארה"ב ואינו מפעיל עסק בארה"ב
                     </p>
                     <p>
                       <strong>טופס W-8ECI —</strong>
@@ -435,6 +435,15 @@
         </nav>
       </footer>
     </div>
+
+    <script>
+      // Show loading spinner demo
+      $("button[type='submit']").click(function (event) {
+        event.preventDefault();
+        $(".loading").removeClass("hide");
+
+      })
+    </script>
 
   </body>
 
